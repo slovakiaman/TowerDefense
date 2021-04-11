@@ -106,6 +106,7 @@ public class Enemy : MonoBehaviour
     private void EnterExit()
     {
         PlayerManager.instance.DecreaseLives(1);
+        ScoreManager.instance.setScore((ulong)(ScoreManager.instance.GetScore() * 0.9));
         Destroy(gameObject);
     }
 

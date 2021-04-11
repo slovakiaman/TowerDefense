@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
 
     private void Victory()
     {
+        ScoreManager.instance.AddScore((int)(PlayerManager.instance.GetMoney() * 0.3));
         ScoreManager.instance.SaveIntoJson(SceneManager.GetActiveScene().name);
         Time.timeScale = 0;
         backgroundMusic.Pause();

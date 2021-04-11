@@ -9,6 +9,7 @@ public abstract class Tower : MonoBehaviour
 
     [Header("Tower stats")]
     [SerializeField] private int price;
+    [SerializeField] private int scorePrice;
     [SerializeField] protected float range = 10f;
     [SerializeField] protected float fireRate = 1f;
     [SerializeField] protected int damage = 10;
@@ -30,6 +31,7 @@ public abstract class Tower : MonoBehaviour
 
     void Start()
     {
+        ScoreManager.instance.AddScore(-scorePrice);
         InitializeTower();
         if (fireRate == 0)
             Debug.LogError("Fire rate too low");

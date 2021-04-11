@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     private Scores _scores;
-    private int _score;
+    private ulong _score;
 
     private void Start()
     {
@@ -42,20 +43,42 @@ public class ScoreManager : MonoBehaviour
 
     public void LoadFromJson()
     {
-        _scores = JsonUtility.FromJson<Scores>(System.IO.File.ReadAllText(Application.persistentDataPath + "/Score.json"));
+        try
+        {
+            string jsonString = File.ReadAllText(Application.persistentDataPath + "/Score.json");
+            _scores = JsonUtility.FromJson<Scores>(jsonString);
+        }
+        catch(FileNotFoundException e)
+        {
+            Debug.Log("No saved score");
+        }
+        catch (IOException error)
+        {
+            Debug.Log(error.Message);
+        }
+        
+
+        
     }
 
-    public void setScore(int score)
+    public void setScore(ulong score)
     {
         _score = score;
+        Debug.Log("Change score" + _score);
     }
 
     public void AddScore(int score)
     {
-        _score += score;
+        _score += (ulong) score;
+        Debug.Log("Added score" + _score);
     }
 
-    public bool getScoreByLevel(in string levelName,out int score)
+    public ulong GetScore()
+    {
+        return _score;
+    }
+
+    public bool getScoreByLevel(in string levelName,out ulong score)
     {
         Score score1 = null;
         if (_scores.GetLevelByName(in levelName, out score1))
@@ -93,9 +116,9 @@ public class Scores
 public class Score
 {
     public string levelName;
-    public int levelScore;
+    public ulong levelScore;
 
-    public Score(string name,int score)
+    public Score(string name, ulong score)
     {
         levelName = name;
         levelScore = score;

@@ -22,7 +22,7 @@ public class LevelsMap : MonoBehaviour
             {
                 string levelName = path.Remove(0, 21);
                 levelName = levelName.Remove(levelName.Length - 6);
-                int score = 0;
+                ulong score = 0;
                 nextlevel = ScoreManager.instance.getScoreByLevel(levelName, out score);
                 GameObject gameObject = Instantiate(prefabButton);
                 gameObject.name = levelName;
