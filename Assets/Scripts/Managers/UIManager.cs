@@ -370,7 +370,7 @@ public class UIManager : MonoBehaviour
         ShowOtherDialoguePanel(false);
         foreach (string entity in Enum.GetNames(typeof(DialogueEntity)))
         {
-            if (entity != Enum.GetName(typeof(DialogueEntity), DialogueEntity.KING) || entity != Enum.GetName(typeof(DialogueEntity), DialogueEntity.INFO))
+            if (!(entity == Enum.GetName(typeof(DialogueEntity), DialogueEntity.KING) || entity == Enum.GetName(typeof(DialogueEntity), DialogueEntity.INFO)))
                 this.otherDialoguePanel.transform.Find(entity).gameObject.SetActive(false);
         }
     }
