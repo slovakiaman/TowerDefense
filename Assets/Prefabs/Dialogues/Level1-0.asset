@@ -13,6 +13,53 @@ MonoBehaviour:
   m_Name: Level1-0
   m_EditorClassIdentifier: 
   lines:
+  - entity: 2
+    text: "Drah\xFD dnes si sa zachova\u013E velmi \u0161tedro k tomu pastierovi."
+    timeToDisappear: 5
   - entity: 1
-    text: Hello everyone!
-    timeToDisappear: 3
+    text: "Som predsa kr\xE1l. Mus\xEDm sa stara\u0165 o svojich poddan\xFDch. V\u0161ak
+      si \u017Eiadal len 10 zlat\xFDch aby mohol zv\xE4\u010D\u0161i\u0165 svoj statok."
+    timeToDisappear: 5
+  - entity: 2
+    text: "Kr\xE1\u013E Argorn III by to nikdy nespravil. Vie\u0161 predsa ak\xFD
+      je chamtiv\xFD."
+    timeToDisappear: 5
+  - entity: 0
+    text: Bum bum bum. (Door knocked)
+    timeToDisappear: 5
+  - entity: 2
+    text: "Kto to m\xF4\u017Ee by\u0165 v tak skor\xFA hodinu?"
+    timeToDisappear: 5
+  - entity: 1
+    text: "Ur\u010Dite zas ten kr\xE1lovsk\xFD ga\u0161par.  Vravel som ti aby si
+      mu nenalievala... "
+    timeToDisappear: 5
+  - entity: 3
+    text: "Kr\xE1l. Dedina Northyard bola v noci prepadnut\xE1. V\xE4\u010D\u0161ina
+      \u013Eud\xED u\u0161la av\u0161ak niektor\xFD zahynuli. Nedok\xE1zali sme..."
+    timeToDisappear: 5
+  - entity: 1
+    text: "Po\u010Dkaj \u010Do sa stalo. Pomal\u0161ie rozpr\xE1vaj. Nevid\xED\u0161,
+      \u017Ee som sa pr\xE1ve zobudil?"
+    timeToDisappear: 5
+  - entity: 3
+    text: "Str\xE1\u017E ma informovala, \u017Ee sa objavili nezn\xE1me obludy. Doslova
+      mon\u0161tr\xE1. Spusto\u0161ili cel\xFA dedinu."
+    timeToDisappear: 5
+  - entity: 1
+    text: "Mon\u0161tr\xE1? O tak\xFDch sa p\xED\u0161e len v starovek\xFDch knih\xE1ch.
+      Hmmm"
+    timeToDisappear: 5
+  - entity: 1
+    text: "Keby tu len bol m\xE1g Rewind. Ten by vedel \u010Do za t\xFDm m\xF4\u017Ee
+      by\u0165."
+    timeToDisappear: 5
+  - entity: 3
+    text: "Va\u0161a v\xFDsos\u0165 \u010Do m\xE1m spravi\u0165? Ka\u017Ed\xFA chv\xEDlu
+      bud\xFA pred hradbami. Northyard je nane\u0161\u0165astienajbli\u017E\u0161ia
+      dedina."
+    timeToDisappear: 5
+  - entity: 2
+    text: "Povolaj ku\u0161istov nech pripravia crosbow  ve\u017Ee. Budeme sa br\xE1ni\u0165
+      z dia\u013Eky. Nech je to \u010Dokolvek mus\xEDme bojova\u0165!"
+    timeToDisappear: 5

@@ -6,6 +6,7 @@ public enum DialogueEntity
 {
     INFO,
     KING,
+    QUEEN,
     GENERAL1,
     GENERAL2,
     GENERAL3,
