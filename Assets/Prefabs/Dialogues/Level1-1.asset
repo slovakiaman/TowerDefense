@@ -14,15 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - entity: 3
-    text: "Zvl\xE1dli sme to! Odrazili sme to nech to bolo \u010Doko\u013Evek. Ale
-      je tu nie\u010Do divn\xE9. Niesu tu \u017Eiadne tel\xE1 t\xFDch mon\u0161tier."
-    timeToDisappear: 5
+    text: We did it! We beat it, whatever it was. But there is something strange.
+      No monster bodies were found.
+    timeToDisappear: 10
   - entity: 1
-    text: "\xC1no. Zvl\xE1dli. Povolaj vojsko mus\xEDme sa \xEDs\u0165 pozrie\u0165
-      do dediny NorthYard. Predsa len je ne\u010Faleko.  "
+    text: Yes. They we it. Call the army we have to go see the village of NorthYard.
+      Still, it's nearby.
     timeToDisappear: 8
   - entity: 0
-    text: "Kr\xE1\u013E sa vyd\xE1va na prieskum dediny Northyard. Spolu z \u010Das\u0165ou
-      svojho vojska. A prem\xFD\u0161\u013Ea pre\u010Do kde s\xFA pozostatky toho
-      \u010Do zabili."
-    timeToDisappear: 8
+    text: The king sets out to explore the village of Northyard. Together with part
+      of his army. And he wonders why the remains of what they killed are missing.
+    timeToDisappear: 13

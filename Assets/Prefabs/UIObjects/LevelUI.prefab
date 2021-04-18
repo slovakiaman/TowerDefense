@@ -7725,7 +7725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b5163dfce234a9f01abae897364b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charCountdown: 0.1
+  charCountdown: 0.05
 --- !u!1 &8969268208848818991
 GameObject:
   m_ObjectHideFlags: 0
