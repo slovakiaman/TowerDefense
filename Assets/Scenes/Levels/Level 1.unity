@@ -44816,10 +44816,8 @@ MonoBehaviour:
     type: 3}
   crystalTowerPrefab1: {fileID: 8122017662506228672, guid: 1e477ae22c83e7c46adb884342b214e4,
     type: 3}
-  teslaTowerPrefab1: {fileID: 2806958102817746218, guid: 0e4a57c84d9452448a1e51f28df79086,
-    type: 3}
-  spinnerTowerPrefab1: {fileID: 596414794137842254, guid: 20867e2bbf1758f428df73e70395e9fc,
-    type: 3}
+  teslaTowerPrefab1: {fileID: 0}
+  spinnerTowerPrefab1: {fileID: 0}
   enemySlimeRedPrefab: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
     type: 3}
   enemySlimeGreenPrefab: {fileID: 2282488233902236740, guid: 51032b7999d044a409e984e7f0e34ddf,

@@ -9,16 +9,6 @@ public class ConstantsManager: MonoBehaviour
     public void Awake()
     {
         instance = this;
-        if (balistaTowerPrefab1 == null)
-            Debug.LogError("No balista tower 1 found");
-        if (cannonTowerPrefab1 == null)
-            Debug.LogError("No cannon tower 1 found");
-        if (crystalTowerPrefab1 == null)
-            Debug.LogError("No crystal tower 1 found");
-        if (teslaTowerPrefab1 == null)
-            Debug.LogError("No tesla tower 1 found");
-        if (spinnerTowerPrefab1 == null)
-            Debug.LogError("No spinner tower 1 found");
 
         if (enemySlimeRedPrefab == null)
             Debug.LogError("No slime enemy found");
@@ -56,6 +46,8 @@ public class ConstantsManager: MonoBehaviour
             Debug.LogError("No beholder enemy found");
         if (enemyBeholderGreenPrefab == null)
             Debug.LogError("No beholder enemy found");
+
+        UIManager.instance.InitShopTowers();
     }
 
     [Header("Tower prefabs")]

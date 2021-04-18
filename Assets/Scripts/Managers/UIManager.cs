@@ -28,6 +28,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject WeakAgainstImage;
     [SerializeField] private Text WeakAgainstText;
 
+    [Header("Towers panel")]
+    [SerializeField] private GameObject balistaItem;
+    [SerializeField] private GameObject cannonItem;
+    [SerializeField] private GameObject crystalItem;
+    [SerializeField] private GameObject teslaItem;
+    [SerializeField] private GameObject spinnerItem;
 
     [Header("Menu Panels")]
     [SerializeField] private GameObject pausePanel;
@@ -75,6 +81,26 @@ public class UIManager : MonoBehaviour
         this.WaveManager = (WaveManager)GameManagerObject.GetComponent<WaveManager>();
 
         this.textAnimator = gameObject.GetComponent<TextAnimator>();
+
+    }
+
+    public void InitShopTowers()
+    {
+        ConstantsManager instance = ConstantsManager.instance;
+        if (ConstantsManager.instance.balistaTowerPrefab1 == null)
+            balistaItem.SetActive(false);
+
+        if (ConstantsManager.instance.cannonTowerPrefab1 == null)
+            cannonItem.SetActive(false);
+
+        if (ConstantsManager.instance.crystalTowerPrefab1 == null)
+            crystalItem.SetActive(false);
+
+        if (ConstantsManager.instance.teslaTowerPrefab1 == null)
+            teslaItem.SetActive(false);
+
+        if (ConstantsManager.instance.spinnerTowerPrefab1 == null)
+            spinnerItem.SetActive(false);
     }
 
     public Shop GetShop()

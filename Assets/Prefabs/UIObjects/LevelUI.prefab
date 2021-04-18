@@ -7664,6 +7664,11 @@ MonoBehaviour:
   nextEnemyImage: {fileID: 8969268209104700708}
   WeakAgainstImage: {fileID: 8969268208585374933}
   WeakAgainstText: {fileID: 8969268209408635190}
+  balistaItem: {fileID: 7919877258504690884}
+  cannonItem: {fileID: 7919877259297313771}
+  crystalItem: {fileID: 7919877257916894462}
+  teslaItem: {fileID: 7919877258934713268}
+  spinnerItem: {fileID: 7919877258781881613}
   pausePanel: {fileID: 6282471766363037429}
   victoryPanel: {fileID: 5389712762249585303}
   defeatPanel: {fileID: 6647077142958705287}
