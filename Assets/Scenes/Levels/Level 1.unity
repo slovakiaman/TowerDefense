@@ -45198,7 +45198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   editorDialogues:
-  - dialogueName: 0
+  - dialogueName: start
     dialogue: {fileID: 11400000, guid: 1a8011f1c6865a646bd9699cc1aebc63, type: 2}
   - dialogueName: 21
     dialogue: {fileID: 11400000, guid: add0f6279f8a52f4a85d6d30e8a5430b, type: 2}

@@ -347,7 +347,35 @@ public class UIManager : MonoBehaviour
         {
             ShowOtherDialoguePanel(true);
             Text textObject = otherDialoguePanel.transform.Find("DialogText").GetComponent<Text>();
-            otherDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = "GENERAL KENOBI";
+            String name = "";
+            switch (entity)
+            {
+                case DialogueEntity.QUEEN:
+                    name = "Queen";
+                    break;
+                case DialogueEntity.GENERAL1:
+                    name = "General1";
+                    break;
+                case DialogueEntity.GENERAL2:
+                    name = "General2";
+                    break;
+                case DialogueEntity.GENERAL3:
+                    name = "General3";
+                    break;
+                case DialogueEntity.BOSS1:
+                    name = "First boss";
+                    break;
+                case DialogueEntity.BOSS2:
+                    name = "Second boss";
+                    break;
+                case DialogueEntity.BOSS3:
+                    name = "Third boss";
+                    break;
+                case DialogueEntity.WIZARD:
+                    name = "Wizard Rewind";
+                    break;
+            }
+            otherDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = name;
             GameObject entityImageObject = otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).gameObject;
             entityImageObject.SetActive(true);
             textAnimator.AnimateDialogueLine(textObject, dialogueLine.GetText());

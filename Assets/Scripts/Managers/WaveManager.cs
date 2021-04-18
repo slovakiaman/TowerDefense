@@ -20,7 +20,7 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         countdown = this.waves[waveNumber].countdown;
-
+        DialogueManager.instance.ShowDialogue("start");
         UIManager.instance.ShowNextWaveEnemy(waves[0].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
     }
 
