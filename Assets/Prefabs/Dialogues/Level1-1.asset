@@ -24,4 +24,7 @@ MonoBehaviour:
   - entity: 0
     text: The king sets out to explore the village of Northyard. Together with part
       of his army. And he wonders why the remains of what they killed are missing.
-    timeToDisappear: 13
+    timeToDisappear: 10
+  - entity: 0
+    text: are missing.
+    timeToDisappear: 3

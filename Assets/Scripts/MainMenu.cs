@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Awake()
+    {
+        Time.timeScale = 1;
+        AudioListener.volume = 1;
+    }
     public void StoryMode()
     {
         SceneManager.LoadScene("Scenes/LevelsMap", LoadSceneMode.Single);

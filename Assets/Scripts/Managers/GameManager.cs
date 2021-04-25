@@ -13,6 +13,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource victorySound;
     [SerializeField] private AudioSource defeatSound;
 
+    private void Awake()
+    {
+        PauseSounds(false);
+        MuteSounds(false);
+        StopTime(false);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -50,12 +57,21 @@ public class GameManager : MonoBehaviour
     {
         ScoreManager.instance.AddScore((int)(PlayerManager.instance.GetMoney() * 0.3));
         ScoreManager.instance.SaveIntoJson(SceneManager.GetActiveScene().name);
-        Time.timeScale = 0;
         backgroundMusic.Pause();
+        DialogueManager.instance.ShowDialogue("end");
         gameOver = true;
         UIManager.instance.ShowVictory(true);
         BuildManager.instance.Disable();
         victorySound.Play();
+    }
+
+    public void Pause()
+    {
+        ToggleTime();
+        if (timeStopped)
+            PauseSounds(true);
+        else
+            PauseSounds(false);
     }
 
     public void ToggleTime()
@@ -65,27 +81,60 @@ public class GameManager : MonoBehaviour
 
         if (!timeStopped)
         {
+            StopTime(true);
             UIManager.instance.ShowPause(true);
-            Time.timeScale = 0;
-            backgroundMusic.Pause();
         }
         else
         {
+            StopTime(false);
             UIManager.instance.ShowPause(false);
-            backgroundMusic.UnPause();
-            Time.timeScale = 1;
         }
-        timeStopped = !timeStopped;
     }
 
     public void ToggleSounds()
     {
+        if (gameOver)
+            return;
+
         if (!soundsMuted)
-            AudioListener.volume = 0;
+            MuteSounds(true);
         else
-            AudioListener.volume = 1;
-        soundsMuted = !soundsMuted;
+            MuteSounds(false);
     }
+
+    private void PauseSounds(bool pause)
+    {
+        AudioListener.pause = pause;
+    }
+
+    private void StopTime(bool stop)
+    {
+        if (stop)
+        {
+            Time.timeScale = 0;
+            timeStopped = true;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            timeStopped = false;
+        }
+    }
+
+    private void MuteSounds(bool mute)
+    {
+        if (mute)
+        {
+            AudioListener.volume = 0;
+            soundsMuted = true;
+        }
+        else
+        {
+            AudioListener.volume = 1;
+            soundsMuted = false;
+        }
+    }
+
 
     public void PlayBackgroundMusic()
     {
@@ -94,15 +143,16 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
+        PauseSounds(false);
+        MuteSounds(false);
+        StopTime(false);
         ScoreManager.instance.setScore(0);
         backgroundMusic.Stop();
         UIManager.instance.ShowPause(false);
-        timeStopped = false;
-        Time.timeScale = 1;
-        gameOver = false;
         GetComponent<WaveManager>().ResetSpawner();
         BuildManager.instance.ResetBuilder();
         PlayerManager.instance.ResetPlayer();
+        DialogueManager.instance.Reset();
     }
 
     public void ChangeLevel()

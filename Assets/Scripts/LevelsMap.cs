@@ -28,6 +28,8 @@ public class LevelsMap : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+        AudioListener.volume = 1;
         int scenesCount = SceneManager.sceneCountInBuildSettings;
         bool nextlevel = true;
         bool locked = false;

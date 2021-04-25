@@ -96,6 +96,7 @@ public class WaveManager : MonoBehaviour
     public void StartSpawner()
     {
         this.start = true;
+        DialogueManager.instance.Reset();
     }
 
     public void spawnAnotherWave()
@@ -119,7 +120,10 @@ public class WaveManager : MonoBehaviour
         if (spawning)
             UIManager.instance.ShowNextWaveEnemy(waves[waveNumber + 1].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
         else if (waveNumber == waves.Count)
+        {
             UIManager.instance.ShowNextWaveEnemy(waves[waveNumber - 1].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
+            UIManager.instance.ShowSpawnWaveButton(false);
+        }
         else
             UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false); ;
         spawning = false;

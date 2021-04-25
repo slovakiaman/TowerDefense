@@ -324,7 +324,7 @@ public class UIManager : MonoBehaviour
 
     public void Pause()
     {
-        GameManager.ToggleTime();
+        GameManager.Pause();
     }
 
     public void Quit()
