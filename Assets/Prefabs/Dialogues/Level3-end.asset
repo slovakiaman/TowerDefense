@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level3-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 1
+    text: We continue our search. The direction of the village of Walden. We have
+      to save those villagers!
+    timeToDisappear: 7
+  - entity: 1
+    text: Immediately inform the military engineer that we need stronger towers.
+      There are more and more of those monsters. They are starting to have the upper
+      hand.
+    timeToDisappear: 12
+  - entity: 3
+    text: I understand! I'll put one of the generals in charge.
+    timeToDisappear: 5
