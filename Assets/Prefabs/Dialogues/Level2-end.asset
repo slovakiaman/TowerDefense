@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level2-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 4
+    text: Thank you, Your Majesty. I'll go quickly to my wife and kids. I hid them
+      in the woods by the sawmill. I hope they're fine.
+    timeToDisappear: 10
+  - entity: 1
+    text: Did other villagers survive?
+    timeToDisappear: 2
+  - entity: 4
+    text: Yes, we all ran to the forest. There, those monsters stopped chasing us.
+    timeToDisappear: 7
+  - entity: 3
+    text: Your Highness, do you think this may be related to rumors about that forest?
+    timeToDisappear: 7
+  - entity: 1
+    text: It's a forest of guardians. Apparently it is true that he is enchanted
+      by ancient beings.
+    timeToDisappear: 7
+  - entity: 1
+    text: Villager go with the family and gather the villagers and run to the castle.
+      They will take care of you there. We go on and look for where monsters arise.
+    timeToDisappear: 12
+  - entity: 4
+    text: Yes I will, thank you again for the rescue. We'll get together right away
+      and leave.
+    timeToDisappear: 7
