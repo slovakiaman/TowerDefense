@@ -23,5 +23,5 @@ MonoBehaviour:
       hand.
     timeToDisappear: 12
   - entity: 3
-    text: I understand! I'll put one of the generals in charge.
+    text: I understand! I will entrust one of the knights to oversee it.
     timeToDisappear: 5
