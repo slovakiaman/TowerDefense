@@ -64,13 +64,11 @@ public class ScoreManager : MonoBehaviour
     public void setScore(ulong score)
     {
         _score = score;
-        Debug.Log("Change score" + _score);
     }
 
     public void AddScore(int score)
     {
         _score += (ulong) score;
-        Debug.Log("Added score" + _score);
     }
 
     public ulong GetScore()
