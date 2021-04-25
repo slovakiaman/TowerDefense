@@ -16,6 +16,8 @@ public class LevelsMap : MonoBehaviour
     [SerializeField]
     private int biomIndex = 0;
     [SerializeField]
+    private int maxBiomIndex = 0;
+    [SerializeField]
     private GameObject previousBiomButton;
     [SerializeField]
     private GameObject nextBiomButton;
@@ -55,6 +57,14 @@ public class LevelsMap : MonoBehaviour
             }
             
         }
+        if (levels.Count%levelsOnBiom == 0)
+        {
+            maxBiomIndex = (levels.Count / levelsOnBiom) - 1;
+        }
+        else
+        {
+            maxBiomIndex = levels.Count / levelsOnBiom;
+        }
         showLevels();
     }
 
@@ -91,7 +101,7 @@ public class LevelsMap : MonoBehaviour
             previousBiomButton.SetActive(true);
         }
 
-        if (biomIndex >= levels.Count/levelsOnBiom)
+        if (biomIndex >= maxBiomIndex)
         {
             nextBiomButton.SetActive(false);
         }
