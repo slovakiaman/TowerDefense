@@ -8,6 +8,7 @@ public enum DialogueEntity
     KING,
     QUEEN,
     GENERAL1,
+    ENGINEER,
     VILLAGER,
     GENERAL2,
     GENERAL3,

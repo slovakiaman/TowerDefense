@@ -382,6 +382,9 @@ public class UIManager : MonoBehaviour
                 case DialogueEntity.GENERAL1:
                     name = "General";
                     break;
+                case DialogueEntity.ENGINEER:
+                    name = "Army Engineer";
+                    break;
                 case DialogueEntity.VILLAGER:
                     name = "Villager";
                     break;
