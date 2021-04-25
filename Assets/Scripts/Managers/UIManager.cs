@@ -380,7 +380,10 @@ public class UIManager : MonoBehaviour
                     name = "Queen";
                     break;
                 case DialogueEntity.GENERAL1:
-                    name = "General1";
+                    name = "General";
+                    break;
+                case DialogueEntity.VILLAGER:
+                    name = "Villager";
                     break;
                 case DialogueEntity.GENERAL2:
                     name = "General2";
