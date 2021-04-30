@@ -64,4 +64,9 @@ public class DialogueManager : MonoBehaviour
         UIManager.instance.ShowKingDialoguePanel(false);
         UIManager.instance.HideOtherDialoguePanel();
     }
+
+    public DialogueEntity GetCurrentActiveEntity()
+    {
+        return dialogueInProgress.GetCurrentDialogueLine().GetDialogueEntity();
+    }
 }

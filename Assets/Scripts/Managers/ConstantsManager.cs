@@ -46,8 +46,6 @@ public class ConstantsManager: MonoBehaviour
             Debug.LogError("No beholder enemy found");
         if (enemyBeholderGreenPrefab == null)
             Debug.LogError("No beholder enemy found");
-
-        UIManager.instance.InitShopTowers();
     }
 
     [Header("Tower prefabs")]

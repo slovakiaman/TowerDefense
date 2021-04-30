@@ -17,6 +17,10 @@ public class BuildManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
         shop = UIManager.instance.GetShop();
     }
 

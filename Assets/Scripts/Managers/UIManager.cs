@@ -84,6 +84,11 @@ public class UIManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        InitShopTowers();
+    }
+
     public void InitShopTowers()
     {
         ConstantsManager instance = ConstantsManager.instance;
@@ -287,6 +292,7 @@ public class UIManager : MonoBehaviour
     public void ShowKingDialoguePanel(bool show)
     {
         this.kingDialoguePanel.SetActive(show);
+        this.kingDialoguePanel.transform.Find("Image").gameObject.SetActive(false);
     }
 
     public void ShowOtherDialoguePanel(bool show)
@@ -359,6 +365,7 @@ public class UIManager : MonoBehaviour
             Text textObject = kingDialoguePanel.transform.Find("DialogText").GetComponent<Text>();
             kingDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = "Lightsoul II";
             textAnimator.AnimateDialogueLine(textObject, dialogueLine.GetText());
+            kingDialoguePanel.transform.Find("ImageAnimation").gameObject.SetActive(true);
             Invoke("HideKingDialoguePanel", dialogueLine.GetTimeToDisappear());
         } 
         else if(entity == DialogueEntity.INFO)
@@ -410,6 +417,7 @@ public class UIManager : MonoBehaviour
             otherDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = name;
             GameObject entityImageObject = otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).gameObject;
             entityImageObject.SetActive(true);
+            otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).Find("ImageAnimation").gameObject.SetActive(true);
             textAnimator.AnimateDialogueLine(textObject, dialogueLine.GetText());
             Invoke("HideOtherDialoguePanel", dialogueLine.GetTimeToDisappear());
         }
@@ -431,7 +439,10 @@ public class UIManager : MonoBehaviour
         foreach (string entity in Enum.GetNames(typeof(DialogueEntity)))
         {
             if (!(entity == Enum.GetName(typeof(DialogueEntity), DialogueEntity.KING) || entity == Enum.GetName(typeof(DialogueEntity), DialogueEntity.INFO)))
+            {
+                this.otherDialoguePanel.transform.Find(entity).Find("Image").gameObject.SetActive(false);
                 this.otherDialoguePanel.transform.Find(entity).gameObject.SetActive(false);
+            }
         }
     }
 
@@ -496,4 +507,27 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void StopCurrentDialogAnimation()
+    {
+        DialogueEntity entity = DialogueManager.instance.GetCurrentActiveEntity();
+        AudioSource audio;
+        if (entity == DialogueEntity.KING)
+        {
+            audio = kingDialoguePanel.gameObject.GetComponent<AudioSource>();
+            kingDialoguePanel.transform.Find("ImageAnimation").gameObject.SetActive(false);
+            kingDialoguePanel.transform.Find("Image").gameObject.SetActive(true);
+
+        }
+        else if (entity == DialogueEntity.INFO)
+        {
+            audio = infoDialoguePanel.gameObject.GetComponent<AudioSource>();
+        }
+        else
+        {
+            audio = otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).gameObject.GetComponent<AudioSource>();
+            otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).Find("ImageAnimation").gameObject.SetActive(false);
+            otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).Find("Image").gameObject.SetActive(true);
+        }
+        audio.Stop();
+    }
 }

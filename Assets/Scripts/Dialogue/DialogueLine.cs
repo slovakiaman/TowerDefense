@@ -8,7 +8,6 @@ public class DialogueLine
 {
     [SerializeField] private DialogueEntity entity;
     [SerializeField] private string text;
-    [SerializeField] private float timeToDisappear;
 
     private float timer;
 
@@ -24,7 +23,8 @@ public class DialogueLine
 
     public float GetTimeToDisappear()
     {
-        return this.timeToDisappear;
+        float timeToDisappear = (float)text.Length / 14;
+        return timeToDisappear >= 1.5f ? timeToDisappear : 1.5f;
     }
 
     /**
@@ -40,9 +40,9 @@ public class DialogueLine
         return false;
     }
 
-    public void StartTimer()
+    public void Start()
     {
-        timer = timeToDisappear;
+        timer = GetTimeToDisappear();
     }
     
 }

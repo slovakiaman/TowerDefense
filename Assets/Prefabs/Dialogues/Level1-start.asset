@@ -15,49 +15,35 @@ MonoBehaviour:
   lines:
   - entity: 2
     text: Dear you were very generous to the shepherd yesterday.
-    timeToDisappear: 5
   - entity: 1
     text: I'm a king after all. I have to take care of my vassals. However, he only
       asked for 10 gold so he could enlarge his farm.
-    timeToDisappear: 10
   - entity: 2
     text: King Argorn III would never do that. You know how greedy he is.
-    timeToDisappear: 5
   - entity: 0
     text: Knock knock knock. (Door knocked)
-    timeToDisappear: 2
   - entity: 2
     text: Who can it be at such an early hour?
-    timeToDisappear: 5
   - entity: 1
     text: Definitely the royal harlequin again. I told you not to give him the wine...
-    timeToDisappear: 2
   - entity: 0
     text: (The door opened)
-    timeToDisappear: 2
   - entity: 3
     text: Your Highness. The village of Northyard was raided at night. Most people
       escaped but some died. We couldn't ...
-    timeToDisappear: 10
   - entity: 1
     text: Wait what happened. Talk more slowly. Can't you see I just woke up?
-    timeToDisappear: 5
   - entity: 3
     text: The guard informed me that unknown monsters had appeared. Literally monsters.
       They ravaged the whole village.
-    timeToDisappear: 5
   - entity: 1
     text: Monsters? Such is written only in ancient books. Hmmm
-    timeToDisappear: 5
   - entity: 1
     text: If only the magician Rewind was here. He would know best what could be
       behind it.
-    timeToDisappear: 5
   - entity: 3
     text: Your Highness, what should I do? They will be in front of the walls at
       any moment. Northyard is unfortunately the nearest village.
-    timeToDisappear: 10
   - entity: 1
     text: Call the crossbowmen to prepare a crossbow tower. We will defend ourselves
       from a distance. Whatever it is we have to fight!
-    timeToDisappear: 10

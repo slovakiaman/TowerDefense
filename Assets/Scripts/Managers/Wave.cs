@@ -18,8 +18,7 @@ public class Wave : ScriptableObject
 
     public GameObject GetEnemyPrefab()
     {
-        if (enemyPrefab == null)
-            AssignPrefab();
+        AssignPrefab();
         return this.enemyPrefab;
     }
 

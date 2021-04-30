@@ -29,7 +29,7 @@ public class Dialogue: ScriptableObject
             {
                 actualLineIndex++;
                 actualLine = lines[actualLineIndex];
-                actualLine.StartTimer();
+                actualLine.Start();
                 UIManager.instance.ShowDialogueLine(actualLine);
             }
             else
@@ -42,7 +42,12 @@ public class Dialogue: ScriptableObject
     {
         actualLine = lines[0];
         actualLineIndex = 0;
-        actualLine.StartTimer();
+        actualLine.Start();
         UIManager.instance.ShowDialogueLine(actualLine);
+    }
+
+    public DialogueLine GetCurrentDialogueLine()
+    {
+        return actualLine;
     }
 }
