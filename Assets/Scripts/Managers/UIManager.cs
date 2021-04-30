@@ -510,6 +510,7 @@ public class UIManager : MonoBehaviour
     public void StopCurrentDialogAnimation()
     {
         DialogueEntity entity = DialogueManager.instance.GetCurrentActiveEntity();
+        if (entity == null) return;
         AudioSource audio;
         if (entity == DialogueEntity.KING)
         {
