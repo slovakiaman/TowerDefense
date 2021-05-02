@@ -387,7 +387,7 @@ public class UIManager : MonoBehaviour
                     name = "Queen";
                     break;
                 case DialogueEntity.GENERAL1:
-                    name = "General";
+                    name = "General Palanthor";
                     break;
                 case DialogueEntity.ENGINEER:
                     name = "Army Engineer";
@@ -396,10 +396,10 @@ public class UIManager : MonoBehaviour
                     name = "Villager";
                     break;
                 case DialogueEntity.GENERAL2:
-                    name = "General2";
+                    name = "General Ragnar";
                     break;
                 case DialogueEntity.GENERAL3:
-                    name = "General3";
+                    name = "General Raffa";
                     break;
                 case DialogueEntity.BOSS1:
                     name = "First boss";

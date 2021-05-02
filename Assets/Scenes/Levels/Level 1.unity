@@ -37211,7 +37211,7 @@ PrefabInstance:
     - target: {fileID: 5389712763617842904, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14.599976
+      value: -14.59996
       objectReference: {fileID: 0}
     - target: {fileID: 5389712763638618642, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
@@ -45480,8 +45480,6 @@ MonoBehaviour:
     dialogue: {fileID: 11400000, guid: 1a8011f1c6865a646bd9699cc1aebc63, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: add0f6279f8a52f4a85d6d30e8a5430b, type: 2}
-  - dialogueName: 0
-    dialogue: {fileID: 0}
 --- !u!4 &1670396357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4,
