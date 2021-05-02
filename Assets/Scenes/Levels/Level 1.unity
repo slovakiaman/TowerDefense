@@ -45138,9 +45138,9 @@ MonoBehaviour:
   enemyBeholderGreenPrefab: {fileID: 2703858864881451887, guid: b8efcf3126860f7449d921914eee1fa3,
     type: 3}
   enemyBoss1Prefab: {fileID: 170346, guid: da6d6a06655063040aeb66d615ac7600, type: 3}
-  enemyBoss2Prefab: {fileID: 170346, guid: da6d6a06655063040aeb66d615ac7600, type: 3}
-  enemyBoss3Prefab: {fileID: 170346, guid: da6d6a06655063040aeb66d615ac7600, type: 3}
-  enemyBoss4Prefab: {fileID: 170346, guid: da6d6a06655063040aeb66d615ac7600, type: 3}
+  enemyBoss2Prefab: {fileID: 100720, guid: 718245bcad6022948a1547e6551fc1c8, type: 3}
+  enemyBoss3Prefab: {fileID: 194904, guid: 39f6545d821d68244a0bc391b186a47e, type: 3}
+  enemyBoss4Prefab: {fileID: 109776, guid: 9113168b0d7366a4aa40bfe606656791, type: 3}
 --- !u!114 &1669861731
 MonoBehaviour:
   m_ObjectHideFlags: 0
