@@ -15,5 +15,6 @@ public enum DialogueEntity
     BOSS1,
     BOSS2,
     BOSS3,
+    BOSS4,
     WIZARD
 }

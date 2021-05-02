@@ -401,13 +401,16 @@ public class UIManager : MonoBehaviour
                     name = "General Raffa";
                     break;
                 case DialogueEntity.BOSS1:
-                    name = "First boss";
+                    name = "Caildrass, The Clumsy One";
                     break;
                 case DialogueEntity.BOSS2:
-                    name = "Second boss";
+                    name = "Onerth, The Strong Minded";
                     break;
                 case DialogueEntity.BOSS3:
-                    name = "Third boss";
+                    name = "Dirsy, Icebreath";
+                    break;
+                case DialogueEntity.BOSS4:
+                    name = "Rimbem, Terror Bringer";
                     break;
                 case DialogueEntity.WIZARD:
                     name = "Wizard Rewind";
