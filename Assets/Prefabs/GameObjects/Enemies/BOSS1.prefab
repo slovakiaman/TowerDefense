@@ -1456,7 +1456,7 @@ GameObject:
   - component: {fileID: 7465431972255803918}
   - component: {fileID: 5882265387834948563}
   m_Layer: 0
-  m_Name: BOSS 1
+  m_Name: BOSS1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2341,7 +2341,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d8c240ce07ee91a46ae5679124d39b84, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
