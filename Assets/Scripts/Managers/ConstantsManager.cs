@@ -75,5 +75,9 @@ public class ConstantsManager: MonoBehaviour
     public GameObject enemyBeholderCyanPrefab;
     public GameObject enemyBeholderGreenPrefab;
 
-
+    [Header("Enemy prefabs")]
+    public GameObject enemyBoss1Prefab;
+    public GameObject enemyBoss2Prefab;
+    public GameObject enemyBoss3Prefab;
+    public GameObject enemyBoss4Prefab;
 }

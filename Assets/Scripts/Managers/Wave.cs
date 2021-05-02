@@ -80,6 +80,18 @@ public class Wave : ScriptableObject
             case EnemyVariant.BEHOLDER_GREEN:
                 enemyPrefab = ConstantsManager.instance.enemyBeholderGreenPrefab;
                 break;
+            case EnemyVariant.BOSS1:
+                enemyPrefab = ConstantsManager.instance.enemyBoss1Prefab;
+                break;
+            case EnemyVariant.BOSS2:
+                enemyPrefab = ConstantsManager.instance.enemyBoss2Prefab;
+                break;
+            case EnemyVariant.BOSS3:
+                enemyPrefab = ConstantsManager.instance.enemyBoss3Prefab;
+                break;
+            case EnemyVariant.BOSS4:
+                enemyPrefab = ConstantsManager.instance.enemyBoss4Prefab;
+                break;
         }
     }
 
