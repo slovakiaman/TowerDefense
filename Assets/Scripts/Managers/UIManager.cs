@@ -66,7 +66,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject nextWaveBeholderGreen;
 
     private TextAnimator textAnimator;
-
     private void Awake()
     {
         instance = this;
@@ -509,8 +508,10 @@ public class UIManager : MonoBehaviour
 
     public void StopCurrentDialogAnimation()
     {
+        if (!DialogueManager.instance.HasDialogueInProgress())
+            return;
+
         DialogueEntity entity = DialogueManager.instance.GetCurrentActiveEntity();
-        if (entity == null) return;
         AudioSource audio;
         if (entity == DialogueEntity.KING)
         {
