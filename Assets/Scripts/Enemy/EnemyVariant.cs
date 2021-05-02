@@ -21,5 +21,10 @@ public enum EnemyVariant
     GOLEM_RED2,
     BEHOLDER_PURPLE,
     BEHOLDER_CYAN,
-    BEHOLDER_GREEN
+    BEHOLDER_GREEN,
+    BOSS1,
+    BOSS2,
+    BOSS3,
+    BOSS4
+
 }
