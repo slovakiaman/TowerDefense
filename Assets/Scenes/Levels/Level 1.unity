@@ -37708,6 +37708,114 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveLichRed
+      value: 
+      objectReference: {fileID: 1061611779444407541, guid: 3839ed6052db86a4ab0f11cfc79aceae,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveGolemRed
+      value: 
+      objectReference: {fileID: 5212024513729630868, guid: e6f9f5caaa91d364db51b00c3b415576,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveMummyRed
+      value: 
+      objectReference: {fileID: 9212660955744656323, guid: 010de9164eb207b40bb5998dca9a5e53,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveSlimeRed
+      value: 
+      objectReference: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveGolemRed2
+      value: 
+      objectReference: {fileID: 5212024513729630868, guid: 5a0e1917d93e53748a81ac9dbe6af2f6,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveLichGreen
+      value: 
+      objectReference: {fileID: 1061611779444407541, guid: 99c3983e026e2644ba96f87e0cf711bf,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveMummyGrey
+      value: 
+      objectReference: {fileID: 9212660955744656323, guid: bc6dce102d0fdfc4bb059516d7cd6057,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveGolemGreen
+      value: 
+      objectReference: {fileID: 5212024513729630868, guid: 5e69c61ba4ebe404f8c19fe3765c3469,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveLichPurple
+      value: 
+      objectReference: {fileID: 1061611779444407541, guid: ac4d6f9b10f406c4fae5c3d68338c318,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveMummyWhite
+      value: 
+      objectReference: {fileID: 9212660955744656323, guid: 0915272b5f69db64ca0e18bbde6fbc8c,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveSlimeGreen
+      value: 
+      objectReference: {fileID: 2282488233902236740, guid: 51032b7999d044a409e984e7f0e34ddf,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveTurtleBlue
+      value: 
+      objectReference: {fileID: 4240767672001036938, guid: 84b52f93c8d72004fae4fb26e49d0880,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveSlimeYellow
+      value: 
+      objectReference: {fileID: 2282488233902236740, guid: 27344e9c7ab24a24aaf89fbed8ce4e35,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveTurtleBlack
+      value: 
+      objectReference: {fileID: 4240767672001036938, guid: b4de3b8828804ff48814779a3d5c1716,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveTurtleWhite
+      value: 
+      objectReference: {fileID: 4240767672001036938, guid: 4f8e9b2ced5263043a90ac79dbbf260d,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveBeholderCyan
+      value: 
+      objectReference: {fileID: 2703858864881451887, guid: b402bd065feb95d48933cbed4d72a325,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveBeholderGreen
+      value: 
+      objectReference: {fileID: 2703858864881451887, guid: b8efcf3126860f7449d921914eee1fa3,
+        type: 3}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveBeholderPurple
+      value: 
+      objectReference: {fileID: 2703858864881451887, guid: 7bf9c44cebed1f3488f9a533759eb65c,
+        type: 3}
     - target: {fileID: 8969268208863988509, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchorMax.y
