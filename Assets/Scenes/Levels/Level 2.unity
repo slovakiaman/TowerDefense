@@ -13483,6 +13483,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 2.199997
       objectReference: {fileID: 0}
+    - target: {fileID: 5389712763617842904, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -14.59996
+      objectReference: {fileID: 0}
     - target: {fileID: 5389712763638618642, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -14823,7 +14828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b58efb50b6fa26e4aa56892f9a569e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1000
+  startMoney: 500
   startLives: 5
 --- !u!114 &464196506
 MonoBehaviour:
@@ -14857,9 +14862,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db02e023577db404cbe0473399481c8b, type: 2}
   - {fileID: 11400000, guid: e055770f1715109409c42f3fd81e1330, type: 2}
   - {fileID: 11400000, guid: 41cd77b73103fa24ea55292c3bb581dd, type: 2}
-  - {fileID: 11400000, guid: 1b28a45ab268d254ba77d4e758090ca9, type: 2}
-  - {fileID: 11400000, guid: a260b40767a74024389192e7a2722197, type: 2}
-  - {fileID: 11400000, guid: 13050d870e3849a438b6a38ac6a9329a, type: 2}
   nextWaveTime: 5.5
   countdown: 1
   waveNumber: 0
@@ -14877,10 +14879,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   balistaTowerPrefab1: {fileID: 6932228161388596386, guid: 7436575bce89cdf4cac825bb6e7560b7,
     type: 3}
-  cannonTowerPrefab1: {fileID: 4149252355760522626, guid: 715e1a34f609e864284a0d4bf5029d70,
-    type: 3}
-  crystalTowerPrefab1: {fileID: 8122017662506228672, guid: 1e477ae22c83e7c46adb884342b214e4,
-    type: 3}
+  cannonTowerPrefab1: {fileID: 0}
+  crystalTowerPrefab1: {fileID: 0}
   teslaTowerPrefab1: {fileID: 0}
   spinnerTowerPrefab1: {fileID: 0}
   enemySlimeRedPrefab: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
