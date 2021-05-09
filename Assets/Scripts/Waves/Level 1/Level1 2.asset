@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffac0dd59d7a3d54981d16904d1434a7, type: 3}
-  m_Name: Wave18
+  m_Name: Level1 2
   m_EditorClassIdentifier: 
-  enemy: 6
-  pathNumber: 1
-  enemyCount: 1
-  speed: 5
-  hp: 1200
-  scale: 0.9
-  countdown: 8
-  moneyReward: 300
+  enemy: 0
+  pathNumber: 0
+  enemyCount: 0
+  speed: 0
+  hp: 0
+  scale: 0
+  countdown: 0
+  moneyReward: 0
