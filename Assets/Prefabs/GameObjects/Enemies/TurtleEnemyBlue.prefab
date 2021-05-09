@@ -150,12 +150,12 @@ GameObject:
   - component: {fileID: 4240767672001036937}
   - component: {fileID: 1636312734984536478}
   m_Layer: 0
-  m_Name: TurtleEnemy
+  m_Name: TurtleEnemyBlue
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4240767672001036936
 Transform:
   m_ObjectHideFlags: 0
