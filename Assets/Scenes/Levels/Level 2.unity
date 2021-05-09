@@ -13838,6 +13838,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8969268208819543479, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: nextWaveSlimeGreen
+      value: 
+      objectReference: {fileID: 590346513}
     - target: {fileID: 8969268208863988509, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -18522,6 +18527,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4f82206765cef54ca8f19ce34136e8a, type: 3}
+--- !u!1 &590346513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6973051985677597500, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+    type: 3}
+  m_PrefabInstance: {fileID: 450969432}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &592404081
 PrefabInstance:
   m_ObjectHideFlags: 0
