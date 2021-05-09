@@ -7,12 +7,14 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     private Scores _scores;
+    private Scores _endlessScores;
     private ulong _score;
 
     private void Start()
     {
         instance = this;
         instance._scores = new Scores();
+        instance._endlessScores = new Scores();
         instance._score = 0;
         instance.LoadFromJson();
     }
@@ -41,12 +43,37 @@ public class ScoreManager : MonoBehaviour
         System.IO.File.WriteAllText(Application.persistentDataPath + "/Score.json", data);
     }
 
+    public void SaveEndlessIntoJson(string levelName)
+    {
+        Score score = null;
+        if (_endlessScores.GetLevelByName(levelName, out score))
+        {
+            if (score.levelScore > _score)
+            {
+                return;
+            }
+            else
+            {
+                score.levelScore = _score;
+            }
+        }
+        else
+        {
+            _endlessScores.scores.Add(new Score(levelName, _score));
+        }
+
+        _score = 0;
+        string data = JsonUtility.ToJson(_endlessScores);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/EndlessScore.json", data);
+    }
     public void LoadFromJson()
     {
         try
         {
             string jsonString = File.ReadAllText(Application.persistentDataPath + "/Score.json");
             _scores = JsonUtility.FromJson<Scores>(jsonString);
+            string jsonStringEndless = File.ReadAllText(Application.persistentDataPath + "/EndlessScore.json");
+            _endlessScores = JsonUtility.FromJson<Scores>(jsonStringEndless);
         }
         catch(FileNotFoundException e)
         {
@@ -80,6 +107,17 @@ public class ScoreManager : MonoBehaviour
     {
         Score score1 = null;
         if (_scores.GetLevelByName(in levelName, out score1))
+        {
+            score = score1.levelScore;
+            return true;
+        }
+        score = 0;
+        return false;
+    }
+    public bool getEndlessScoreByLevel(in string levelName, out ulong score)
+    {
+        Score score1 = null;
+        if (_endlessScores.GetLevelByName(in levelName, out score1))
         {
             score = score1.levelScore;
             return true;

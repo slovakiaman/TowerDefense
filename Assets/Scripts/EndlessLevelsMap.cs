@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelsMap : MonoBehaviour
+public class EndlessLevelsMap : MonoBehaviour
 {
     [SerializeField]
     private GameObject prefabButton;
@@ -31,31 +31,16 @@ public class LevelsMap : MonoBehaviour
         Time.timeScale = 1;
         AudioListener.volume = 1;
         int scenesCount = SceneManager.sceneCountInBuildSettings;
-        bool nextlevel = true;
-        bool locked = false;
         for (int i = 0;i < scenesCount; i++)
         {
             string path = SceneUtility.GetScenePathByBuildIndex(i);
-            if (path.Contains("Assets/Scenes/Levels/"))
+            if (path.Contains("Assets/Scenes/EndlessLevels/"))
             {
-                string levelName = path.Remove(0, 21);
+                string levelName = path.Remove(0, 28);
                 levelName = levelName.Remove(levelName.Length - 6);
                 ulong score = 0;
-                nextlevel = ScoreManager.instance.getScoreByLevel(levelName, out score);
-                levels.Add(new Level(levelName, score, i,locked));
-                if(!locked && score == 0)
-                {
-                    if(levels.Count % levelsOnBiom != 0)
-                    {
-                        biomIndex = levels.Count / levelsOnBiom;
-                    }
-                    else
-                    {
-                        biomIndex = (levels.Count / levelsOnBiom) -1 ;
-                    }
-                    
-                }
-                locked = !nextlevel;
+                ScoreManager.instance.getEndlessScoreByLevel(levelName, out score);
+                levels.Add(new Level(levelName, score, i,false));
             }
             
         }
@@ -126,18 +111,9 @@ public class LevelsMap : MonoBehaviour
             }
             Level level = levels[i];
             GameObject gameObject = Instantiate(prefabButton);
-            if (level.isLocked)
+            if (gameObject.transform.Find("Level_image").Find(level.levelName) != null)
             {
-                gameObject.GetComponent<Button>().interactable = false;
-                gameObject.transform.Find("DisabledBtn").gameObject.SetActive(true);
-                gameObject.transform.Find("Level_image").Find("Locked").gameObject.SetActive(true);
-            }
-            else
-            {
-                if (gameObject.transform.Find("Level_image").Find(level.levelName) != null)
-                {
-                    gameObject.transform.Find("Level_image").Find(level.levelName).gameObject.SetActive(true);
-                }
+                gameObject.transform.Find("Level_image").Find(level.levelName).gameObject.SetActive(true);
             }
             gameObject.name = level.levelName;
             gameObject.GetComponent<LevelButton>().levelIndex = level.index;
