@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Dialogues/Dialogue")]
@@ -30,7 +29,7 @@ public class Dialogue: ScriptableObject
                 actualLineIndex++;
                 actualLine = lines[actualLineIndex];
                 actualLine.Start();
-                UIManager.instance.ShowDialogueLine(actualLine);
+                ((NormalUIManager)UIManager.instance).ShowDialogueLine(actualLine);
             }
             else
                 return true;
@@ -43,7 +42,7 @@ public class Dialogue: ScriptableObject
         actualLine = lines[0];
         actualLineIndex = 0;
         actualLine.Start();
-        UIManager.instance.ShowDialogueLine(actualLine);
+        ((NormalUIManager)UIManager.instance).ShowDialogueLine(actualLine);
     }
 
     public DialogueLine GetCurrentDialogueLine()

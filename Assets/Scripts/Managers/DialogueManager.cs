@@ -61,8 +61,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguesToShow.Clear();
         dialogueInProgress = null;
-        UIManager.instance.ShowKingDialoguePanel(false);
-        UIManager.instance.HideOtherDialoguePanel();
+        ((NormalUIManager)UIManager.instance).ShowKingDialoguePanel(false);
+        ((NormalUIManager)UIManager.instance).HideOtherDialoguePanel();
     }
 
     public bool HasDialogueInProgress()

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public abstract class GameManager : MonoBehaviour
 {
-    private bool gameOver = false;
-    private bool timeStopped = false;
-    private bool soundsMuted = false;
+    protected bool gameOver = false;
+    protected bool timeStopped = false;
+    protected bool soundsMuted = false;
 
-    [SerializeField] private AudioSource backgroundMusic;
-    [SerializeField] private AudioSource victorySound;
-    [SerializeField] private AudioSource defeatSound;
+    public AudioSource backgroundMusic;
+    public AudioSource victorySound;
+    public AudioSource defeatSound;
 
     private void Awake()
     {
@@ -42,28 +42,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void GameOver()
-    {
-        ScoreManager.instance.setScore(0);
-        Time.timeScale = 0;
-        backgroundMusic.Pause();
-        gameOver = true;
-        UIManager.instance.ShowGameOver(true);
-        BuildManager.instance.Disable();
-        defeatSound.Play();
-    }
+    public abstract void GameOver();
 
-    private void Victory()
-    {
-        ScoreManager.instance.AddScore((int)(PlayerManager.instance.GetMoney() * 0.3));
-        ScoreManager.instance.SaveIntoJson(SceneManager.GetActiveScene().name);
-        backgroundMusic.Pause();
-        DialogueManager.instance.ShowDialogue("end");
-        gameOver = true;
-        UIManager.instance.ShowVictory(true);
-        BuildManager.instance.Disable();
-        victorySound.Play();
-    }
+    public abstract void Victory();
 
     public void Pause()
     {
@@ -102,12 +83,12 @@ public class GameManager : MonoBehaviour
             MuteSounds(false);
     }
 
-    private void PauseSounds(bool pause)
+    protected void PauseSounds(bool pause)
     {
         AudioListener.pause = pause;
     }
 
-    private void StopTime(bool stop)
+    protected void StopTime(bool stop)
     {
         if (stop)
         {
@@ -121,7 +102,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void MuteSounds(bool mute)
+    protected void MuteSounds(bool mute)
     {
         if (mute)
         {
@@ -141,19 +122,7 @@ public class GameManager : MonoBehaviour
         backgroundMusic.Play();
     }
 
-    public void ResetGame()
-    {
-        PauseSounds(false);
-        MuteSounds(false);
-        StopTime(false);
-        ScoreManager.instance.setScore(0);
-        backgroundMusic.Stop();
-        UIManager.instance.ShowPause(false);
-        GetComponent<WaveManager>().ResetSpawner();
-        BuildManager.instance.ResetBuilder();
-        PlayerManager.instance.ResetPlayer();
-        DialogueManager.instance.Reset();
-    }
+    public abstract void ResetGame();
 
     public void ChangeLevel()
     {

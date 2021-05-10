@@ -33,7 +33,7 @@ public class TextAnimator : MonoBehaviour
                 charIndex++;
             } else
             {
-                UIManager.instance.StopCurrentDialogAnimation();
+                ((NormalUIManager)UIManager.instance).StopCurrentDialogAnimation();
                 Reset();
             }
         }

@@ -7,81 +7,59 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
+
     [Header("SETUP FIELDS")]
-    private WaveManager WaveManager;
-    private GameManager GameManager;
+    protected WaveManager WaveManager;
+    protected GameManager GameManager;
 
     [Header("Next wave panel")]
-    [SerializeField] public Text nextWaveCountdownText;
-    [SerializeField] public GameObject startButton;
-    [SerializeField] public GameObject spawnWaveButton;
-
-    [Header("Shop panel")]
-    [SerializeField] public Text moneyText;
-    [SerializeField] public Text livesText;
-    [SerializeField] private GameObject shopLeftPanel;
-    [SerializeField] private GameObject shopRightPanel;
-    [SerializeField] private GameObject shopBuyButton;
-    [SerializeField] private GameObject shopSellButton;
-    [SerializeField] private GameObject shopUpgradeButton;
-    [SerializeField] private GameObject nextEnemyImage;
-    [SerializeField] private GameObject WeakAgainstImage;
-    [SerializeField] private Text WeakAgainstText;
-
-    [Header("Towers panel")]
-    [SerializeField] private GameObject balistaItem;
-    [SerializeField] private GameObject cannonItem;
-    [SerializeField] private GameObject crystalItem;
-    [SerializeField] private GameObject teslaItem;
-    [SerializeField] private GameObject spinnerItem;
+    public Text nextWaveCountdownText;
+    public GameObject startButton;
+    public GameObject spawnWaveButton;
 
     [Header("Menu Panels")]
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject defeatPanel;
 
-    [Header("DialoguePanels")]
-    [SerializeField] private GameObject infoDialoguePanel;
-    [SerializeField] private GameObject kingDialoguePanel;
-    [SerializeField] private GameObject otherDialoguePanel;
+    [Header("Shop panel")]
+    [SerializeField] public Text moneyText;
+    [SerializeField] public Text livesText;
+    [SerializeField] public GameObject shopLeftPanel;
+    [SerializeField] public GameObject shopRightPanel;
+    [SerializeField] public GameObject shopBuyButton;
+    [SerializeField] public GameObject shopSellButton;
+    [SerializeField] public GameObject shopUpgradeButton;
+    [SerializeField] public GameObject nextEnemyImage;
+    [SerializeField] public GameObject WeakAgainstImage;
+    [SerializeField] public Text WeakAgainstText;
+
+    [Header("Towers panel")]
+    [SerializeField] protected GameObject balistaItem;
+    [SerializeField] protected GameObject cannonItem;
+    [SerializeField] protected GameObject crystalItem;
+    [SerializeField] protected GameObject teslaItem;
+    [SerializeField] protected GameObject spinnerItem;
 
     [Header("NextWaveEnemy")]
-    [SerializeField] private GameObject nextWaveSlimeRed;
-    [SerializeField] private GameObject nextWaveSlimeGreen;
-    [SerializeField] private GameObject nextWaveSlimeYellow;
-    [SerializeField] private GameObject nextWaveTurtleBlue;
-    [SerializeField] private GameObject nextWaveTurtleBlack;
-    [SerializeField] private GameObject nextWaveTurtleWhite;
-    [SerializeField] private GameObject nextWaveMummyGrey;
-    [SerializeField] private GameObject nextWaveMummyWhite;
-    [SerializeField] private GameObject nextWaveMummyRed;
-    [SerializeField] private GameObject nextWaveGolemGreen;
-    [SerializeField] private GameObject nextWaveGolemRed;
-    [SerializeField] private GameObject nextWaveGolemRed2;
-    [SerializeField] private GameObject nextWaveLichPurple;
-    [SerializeField] private GameObject nextWaveLichGreen;
-    [SerializeField] private GameObject nextWaveLichRed;
-    [SerializeField] private GameObject nextWaveBeholderPurple;
-    [SerializeField] private GameObject nextWaveBeholderCyan;
-    [SerializeField] private GameObject nextWaveBeholderGreen;
-
-    private TextAnimator textAnimator;
-    private void Awake()
-    {
-        instance = this;
-        shopLeftPanel.SetActive(false);
-        shopRightPanel.SetActive(false);
-        shopBuyButton.SetActive(false);
-        shopSellButton.SetActive(false);
-        shopUpgradeButton.SetActive(false);
-
-        GameObject GameManagerObject = GameObject.FindGameObjectWithTag("GameController");
-        this.GameManager = (GameManager)GameManagerObject.GetComponent<GameManager>();
-        this.WaveManager = (WaveManager)GameManagerObject.GetComponent<WaveManager>();
-
-        this.textAnimator = gameObject.GetComponent<TextAnimator>();
-
-    }
+    [SerializeField] protected GameObject nextWaveSlimeRed;
+    [SerializeField] protected GameObject nextWaveSlimeGreen;
+    [SerializeField] protected GameObject nextWaveSlimeYellow;
+    [SerializeField] protected GameObject nextWaveTurtleBlue;
+    [SerializeField] protected GameObject nextWaveTurtleBlack;
+    [SerializeField] protected GameObject nextWaveTurtleWhite;
+    [SerializeField] protected GameObject nextWaveMummyGrey;
+    [SerializeField] protected GameObject nextWaveMummyWhite;
+    [SerializeField] protected GameObject nextWaveMummyRed;
+    [SerializeField] protected GameObject nextWaveGolemGreen;
+    [SerializeField] protected GameObject nextWaveGolemRed;
+    [SerializeField] protected GameObject nextWaveGolemRed2;
+    [SerializeField] protected GameObject nextWaveLichPurple;
+    [SerializeField] protected GameObject nextWaveLichGreen;
+    [SerializeField] protected GameObject nextWaveLichRed;
+    [SerializeField] protected GameObject nextWaveBeholderPurple;
+    [SerializeField] protected GameObject nextWaveBeholderCyan;
+    [SerializeField] protected GameObject nextWaveBeholderGreen;
 
     private void Start()
     {
@@ -283,22 +261,6 @@ public class UIManager : MonoBehaviour
         pausePanel.SetActive(show);
     }
 
-    public void ShowInfoDialoguePanel(bool show)
-    {
-        this.infoDialoguePanel.SetActive(show);
-    }
-
-    public void ShowKingDialoguePanel(bool show)
-    {
-        this.kingDialoguePanel.SetActive(show);
-        this.kingDialoguePanel.transform.Find("Image").gameObject.SetActive(false);
-    }
-
-    public void ShowOtherDialoguePanel(bool show)
-    {
-        this.otherDialoguePanel.SetActive(show);
-    }
-
     public void StartSpawner()
     {
         ShowStartButton(false);
@@ -353,99 +315,6 @@ public class UIManager : MonoBehaviour
     public void Menu()
     {
         GameManager.Menu();
-    }
-
-    public void ShowDialogueLine(DialogueLine dialogueLine)
-    {
-        DialogueEntity entity = dialogueLine.GetDialogueEntity();
-        if (entity == DialogueEntity.KING)
-        {
-            ShowKingDialoguePanel(true);
-            Text textObject = kingDialoguePanel.transform.Find("DialogText").GetComponent<Text>();
-            kingDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = "Lightsoul II";
-            textAnimator.AnimateDialogueLine(textObject, dialogueLine.GetText());
-            kingDialoguePanel.transform.Find("ImageAnimation").gameObject.SetActive(true);
-            Invoke("HideKingDialoguePanel", dialogueLine.GetTimeToDisappear());
-        } 
-        else if(entity == DialogueEntity.INFO)
-        {
-            ShowInfoDialoguePanel(true);
-            Text textObject = infoDialoguePanel.transform.Find("DialogText").GetComponent<Text>();
-            infoDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = "Meanwhile...";
-            textAnimator.AnimateDialogueLine(textObject, dialogueLine.GetText());
-            Invoke("HideInfoDialoguePanel", dialogueLine.GetTimeToDisappear());
-        }
-        else
-        {
-            ShowOtherDialoguePanel(true);
-            Text textObject = otherDialoguePanel.transform.Find("DialogText").GetComponent<Text>();
-            String name = "";
-            switch (entity)
-            {
-                case DialogueEntity.QUEEN:
-                    name = "Queen";
-                    break;
-                case DialogueEntity.GENERAL1:
-                    name = "General Palanthor";
-                    break;
-                case DialogueEntity.ENGINEER:
-                    name = "Army Engineer";
-                    break;
-                case DialogueEntity.VILLAGER:
-                    name = "Villager";
-                    break;
-                case DialogueEntity.GENERAL2:
-                    name = "General Ragnar";
-                    break;
-                case DialogueEntity.GENERAL3:
-                    name = "General Raffa";
-                    break;
-                case DialogueEntity.BOSS1:
-                    name = "Caildrass, The Clumsy One";
-                    break;
-                case DialogueEntity.BOSS2:
-                    name = "Onerth, The Strong Minded";
-                    break;
-                case DialogueEntity.BOSS3:
-                    name = "Dirsy, Icebreath";
-                    break;
-                case DialogueEntity.BOSS4:
-                    name = "Rimbem, Terror Bringer";
-                    break;
-                case DialogueEntity.WIZARD:
-                    name = "Wizard Rewind";
-                    break;
-            }
-            otherDialoguePanel.transform.Find("NameHeader").GetComponent<Text>().text = name;
-            GameObject entityImageObject = otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).gameObject;
-            entityImageObject.SetActive(true);
-            otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).Find("ImageAnimation").gameObject.SetActive(true);
-            textAnimator.AnimateDialogueLine(textObject, dialogueLine.GetText());
-            Invoke("HideOtherDialoguePanel", dialogueLine.GetTimeToDisappear());
-        }
-    }
-
-    public void HideInfoDialoguePanel()
-    {
-        ShowInfoDialoguePanel(false);
-    }
-
-    public void HideKingDialoguePanel()
-    {
-        ShowKingDialoguePanel(false);
-    }
-
-    public void HideOtherDialoguePanel()
-    {
-        ShowOtherDialoguePanel(false);
-        foreach (string entity in Enum.GetNames(typeof(DialogueEntity)))
-        {
-            if (!(entity == Enum.GetName(typeof(DialogueEntity), DialogueEntity.KING) || entity == Enum.GetName(typeof(DialogueEntity), DialogueEntity.INFO)))
-            {
-                this.otherDialoguePanel.transform.Find(entity).Find("Image").gameObject.SetActive(false);
-                this.otherDialoguePanel.transform.Find(entity).gameObject.SetActive(false);
-            }
-        }
     }
 
     public void ShowNextWaveEnemy(EnemyVariant variant, bool show)
@@ -509,30 +378,4 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void StopCurrentDialogAnimation()
-    {
-        if (!DialogueManager.instance.HasDialogueInProgress())
-            return;
-
-        DialogueEntity entity = DialogueManager.instance.GetCurrentActiveEntity();
-        AudioSource audio;
-        if (entity == DialogueEntity.KING)
-        {
-            audio = kingDialoguePanel.gameObject.GetComponent<AudioSource>();
-            kingDialoguePanel.transform.Find("ImageAnimation").gameObject.SetActive(false);
-            kingDialoguePanel.transform.Find("Image").gameObject.SetActive(true);
-
-        }
-        else if (entity == DialogueEntity.INFO)
-        {
-            audio = infoDialoguePanel.gameObject.GetComponent<AudioSource>();
-        }
-        else
-        {
-            audio = otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).gameObject.GetComponent<AudioSource>();
-            otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).Find("ImageAnimation").gameObject.SetActive(false);
-            otherDialoguePanel.transform.Find(Enum.GetName(typeof(DialogueEntity), entity)).Find("Image").gameObject.SetActive(true);
-        }
-        audio.Stop();
-    }
 }

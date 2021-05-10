@@ -5,36 +5,32 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WaveManager : MonoBehaviour
+public class EndlessWaveManager : WaveManager
 {
-    //public Transform spawnPoint;
-    public List<Wave> waves;
+    public List<EndlessWave> waves;
+    public int nextWaveNumber;
+    public int wavesCompleted;
+    public float endlessCoeficient = 1.3f;
 
-    public float nextWaveTime = 5.5f;
-    public float countdown;
-    public int waveNumber = 0;
-    private bool spawning = false;
-    private bool start = false;
-    private float checkVictoryTimer = 0f;
-
-    void Start()
+    public override void Init()
     {
         countdown = this.waves[waveNumber].countdown;
-        DialogueManager.instance.ShowDialogue("start");
         UIManager.instance.ShowNextWaveEnemy(waves[0].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
     }
 
-    void Update()
+    public override void DoUpdate()
     {
         if (start)
         {
             if (!spawning)
             {
-                if (waveNumber < this.waves.Count)
+                if (wavesCompleted >= waves.Count)
                 {
                     UIManager.instance.ShowNextWaveCountdown(Math.Round(countdown));
                     if (countdown <= 0f)
                     {
+                        waveNumber = nextWaveNumber;
+                        nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
                         UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
                         StartCoroutine(SpawnWave());
                         spawning = true;
@@ -43,12 +39,23 @@ public class WaveManager : MonoBehaviour
                 }
                 else
                 {
-                    if (checkVictoryTimer <= 0)
+                    if (waveNumber < this.waves.Count)
                     {
-                        CheckVictory();
-                        checkVictoryTimer = 1f;
+                        UIManager.instance.ShowNextWaveCountdown(Math.Round(countdown));
+                        if (countdown <= 0f)
+                        {
+                            UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
+                            StartCoroutine(SpawnWave());
+                            spawning = true;
+                            waveNumber++;
+                        }
+                        countdown -= Time.deltaTime;
                     }
-                    checkVictoryTimer -= Time.deltaTime;
+                    else
+                    {
+                        nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
+                    }
+
                 }
             }
             else
@@ -60,53 +67,42 @@ public class WaveManager : MonoBehaviour
         {
             UIManager.instance.ShowGameNotStartedText();
         }
-
     }
 
-    private void CheckVictory()
+    public override IEnumerator SpawnWave()
     {
-        GameObject enemyObject = GameObject.FindGameObjectWithTag("Enemy");
-        if (enemyObject == null)
-            PlayerManager.instance.SetVictory(true);
-    }
-
-
-    IEnumerator SpawnWave()
-    {
-        DialogueManager.instance.ShowDialogue(waveNumber.ToString());
         Debug.Log("Spawning wave " + (waveNumber + 1) + "!");
         UIManager.instance.ShowSpawnWaveButton(false);
-        Wave wave = this.waves[waveNumber];
+        EndlessWave wave = this.waves[waveNumber];
         if (waveNumber + 1 < waves.Count)
             UIManager.instance.ShowNextWaveEnemy(waves[waveNumber + 1].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
-        Transform spawnPoint = Waypoints.instance.GetNextWaypoint(wave.pathNumber, -1);
+        Transform spawnPoint = Waypoints.instance.GetNextWaypoint(wave.GetAssignedPathIndex(), -1);
         for (int i = 0; i < wave.enemyCount; i++)
         {
             GameObject enemyObject = Instantiate(wave.GetEnemyPrefab(), spawnPoint.position, wave.GetEnemyPrefab().transform.rotation);
-            enemyObject.GetComponent<Enemy>().SetupValues(wave.pathNumber, wave.speed, wave.hp, wave.moneyReward, wave.scale);
+            float enemyHp = wave.hp;
+            if (wavesCompleted >= waves.Count)
+            {
+                float multiplier = (int)(wavesCompleted / waves.Count);
+                float multiply = Mathf.Pow(endlessCoeficient, multiplier);
+                enemyHp = enemyHp * multiply;
+            }
+            enemyObject.GetComponent<Enemy>().SetupValues(wave.GetAssignedPathIndex(), wave.speed, enemyHp, wave.moneyReward, wave.scale);
             yield return new WaitForSeconds(1.7f - (wave.speed * 0.15f));
         }
-        waveNumber++;
         if (waveNumber < waves.Count)
             countdown = this.waves[waveNumber].countdown;
         spawning = false;
+        wavesCompleted++;
         UIManager.instance.ShowSpawnWaveButton(true);
     }
 
-    public void StartSpawner()
+    public override void StartSpawner()
     {
         this.start = true;
-        DialogueManager.instance.Reset();
     }
 
-    public void spawnAnotherWave()
-    {
-        countdown = 0;
-        UIManager.instance.ShowSpawnWaveButton(false);
-        PlayerManager.instance.AddMoney(200);
-    }
-
-    public void ResetSpawner()
+public override void ResetSpawner()
     {
         UIManager.instance.ShowStartButton(true);
         UIManager.instance.ShowSpawnWaveButton(false);
@@ -129,6 +125,8 @@ public class WaveManager : MonoBehaviour
         spawning = false;
         start = false;
         waveNumber = 0;
+        nextWaveNumber = 0;
+        wavesCompleted = 0;
         countdown = this.waves[waveNumber].countdown;
         UIManager.instance.ShowNextWaveEnemy(waves[0].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
         UIManager.instance.ShowGameNotStartedText();

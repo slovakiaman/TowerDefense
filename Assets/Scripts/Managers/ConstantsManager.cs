@@ -80,4 +80,7 @@ public class ConstantsManager: MonoBehaviour
     public GameObject enemyBoss2Prefab;
     public GameObject enemyBoss3Prefab;
     public GameObject enemyBoss4Prefab;
+
 }
+
+

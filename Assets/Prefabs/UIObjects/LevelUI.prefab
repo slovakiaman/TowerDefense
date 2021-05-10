@@ -3964,7 +3964,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -4682,7 +4682,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -4990,7 +4990,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
@@ -5233,7 +5233,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -5895,7 +5895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -6309,7 +6309,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ChangeLevel
         m_Mode: 1
@@ -6552,7 +6552,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -6767,7 +6767,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -7277,7 +7277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -10112,7 +10112,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -11210,7 +11210,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -11876,7 +11876,7 @@ GameObject:
   - component: {fileID: 8969268208819543477}
   - component: {fileID: 8969268208819543474}
   - component: {fileID: 8969268208819543475}
-  - component: {fileID: 8969268208819543479}
+  - component: {fileID: 8992551417393169305}
   - component: {fileID: 4176494050884746561}
   m_Layer: 5
   m_Name: LevelUI
@@ -11971,7 +11971,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8969268208819543479
+--- !u!114 &8992551417393169305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11980,12 +11980,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8969268208819543472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 707006cc3773dae40ac376c902bf45f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8337d52b37c42e842be64090ba8887e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nextWaveCountdownText: {fileID: 8969268209882800978}
   startButton: {fileID: 8969268209420332326}
   spawnWaveButton: {fileID: 8969268209720183657}
+  pausePanel: {fileID: 6282471766363037429}
+  victoryPanel: {fileID: 5389712762249585303}
+  defeatPanel: {fileID: 6647077142958705287}
   moneyText: {fileID: 8969268209394615933}
   livesText: {fileID: 8969268210092616112}
   shopLeftPanel: {fileID: 8969268208342009385}
@@ -12001,30 +12004,27 @@ MonoBehaviour:
   crystalItem: {fileID: 7919877257916894462}
   teslaItem: {fileID: 7919877258934713268}
   spinnerItem: {fileID: 7919877258781881613}
-  pausePanel: {fileID: 6282471766363037429}
-  victoryPanel: {fileID: 5389712762249585303}
-  defeatPanel: {fileID: 6647077142958705287}
-  infoDialoguePanel: {fileID: 1631652330}
-  kingDialoguePanel: {fileID: 1360211783}
-  otherDialoguePanel: {fileID: 1208485631}
   nextWaveSlimeRed: {fileID: 8969268208976410401}
   nextWaveSlimeGreen: {fileID: 6973051985677597500}
   nextWaveSlimeYellow: {fileID: 6970652228173838317}
   nextWaveTurtleBlue: {fileID: 8969268208659402842}
   nextWaveTurtleBlack: {fileID: 5869835882145194748}
   nextWaveTurtleWhite: {fileID: 5255644965894930586}
-  nextWaveMummyGrey: {fileID: 8969268210068977157}
-  nextWaveMummyWhite: {fileID: 3184344005635171264}
+  nextWaveMummyGrey: {fileID: 3184344005635171264}
+  nextWaveMummyWhite: {fileID: 8969268210068977157}
   nextWaveMummyRed: {fileID: 6054688814030922054}
-  nextWaveGolemGreen: {fileID: 8969268208260782116}
-  nextWaveGolemRed: {fileID: 8376439931289447398}
-  nextWaveGolemRed2: {fileID: 8418422735945876965}
+  nextWaveGolemGreen: {fileID: 8418422735945876965}
+  nextWaveGolemRed: {fileID: 8969268208260782116}
+  nextWaveGolemRed2: {fileID: 8376439931289447398}
   nextWaveLichPurple: {fileID: 8969268209816537467}
   nextWaveLichGreen: {fileID: 4088263725651980559}
   nextWaveLichRed: {fileID: 7180399072383342836}
   nextWaveBeholderPurple: {fileID: 8969268210154686458}
   nextWaveBeholderCyan: {fileID: 4569138723781409827}
   nextWaveBeholderGreen: {fileID: 950967495251600547}
+  infoDialoguePanel: {fileID: 1631652330}
+  kingDialoguePanel: {fileID: 1360211783}
+  otherDialoguePanel: {fileID: 1208485631}
 --- !u!114 &4176494050884746561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13457,7 +13457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -13838,7 +13838,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: StartSpawner
         m_Mode: 1
@@ -14351,7 +14351,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SpawnAnotherWave
         m_Mode: 1
@@ -15669,7 +15669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8969268208819543479}
+      - m_Target: {fileID: 8992551417393169305}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ToggleSounds
         m_Mode: 1

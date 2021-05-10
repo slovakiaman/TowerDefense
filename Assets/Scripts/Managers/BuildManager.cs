@@ -11,7 +11,7 @@ public class BuildManager : MonoBehaviour
     private BuildingBlock selectedBlock;
 
     private bool disabled = false;
-    
+
     private Shop shop;
 
     private void Awake()
@@ -27,7 +27,7 @@ public class BuildManager : MonoBehaviour
     public void SetShop(Shop shop)
     {
         this.shop = shop;
-    } 
+    }
 
     public BuildingBlock GetSelectedBlock()
     {
@@ -84,7 +84,7 @@ public class BuildManager : MonoBehaviour
     public void ResetBuilder()
     {
         disabled = false;
-        if (selectedBlock !=  null)
+        if (selectedBlock != null)
             selectedBlock.Unselect();
         selectedBlock = null;
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Tower");
