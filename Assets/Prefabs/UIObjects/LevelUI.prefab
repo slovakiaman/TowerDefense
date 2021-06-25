@@ -1730,7 +1730,7 @@ GameObject:
   - component: {fileID: 868186855375576019}
   - component: {fileID: 4640834810724152639}
   - component: {fileID: 9026069639092702075}
-  - component: {fileID: 4639236172138620550}
+  - component: {fileID: 8192409128531472959}
   m_Layer: 5
   m_Name: BeholderGreenPicture
   m_TagString: Untagged
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &4639236172138620550
+--- !u!95 &8192409128531472959
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -1805,7 +1805,7 @@ Animator:
   m_GameObject: {fileID: 950967495251600547}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 72bf8a40c5421e0419c8551c8bfd7d6e, type: 2}
+  m_Controller: {fileID: 9100000, guid: c000e03db444a2e4595c9fa864f42d2a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2760,7 +2760,7 @@ GameObject:
   - component: {fileID: 4247767884948204148}
   - component: {fileID: 1924124115688695109}
   - component: {fileID: 8169816979987313875}
-  - component: {fileID: 8704087797013179117}
+  - component: {fileID: 3413976834920141407}
   m_Layer: 5
   m_Name: MummyDarkerPicture
   m_TagString: Untagged
@@ -2825,7 +2825,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &8704087797013179117
+--- !u!95 &3413976834920141407
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -2835,7 +2835,7 @@ Animator:
   m_GameObject: {fileID: 3184344005635171264}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e4bf98aa944061a409fa0a43eddf3a1b, type: 2}
+  m_Controller: {fileID: 9100000, guid: be9c1d37ccd7a3742856e39c4a1e2f11, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3759,7 +3759,7 @@ GameObject:
   - component: {fileID: 8803135302357866331}
   - component: {fileID: 5020378064452740979}
   - component: {fileID: 247763911330702284}
-  - component: {fileID: 7569665983707339958}
+  - component: {fileID: 8721305610951244202}
   m_Layer: 5
   m_Name: LichGreenPicture
   m_TagString: Untagged
@@ -3824,7 +3824,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &7569665983707339958
+--- !u!95 &8721305610951244202
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -3834,7 +3834,7 @@ Animator:
   m_GameObject: {fileID: 4088263725651980559}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aa6b4591a47ebf5418a1a3ca595fcae3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 199eedcf6dc36484ca60402399dae841, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4002,7 +4002,7 @@ GameObject:
   - component: {fileID: 5489577228421906694}
   - component: {fileID: 181263780877797349}
   - component: {fileID: 9107201917384333407}
-  - component: {fileID: 5926222166595300516}
+  - component: {fileID: 285893982844233113}
   m_Layer: 5
   m_Name: BeholderCyanPicture
   m_TagString: Untagged
@@ -4067,7 +4067,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &5926222166595300516
+--- !u!95 &285893982844233113
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -4077,7 +4077,7 @@ Animator:
   m_GameObject: {fileID: 4569138723781409827}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 72bf8a40c5421e0419c8551c8bfd7d6e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9274f760982baa84883b0ad232a5171f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4306,7 +4306,7 @@ Animator:
   m_GameObject: {fileID: 5255644965894930586}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 802da17fa7e23224cb0e6685c2123d2c, type: 2}
+  m_Controller: {fileID: 9100000, guid: c5987f453b74d0e46b6e4372dd4c72b5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5690,7 +5690,7 @@ Animator:
   m_GameObject: {fileID: 5869835882145194748}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 802da17fa7e23224cb0e6685c2123d2c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 72aee8b9ee77c9e4da0bd3595f751542, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5933,7 +5933,7 @@ GameObject:
   - component: {fileID: 5265404988235956125}
   - component: {fileID: 7071365032688240155}
   - component: {fileID: 5190222933089033608}
-  - component: {fileID: 4739819471351782927}
+  - component: {fileID: 3042199947563223453}
   m_Layer: 5
   m_Name: MummyRedPicture
   m_TagString: Untagged
@@ -5998,7 +5998,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &4739819471351782927
+--- !u!95 &3042199947563223453
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -6008,7 +6008,7 @@ Animator:
   m_GameObject: {fileID: 6054688814030922054}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e4bf98aa944061a409fa0a43eddf3a1b, type: 2}
+  m_Controller: {fileID: 9100000, guid: e870a4f222adc4043a8c047735e97e01, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7538,7 +7538,7 @@ GameObject:
   - component: {fileID: 3588511233785476240}
   - component: {fileID: 6281328536368856913}
   - component: {fileID: 5318535721583144210}
-  - component: {fileID: 5983778265829223206}
+  - component: {fileID: 7933351440593152533}
   m_Layer: 5
   m_Name: SlimeOrangePicture
   m_TagString: Untagged
@@ -7603,7 +7603,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &5983778265829223206
+--- !u!95 &7933351440593152533
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -7613,7 +7613,7 @@ Animator:
   m_GameObject: {fileID: 6970652228173838317}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a108f9d2758c414ab059c767fde0540, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5b32729dac5fbd144b66c6b1861b0a50, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7633,7 +7633,7 @@ GameObject:
   - component: {fileID: 4317264135138457654}
   - component: {fileID: 2519499142450687142}
   - component: {fileID: 7938605965732325995}
-  - component: {fileID: 3265325694992356603}
+  - component: {fileID: 4854574898588335537}
   m_Layer: 5
   m_Name: SlimeGreenPicture
   m_TagString: Untagged
@@ -7698,7 +7698,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &3265325694992356603
+--- !u!95 &4854574898588335537
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -7708,7 +7708,7 @@ Animator:
   m_GameObject: {fileID: 6973051985677597500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a108f9d2758c414ab059c767fde0540, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4c08a7112552db44fa74dd8caae77d39, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7875,7 +7875,7 @@ GameObject:
   - component: {fileID: 7426274568455744155}
   - component: {fileID: 8470217527814378507}
   - component: {fileID: 9209923587308032871}
-  - component: {fileID: 4821380340311160325}
+  - component: {fileID: 2328915077428923147}
   m_Layer: 5
   m_Name: LichPinkPicture
   m_TagString: Untagged
@@ -7940,7 +7940,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &4821380340311160325
+--- !u!95 &2328915077428923147
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -7950,7 +7950,7 @@ Animator:
   m_GameObject: {fileID: 7180399072383342836}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aa6b4591a47ebf5418a1a3ca595fcae3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 810753a802ebe89499d029eb6116b210, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9660,7 +9660,7 @@ GameObject:
   - component: {fileID: 172560501759661788}
   - component: {fileID: 4407816372970881403}
   - component: {fileID: 1165723168143400164}
-  - component: {fileID: 8054518741658381764}
+  - component: {fileID: 7919345350151286027}
   m_Layer: 5
   m_Name: GolemGreyPicture
   m_TagString: Untagged
@@ -9725,7 +9725,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &8054518741658381764
+--- !u!95 &7919345350151286027
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -9735,7 +9735,7 @@ Animator:
   m_GameObject: {fileID: 8376439931289447398}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1bc6e95c1b1828c409ddfa4b66166fb7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 162b1699ac695cf429f46dda64484112, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9755,7 +9755,7 @@ GameObject:
   - component: {fileID: 4056573813329001376}
   - component: {fileID: 3014731048697335384}
   - component: {fileID: 7213735970273643773}
-  - component: {fileID: 116389134390473192}
+  - component: {fileID: 8873741345697103100}
   m_Layer: 5
   m_Name: GolemBlackPicture
   m_TagString: Untagged
@@ -9820,7 +9820,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &116389134390473192
+--- !u!95 &8873741345697103100
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -9830,7 +9830,7 @@ Animator:
   m_GameObject: {fileID: 8418422735945876965}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1bc6e95c1b1828c409ddfa4b66166fb7, type: 2}
+  m_Controller: {fileID: 9100000, guid: b45228d4bbe9aea40829a5c259e36cba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
