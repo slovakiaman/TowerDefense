@@ -15,6 +15,7 @@ public class EndlessWaveManager : WaveManager
     public override void Init()
     {
         countdown = this.waves[waveNumber].countdown;
+        nextWaveNumber = 0;
         UIManager.instance.ShowNextWaveEnemy(waves[0].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
     }
 
@@ -24,39 +25,12 @@ public class EndlessWaveManager : WaveManager
         {
             if (!spawning)
             {
-                if (wavesCompleted >= waves.Count)
+                UIManager.instance.ShowNextWaveCountdown(Math.Round(countdown));
+                if (countdown <= 0f)
                 {
-                    UIManager.instance.ShowNextWaveCountdown(Math.Round(countdown));
-                    if (countdown <= 0f)
-                    {
-                        waveNumber = nextWaveNumber;
-                        nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
-                        UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
-                        StartCoroutine(SpawnWave());
-                        spawning = true;
-                    }
-                    countdown -= Time.deltaTime;
+                    StartCoroutine(SpawnWave());
                 }
-                else
-                {
-                    if (waveNumber < this.waves.Count)
-                    {
-                        UIManager.instance.ShowNextWaveCountdown(Math.Round(countdown));
-                        if (countdown <= 0f)
-                        {
-                            UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
-                            StartCoroutine(SpawnWave());
-                            spawning = true;
-                            waveNumber++;
-                        }
-                        countdown -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
-                    }
-
-                }
+                countdown -= Time.deltaTime;
             }
             else
             {
@@ -71,12 +45,24 @@ public class EndlessWaveManager : WaveManager
 
     public override IEnumerator SpawnWave()
     {
+        waveNumber = nextWaveNumber;
+        if (wavesCompleted >= waves.Count - 1)
+        {
+            nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
+        } else
+        {
+            nextWaveNumber = waveNumber + 1;
+        }
+        spawning = true;
+
         Debug.Log("Spawning wave " + (waveNumber + 1) + "!");
+        
         UIManager.instance.ShowSpawnWaveButton(false);
+
         EndlessWave wave = this.waves[waveNumber];
-        if (waveNumber + 1 < waves.Count)
-            UIManager.instance.ShowNextWaveEnemy(waves[waveNumber + 1].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
-        Transform spawnPoint = Waypoints.instance.GetNextWaypoint(wave.GetAssignedPathIndex(), -1);
+        int assignedPath = ((EndlessWaypoints)Waypoints.instance).AssignPath(wave.waveDifficulty);
+        wave.SetAssignedPathIndex(assignedPath);
+        Transform spawnPoint = ((EndlessWaypoints)Waypoints.instance).GetNextWaypoint(wave.GetAssignedPathIndex(), -1);
         for (int i = 0; i < wave.enemyCount; i++)
         {
             GameObject enemyObject = Instantiate(wave.GetEnemyPrefab(), spawnPoint.position, wave.GetEnemyPrefab().transform.rotation);
@@ -94,6 +80,8 @@ public class EndlessWaveManager : WaveManager
             countdown = this.waves[waveNumber].countdown;
         spawning = false;
         wavesCompleted++;
+        UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
+        UIManager.instance.ShowNextWaveEnemy(waves[nextWaveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
         UIManager.instance.ShowSpawnWaveButton(true);
     }
 
@@ -114,12 +102,7 @@ public override void ResetSpawner()
             Destroy(enemyObject);
         }
         if (spawning)
-            UIManager.instance.ShowNextWaveEnemy(waves[waveNumber + 1].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
-        else if (waveNumber == waves.Count)
-        {
-            UIManager.instance.ShowNextWaveEnemy(waves[waveNumber - 1].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
-            UIManager.instance.ShowSpawnWaveButton(false);
-        }
+            UIManager.instance.ShowNextWaveEnemy(waves[nextWaveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
         else
             UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false); ;
         spawning = false;

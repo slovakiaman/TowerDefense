@@ -23657,7 +23657,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 933799186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 299eb9e8b96f93147aa9eacece995e3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0692b5d4e9a0905499a281c07276eb25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   paths:
@@ -23666,7 +23666,6 @@ MonoBehaviour:
     - {fileID: 88354781}
     - {fileID: 1111904233}
     - {fileID: 1821811424}
-    - {fileID: 1533633317}
     - {fileID: 912349867}
     - {fileID: 1112916153}
     - {fileID: 1033228509}
@@ -23680,6 +23679,7 @@ MonoBehaviour:
     - {fileID: 1033228509}
   - waypoints:
     - {fileID: 1434160259}
+    - {fileID: 1821811424}
     - {fileID: 1111904233}
     - {fileID: 809320803}
     - {fileID: 1112916153}

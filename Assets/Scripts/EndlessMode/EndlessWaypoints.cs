@@ -2,34 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndlessWaypoints : MonoBehaviour
+public class EndlessWaypoints : Waypoints
 {
-    public static EndlessWaypoints instance;
-
     [SerializeField]
     public List<EndlessPath> paths;
     private Dictionary<Difficulty, List<EndlessPath>> pathsMap;
 
-    private void Awake()
+    protected void Awake()
     {
         instance = this;
-    }
-
-    private void Start()
-    {
-        pathsMap = new Dictionary<Difficulty, List<EndlessPath>>();
-        List<EndlessPath> easyPaths = new List<EndlessPath>();
-        List<EndlessPath> mediumPaths = new List<EndlessPath>();
-        List<EndlessPath> hardPaths = new List<EndlessPath>();
-        foreach (EndlessPath path in paths)
-        {
-            if (path.difficulty == Difficulty.EASY) easyPaths.Add(path);
-            if (path.difficulty == Difficulty.MEDIUM) mediumPaths.Add(path);
-            if (path.difficulty == Difficulty.HARD) hardPaths.Add(path);
-        }
-        pathsMap.Add(Difficulty.EASY, easyPaths);
-        pathsMap.Add(Difficulty.MEDIUM, mediumPaths);
-        pathsMap.Add(Difficulty.HARD, hardPaths);
     }
 
     public int AssignPath(Difficulty difficulty)
@@ -52,13 +33,30 @@ public class EndlessWaypoints : MonoBehaviour
         return chosenPath;
     }
 
-    public Transform GetNextWaypoint(int roadNumber, int currentWaypointIndex)
+    public override Transform GetNextWaypoint(int roadNumber, int currentWaypointIndex)
     {
         return currentWaypointIndex + 1 < paths[roadNumber].waypoints.Count ? paths[roadNumber].waypoints[currentWaypointIndex + 1] : null;
     }
 
-    void Update()
+    protected override void Init()
     {
+        pathsMap = new Dictionary<Difficulty, List<EndlessPath>>();
+        List<EndlessPath> easyPaths = new List<EndlessPath>();
+        List<EndlessPath> mediumPaths = new List<EndlessPath>();
+        List<EndlessPath> hardPaths = new List<EndlessPath>();
+        foreach (EndlessPath path in paths)
+        {
+            if (path.difficulty == Difficulty.EASY) easyPaths.Add(path);
+            if (path.difficulty == Difficulty.MEDIUM) mediumPaths.Add(path);
+            if (path.difficulty == Difficulty.HARD) hardPaths.Add(path);
+        }
+        pathsMap.Add(Difficulty.EASY, easyPaths);
+        pathsMap.Add(Difficulty.MEDIUM, mediumPaths);
+        pathsMap.Add(Difficulty.HARD, hardPaths);
+    }
 
+    protected override void DoUpdate()
+    {
+        //not needed
     }
 }

@@ -98,6 +98,12 @@ public class EndlessWave : ScriptableObject
 
     public int GetAssignedPathIndex()
     {
+        
         return this.assignedPathIndex;
+    }
+
+    public void SetAssignedPathIndex(int index)
+    {
+        this.assignedPathIndex = index;
     }
 }

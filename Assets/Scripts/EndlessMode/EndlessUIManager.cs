@@ -19,5 +19,10 @@ public class EndlessUIManager : UIManager
         WaveManager = (EndlessWaveManager)GameManagerObject.GetComponent<EndlessWaveManager>();
     }
 
+    protected void Start()
+    {
+        
+    }
+
 }
 

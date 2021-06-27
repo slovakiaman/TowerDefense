@@ -12,7 +12,7 @@ public class NormalUIManager : UIManager
     [SerializeField] private GameObject otherDialoguePanel;
 
     private TextAnimator textAnimator;
-    private void Awake()
+    protected void Awake()
     {
         instance = this;
         shopLeftPanel.SetActive(false);
