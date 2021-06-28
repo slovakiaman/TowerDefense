@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level05-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 3
+    text: Sir, our recon reports that Al-Jeff is on fire.
+  - entity: 1
+    text: Damn it! We arrived late.
+  - entity: 3
+    text: The walls do not show traces of the siege, the monsters had to surprise
+      the defenders.
+  - entity: 1
+    text: For sure. As I know them, they had open gates.
+  - entity: 1
+    text: The locals have always been carefree for defense. No wonder, they have
+      lived in peace for over 2 generations.
+  - entity: 0
+    text: The royal army is approaching the city.
+  - entity: 3
+    text: My king, the enemy has spotted us.
+  - entity: 1
+    text: Prepare the archers, the struggle for life and death awaits us.

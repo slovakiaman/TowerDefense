@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level012-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The Royal Army pursues monsters from city to city.
+  - entity: 6
+    text: My lord, we are following monsters for weeks, and there have been no major
+      encounter yet. Do you think they are scared?
+  - entity: 1
+    text: Hmm, we gave them a series of defeats, but I still think there will be
+      something different
+  - entity: 7
+    text: My father used to tell me the legend of the scroll of power.
+  - entity: 7
+    text: It is said that whoever finds him will have unlimited power over magic
+      in this world.
+  - entity: 1
+    text: "Continue\u2026"
+  - entity: 7
+    text: According to legend, 3 seals are required to gain access to the scroll.
+  - entity: 7
+    text: Each of the seals is hidden in one country.
+  - entity: 1
+    text: "I got it\u2026"
+  - entity: 1
+    text: Our region is hiding its first seal. The Library of Kwazam hides the second
+      seal, and the Winterstream Sages' Hall contains the third seal.
+  - entity: 1
+    text: And the scroll of power will be nowhere else than in the kingdom of the
+      underworld.
+  - entity: 6
+    text: My lord, do you think the enemy has collected those seals? Nevertheless,
+      we prevented attacks on our cities.
+  - entity: 1
+    text: Hmm I believe the attack was just a screaming maneuver, we have to prevent
+      the enemy from entering the underworld.
+  - entity: 7
+    text: My king, my explorers report that the monsters have moved again, heading
+      for the dark gate, to the frontiers of the underworld.
+  - entity: 1
+    text: Follow them, my brave soldiers...

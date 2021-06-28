@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level011-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: Raffa and his explorers succeeded in the attack.
+  - entity: 0
+    text: The monsters retreated further north.
+  - entity: 0
+    text: The general comes to the king.
+  - entity: 6
+    text: My king, Raffa has counterattacked, the enemy retreats and Winterstream
+      is saved.
+  - entity: 1
+    text: "Hmm\u2026 Kwazam, now Winterstream, what do these cities have in common?"
+  - entity: 1
+    text: "And the dark wizard. Something's not right here\u2026"
+  - entity: 1
+    text: Ragnar?
+  - entity: 6
+    text: Yes sir?
+  - entity: 1
+    text: Any news on Erwind?
+  - entity: 6
+    text: No sir, the messenger hasn't found him yet.
+  - entity: 1
+    text: Now that we need his magical abilities, he's not here, dammit.

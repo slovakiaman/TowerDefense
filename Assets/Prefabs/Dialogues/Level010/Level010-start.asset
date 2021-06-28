@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level010-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: ' General Raffa Commander of the scouts approaches the King.'
+  - entity: 7
+    text: Sir, we have managed to destroy the enemy siege engines.
+  - entity: 7
+    text: We have prevented a direct attack on the city, but the enemy is regrouping
+      his units and will attack us soon.
+  - entity: 1
+    text: Great Raffa, without your initiative, the city would have fallen.
+  - entity: 1
+    text: Hard struggle awaits us, but new mercenary regiments have been added to
+      our ranks that we have hired on the way here.
+  - entity: 1
+    text: The numbers are on our side, am I right Ragnar?
+  - entity: 6
+    text: Yes, my lord, I am sure we will push the enemy and avenge Palanthor.
+  - entity: 0
+    text: The king deplloyed his troops as best he could, the decisive battle had
+      begun.
+  - entity: 0
+    text: The snowy fields in front of Winterstream will be bloody tonight.

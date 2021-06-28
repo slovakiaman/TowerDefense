@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level015-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The Royal Army stops at the ruins of a fortress whose name has long been
+      forgotten.
+  - entity: 1
+    text: Soon the fate of our kingdom will be decided!
+  - entity: 6
+    text: The goal of our journey is here, there is no way back.
+  - entity: 0
+    text: The end of the road is already in sight. The only way ends in a ghost town.
+  - entity: 0
+    text: A legendary place, parents were telling their children about it for generations,
+      when they misbehaved.
+  - entity: 0
+    text: Soldiers morale is on the low, they are tired and doubtful.
+  - entity: 0
+    text: Can they do it? Will they arrive on time?
+  - entity: 0
+    text: Between the gate and the ruins stands an improvised camp of monsters.
+  - entity: 7
+    text: Sir, we must attack!
+  - entity: 1
+    text: You're right, Raffa, now we can't hesitate even though we're all exhausted,
+      move forward!

@@ -10,21 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
-  m_Name: Level1-end
+  m_Name: Level01-end
   m_EditorClassIdentifier: 
   lines:
   - entity: 3
     text: We did it! We beat it, whatever it was. But there is something strange.
       No monster bodies were found.
-    timeToDisappear: 10
   - entity: 1
     text: Yes. They we it. Call the army we have to go see the village of NorthYard.
       Still, it's nearby.
-    timeToDisappear: 8
   - entity: 0
     text: The king sets out to explore the village of Northyard. Together with part
       of his army. And he wonders why the remains of what they killed are missing.
-    timeToDisappear: 10
   - entity: 0
     text: are missing.
-    timeToDisappear: 3

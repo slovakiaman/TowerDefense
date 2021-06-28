@@ -10,39 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
-  m_Name: Leve2-start
+  m_Name: Level02-start
   m_EditorClassIdentifier: 
   lines:
   - entity: 0
     text: The king and his faithful general come to the edge of the village.
-    timeToDisappear: 4
   - entity: 1
     text: Can you hear it?
-    timeToDisappear: 2
   - entity: 3
     text: What do you mean, Your Highness?
-    timeToDisappear: 3
   - entity: 1
     text: That silence. Not even the mill is spinning. What happened here??
-    timeToDisappear: 4
   - entity: 0
     text: Leaf rustling in the distance.
-    timeToDisappear: 2
   - entity: 3
     text: What was that? Jump back on the horse and hide behind me.
-    timeToDisappear: 4
   - entity: 0
     text: A wounded, dirty man from the bushes runs out.
-    timeToDisappear: 3
   - entity: 4
     text: Help, help! Is Your Highness really you? Do I see well? Help us. There
       are monsters.
-    timeToDisappear: 5
   - entity: 1
     text: I know about them. I came here to examine it. They allegedly appeared here
       and came to my castle. Where I beat them.
-    timeToDisappear: 7
   - entity: 1
     text: Order the soldiers to prepare the towers. I have a feeling they're still
       here ....
-    timeToDisappear: 5

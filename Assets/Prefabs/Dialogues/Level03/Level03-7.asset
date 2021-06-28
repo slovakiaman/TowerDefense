@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
-  m_Name: Level3-7
+  m_Name: Level03-7
   m_EditorClassIdentifier: 
   lines:
   - entity: 3
     text: See this Your Highness. The soldiers found the remains of animals on the
       battlefield.
-    timeToDisappear: 7
   - entity: 1
     text: How is it possible? You didn't kill any animals, did you? They weren't
       on the battlefield before.
-    timeToDisappear: 7
   - entity: 3
     text: Not your Highness. I do not understand how this is possible. But since
       the monsters were so far away, they will probably be in front of another village.
-    timeToDisappear: 12

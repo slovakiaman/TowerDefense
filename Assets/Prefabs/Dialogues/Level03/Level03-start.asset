@@ -10,30 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
-  m_Name: Level3-start
+  m_Name: Level03-start
   m_EditorClassIdentifier: 
   lines:
   - entity: 0
     text: The king and his troops arrived on a distant ranch. They came to check
       that the animals and crops were safe.
-    timeToDisappear: 12
   - entity: 1
     text: Where are the animals? There are traces of hooves and some strange tracks
       everywhere. Don't tell me it happened here too.
-    timeToDisappear: 12
   - entity: 3
     text: Look there in the distance is a herd. We should go check it. Maybe they're
       just grazing.
-    timeToDisappear: 10
   - entity: 0
     text: They move closer and an unpleasant discovery awaits them.
-    timeToDisappear: 7
   - entity: 3
     text: These are the monsters again! But where are the animals and shepherds?
-    timeToDisappear: 7
   - entity: 1
     text: Let's hope they went somewhere and hid. We have to beat them again.
-    timeToDisappear: 7
   - entity: 3
     text: There are many more of them now.
-    timeToDisappear: 3

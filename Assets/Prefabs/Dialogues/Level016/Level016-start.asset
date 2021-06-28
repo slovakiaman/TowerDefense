@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level016-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The gates of the city of demons has opened and hordes of monsters charged
+      forward. They tried to buy time to get to the scroll of power.
+  - entity: 0
+    text: Horror and surprise appeared on the soldiers' faces.
+  - entity: 1
+    text: Generals, form your troops.
+  - entity: 0
+    text: The royal army resembling an anthill began to form to face a crushing enemy
+      attack.
+  - entity: 7
+    text: "We will not be able to form ourselves, the enemy will break our lines.
+      Everything will be lost\u2026"
+  - entity: 0
+    text: General Raffa put on his helmet and put on his horse.
+  - entity: 7
+    text: For the king and freedom!!!
+  - entity: 0
+    text: General Raffa hurried his horse and the monsters ran out of the gate.
+  - entity: 0
+    text: He fought valiantly, gained valuable time for the surprised royal army
+      to form.
+  - entity: 0
+    text: But in the end, hordes of enemies defeated him.
+  - entity: 0
+    text: The heroic death of General Raffa encouraged the soldiers who were now
+      longing for the revenge of their brave leader.
+  - entity: 0
+    text: The decisive fight begins.

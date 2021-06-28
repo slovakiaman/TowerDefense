@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level09-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The army managed to defeat the enemies and destroy the siege tools.
+  - entity: 0
+    text: ' However, the monsters have noticed this and they are charging at the
+      recon with a huge advantage in numbers.'
+  - entity: 7
+    text: Scouts, retreat!
+  - entity: 0
+    text: The scouts retreated, seeing the flags of King Lightsoul on the horizon.
+  - entity: 7
+    text: The main army has arrived, now we will show the monsters our strength.

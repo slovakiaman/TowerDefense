@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level014-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: ' After another 2 days of march, the royal army is tired of the exhausting
+      march and recent fighting.'
+  - entity: 0
+    text: The army of monsters is already in sight, kings army have to catch up and
+      prevent the dark wizard from gaining a scroll of power.
+  - entity: 0
+    text: The king has been thinking a lot, something is wrong here, who is the dark
+      wizard? From where did he appear?
+  - entity: 7
+    text: My lord, we are running out of supplies, I have reduced the rations, but
+      even if we do catch monsters in the coming days, we will not have enough supplies
+      left to travel back.
+  - entity: 1
+    text: ' I know Raffa, but the situation is serious. If the dark wizard gains
+      the scroll of power, he will destroy the whole kingdom. We have no choice.'
+  - entity: 7
+    text: That's right, sir.
+  - entity: 6
+    text: In front of us is a hall of demons, great place for a trap.
+  - entity: 6
+    text: I bet that at least half a regiment of monsters is waiting behind those
+      pillars.
+  - entity: 7
+    text: Do you want to bet Ragnar?
+  - entity: 6
+    text: Of course. What about 10 gold.
+  - entity: 7
+    text: Allright.
+  - entity: 0
+    text: Ragnar was right as the royal army approached the demon hall, many enemies
+      ran out from behind the pillar.
+  - entity: 7
+    text: Damn it. Soldiers form line!

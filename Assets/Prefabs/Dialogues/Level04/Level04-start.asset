@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level04-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 1
+    text: Here we stand at the village of Walden. I remember when my father overseed
+      the construction of those walls.
+  - entity: 1
+    text: "Who would think, our defences will be tested by monsters\u2026"
+  - entity: 1
+    text: Old Aragorn is turning in his grave
+  - entity: 1
+    text: General!
+  - entity: 3
+    text: Yes sir?
+  - entity: 1
+    text: Forward!

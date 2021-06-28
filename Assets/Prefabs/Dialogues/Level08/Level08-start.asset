@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level08-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 1
+    text: Palanthor, do we have any new news about Ragnar and his troops?
+  - entity: 3
+    text: "No sir, but our spies report that the monsters are regrouping, something
+      is going on\u2026"
+  - entity: 1
+    text: Hmm... interesting, according to your report, it looks like the enemy is
+      preparing to attack Kwazam.
+  - entity: 3
+    text: Hmm Kwazam is known as the city of magic. That's suspicious.
+  - entity: 1
+    text: Even before the Great war, Kwazam had the largest library of black magic.
+  - entity: 1
+    text: All the mages in the world have tried to get to her. But that library was
+      destroyed...
+  - entity: 3
+    text: Maybe it wasn't completely destroyed, some scrolls may have survived.
+  - entity: 1
+    text: "The Dark Wizard, Vortex, Kwazam Library\u2026 something's wrong here.
+      Palanthor send a messenger to our wizard Erwind, he could help us."
+  - entity: 1
+    text: Get him back as soon as possible.
+  - entity: 3
+    text: Yes sir.
+  - entity: 0
+    text: The king was right, the vortex has risen and the monsters are heading for
+      Kwazam, the battle begins.

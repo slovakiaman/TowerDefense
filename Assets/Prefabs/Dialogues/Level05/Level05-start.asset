@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level05-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 3
+    text: The new soldiers fought bravely.
+  - entity: 1
+    text: They are defending their country. They know that if we don't drive the
+      monsters away, there will be nowhere to go.
+  - entity: 3
+    text: That is true, my lord.
+  - entity: 1
+    text: Send patrols and search the surroundings of the city, gather the surviving
+      inhabitants.
+  - entity: 1
+    text: We need more combat-ready men.

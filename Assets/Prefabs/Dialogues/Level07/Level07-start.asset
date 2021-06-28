@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level07-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The king is planning a strategy with his generals in the command tent.
+  - entity: 6
+    text: The enemy is heading south. What does it mean?
+  - entity: 3
+    text: "Hmm\u2026 I think he's heading for the Mahrib dam."
+  - entity: 6
+    text: What does this mean for us?
+  - entity: 3
+    text: Don't you understand Ragnar? If the monsters destroy the dam, the water
+      will flood our entire region. We cannot allow this.
+  - entity: 1
+    text: Palanthor is right, we have to be faster and cut the monsters way south.
+  - entity: 1
+    text: Then they won't have a choice, they'll turn around and go north.
+  - entity: 3
+    text: Sir, in that case we must send our best troops south immediately!
+  - entity: 1
+    text: Right, send the first cohort and the 4th crosbow regiment. You command
+      them, Ragnar.
+  - entity: 0
+    text: ' An recon unit, waiting for the monsters, the young officer notices the
+      incoming vortex. The fight begins.'

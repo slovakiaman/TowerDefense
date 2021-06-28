@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level04-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 3
+    text: ' Sir all enemies has been killed, but we have suffered heavy losses.'
+  - entity: 1
+    text: I see, but it was worth it, we saved many souls this day.
+  - entity: 3
+    text: My lord I suggest we conscript local men from liberated villages to replenish
+      our ranks.
+  - entity: 1
+    text: Thats a good idea. Do it.
+  - entity: 1
+    text: We need an army to save Al-Jeffa, those desert berbers were never good
+      warriors. They were always dependent on us.

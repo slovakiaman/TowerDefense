@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level06-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 1
+    text: Haaa! Cowards, they are running away!
+  - entity: 1
+    text: I feel so young now. Palanthor do you remember the battle for the northern
+      citadel?
+  - entity: 3
+    text: Yes sir, that was a great victory.
+  - entity: 3
+    text: We completely surprised the Northeners then. My lord do you remember how
+      they has been calling you?
+  - entity: 1
+    text: Ha! Of course I remember. But not a word about it in front of the lads!

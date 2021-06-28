@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level013-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The royal troops have passed through the dark gate, now they are in the
+      underworld.
+  - entity: 0
+    text: A place of black magic and monsters, where no mortal has dared to enter
+      for years.
+  - entity: 6
+    text: Raffa, what are you going to do when this is all over?
+  - entity: 7
+    text: Hmm, I'll ask for a recommision to logistic division, I've had enough of
+      this.
+  - entity: 6
+    text: Hahahaha
+  - entity: 0
+    text: After 2 days of marching, the Royal Army arrives at fort Bald dur.
+  - entity: 0
+    text: The only way forward is along the fortress, so the only way is to siege
+      the fortress.
+  - entity: 0
+    text: The king encourages his men to fight and gives the order to attack.
+  - entity: 1
+    text: Forward!

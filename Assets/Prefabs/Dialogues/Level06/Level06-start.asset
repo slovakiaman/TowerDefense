@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level06-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 3
+    text: Sir, a villager is asking for an audience. He claims to have important
+      information.
+  - entity: 1
+    text: Bring him.
+  - entity: 0
+    text: The villager approached the king and bowed down.
+  - entity: 1
+    text: My general says you have useful information for me.
+  - entity: 5
+    text: Yes, Your Highness.
+  - entity: 5
+    text: My sons and I saw wood in a nearby forest.
+  - entity: 5
+    text: Suddenly my youngest son saw a desert storm in the east.
+  - entity: 1
+    text: A desert storm at this time of year?
+  - entity: 5
+    text: That's what I said, Your Highness.
+  - entity: 5
+    text: ' As the storm approached, I saw that it was not a storm but a vortex.'
+  - entity: 1
+    text: "Continue\u2026"
+  - entity: 5
+    text: An evil wizard and his army of monsters emerged from this vortex.
+  - entity: 1
+    text: The Wizard !? What did he look like?
+  - entity: 5
+    text: I don't know, sir, it was too far away to recognize him.
+  - entity: 1
+    text: If only Erwind were here... Now we have to deal with the wizard.
+  - entity: 3
+    text: Sir, enemy has returned and is attacking the northern walls ...
