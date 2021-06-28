@@ -16886,7 +16886,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b0961bf943c1b43840a781258623db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  editorDialogues: []
+  editorDialogues:
+  - dialogueName: start
+    dialogue: {fileID: 11400000, guid: 75caab06ab96c77479bbbd706a5ff169, type: 2}
+  - dialogueName: end
+    dialogue: {fileID: 11400000, guid: c2a2c5c75b77c8c4ea0d694c935041aa, type: 2}
 --- !u!114 &1332330098
 MonoBehaviour:
   m_ObjectHideFlags: 0
