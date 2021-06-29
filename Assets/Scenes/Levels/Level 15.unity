@@ -21183,25 +21183,15 @@ MonoBehaviour:
   waveNumber: 0
   waves:
   - {fileID: 11400000, guid: cddb6500755b3e14c8db19763caa773a, type: 2}
-  - {fileID: 11400000, guid: 4cc2adab4f1c42e4ca36e4cdf66555d6, type: 2}
-  - {fileID: 11400000, guid: 8b95d170587520246bf52d87e76018ec, type: 2}
-  - {fileID: 11400000, guid: 6f1bd8b932b905a4c95ad21b4ee35da5, type: 2}
-  - {fileID: 11400000, guid: 0a708096954fd9e4280a5416eebd6740, type: 2}
-  - {fileID: 11400000, guid: f13214e940279e94b9350458967a3204, type: 2}
-  - {fileID: 11400000, guid: 3c66a9d234586bc439086d14c31634dc, type: 2}
-  - {fileID: 11400000, guid: 496dff74308abfe4882e4285a91b063f, type: 2}
-  - {fileID: 11400000, guid: 73476a32609da5a4e9941d090e3d408a, type: 2}
-  - {fileID: 11400000, guid: cb3aeb9438b9db94abccbf0a5da8e6c5, type: 2}
-  - {fileID: 11400000, guid: 1f1d63280fe58284080066bfc30d288a, type: 2}
-  - {fileID: 11400000, guid: f0d997aa3727d3a47a9cfa9eee4c792b, type: 2}
-  - {fileID: 11400000, guid: 7da3adcced3033e418924094bb78cdfb, type: 2}
-  - {fileID: 11400000, guid: d8684a6a76679264f86a8f57023ef169, type: 2}
-  - {fileID: 11400000, guid: 87cc427f329a2e1459be4845cc9a349a, type: 2}
-  - {fileID: 11400000, guid: c8c87945e16baec46a966c3a48d5c20c, type: 2}
-  - {fileID: 11400000, guid: 2fc7cc5e7071d4541adff50c6a072431, type: 2}
-  - {fileID: 11400000, guid: 640a52ffe2326f245adf7756e9b551be, type: 2}
-  - {fileID: 11400000, guid: f9bcf62770a258a43b2a67ae0987df62, type: 2}
-  - {fileID: 11400000, guid: 67d277366dec2b24d852322f295c754d, type: 2}
+  - {fileID: 11400000, guid: 0a78ec0748ca03244ae2e36933c13dad, type: 2}
+  - {fileID: 11400000, guid: df7317e096c716a40bd1d45167f7f77b, type: 2}
+  - {fileID: 11400000, guid: ec382322cf5bae44c8d53e6f53ce7ccf, type: 2}
+  - {fileID: 11400000, guid: 16fec3b5c02f83a48b19fafcf4bc73c4, type: 2}
+  - {fileID: 11400000, guid: af9a436dff2a4b348877f7b36204fc09, type: 2}
+  - {fileID: 11400000, guid: 889327e2eb31a174696ca70a996c7b9d, type: 2}
+  - {fileID: 11400000, guid: 3574215ff19357d4b904a957dc35eb62, type: 2}
+  - {fileID: 11400000, guid: 07521449b7954f0449f4bc4915f47fe6, type: 2}
+  - {fileID: 11400000, guid: d41a4a2b9053da748ab87ed8c2966024, type: 2}
 --- !u!114 &1935469443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21220,8 +21210,10 @@ MonoBehaviour:
     type: 3}
   crystalTowerPrefab1: {fileID: 8122017662506228672, guid: 1e477ae22c83e7c46adb884342b214e4,
     type: 3}
-  teslaTowerPrefab1: {fileID: 0}
-  spinnerTowerPrefab1: {fileID: 0}
+  teslaTowerPrefab1: {fileID: 2806958102817746218, guid: 0e4a57c84d9452448a1e51f28df79086,
+    type: 3}
+  spinnerTowerPrefab1: {fileID: 596414794137842254, guid: 20867e2bbf1758f428df73e70395e9fc,
+    type: 3}
   enemySlimeRedPrefab: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
     type: 3}
   enemySlimeGreenPrefab: {fileID: 2282488233902236740, guid: 51032b7999d044a409e984e7f0e34ddf,
