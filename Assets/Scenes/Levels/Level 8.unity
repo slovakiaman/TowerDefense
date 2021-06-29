@@ -6310,7 +6310,7 @@ MonoBehaviour:
   editorDialogues:
   - dialogueName: start
     dialogue: {fileID: 11400000, guid: 485692b8b62894c46b1f3f9cd0db842c, type: 2}
-  - dialogueName: 7
+  - dialogueName: 10
     dialogue: {fileID: 11400000, guid: 1dc217ba6e9b4124a9a13ed8faf8b66e, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: 937cea0d4d82fcc42b2b589dc80fc527, type: 2}
@@ -6372,15 +6372,15 @@ MonoBehaviour:
   waveNumber: 0
   waves:
   - {fileID: 11400000, guid: 3425c4e2f7f948445a55e2fba0c9f1af, type: 2}
-  - {fileID: 11400000, guid: 6cd9f2b4b9e0ad54ab4e4c56b59fb9c7, type: 2}
-  - {fileID: 11400000, guid: ce41692898db22c4ea8d4eb7a121daf0, type: 2}
-  - {fileID: 11400000, guid: 09f013aaead31b0448cbfac0a8b61bf1, type: 2}
-  - {fileID: 11400000, guid: 45d474d66cdf0c7429b6b1016eff276f, type: 2}
-  - {fileID: 11400000, guid: 16ee30c7a55e56d4a946fc7b9541b179, type: 2}
-  - {fileID: 11400000, guid: 1bf1fa1336671bb4dad87a72762b43bb, type: 2}
-  - {fileID: 11400000, guid: 4bc0587e038e13046872dd59d1a1e3a5, type: 2}
-  - {fileID: 11400000, guid: 74227b83cc6509246809eb25006ae388, type: 2}
-  - {fileID: 11400000, guid: 72cb588a6ba7ec2499578395b519599b, type: 2}
+  - {fileID: 11400000, guid: 3e784e1bfd9055546baeb56bdeed18ef, type: 2}
+  - {fileID: 11400000, guid: 79d061d7abdf8484ea9c45debfcd4abd, type: 2}
+  - {fileID: 11400000, guid: 8bd01ff9f47d1a049b22124f806402e7, type: 2}
+  - {fileID: 11400000, guid: 07157e45676a3304e95773959065aa52, type: 2}
+  - {fileID: 11400000, guid: 6b6e78217e5c39943a0088744bb8e91d, type: 2}
+  - {fileID: 11400000, guid: 777e666bb21fd9541b466d27d278ac09, type: 2}
+  - {fileID: 11400000, guid: ea5396f22c701a24488c8e868e82a364, type: 2}
+  - {fileID: 11400000, guid: 9fcadf2ca0a194e46bf044fe8f337e29, type: 2}
+  - {fileID: 11400000, guid: d81aeb043b262024cbdb1ccfc9c20804, type: 2}
 --- !u!114 &462639624
 MonoBehaviour:
   m_ObjectHideFlags: 0
