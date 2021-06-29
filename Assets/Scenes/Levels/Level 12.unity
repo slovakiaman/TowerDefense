@@ -4662,7 +4662,7 @@ MonoBehaviour:
   editorDialogues:
   - dialogueName: start
     dialogue: {fileID: 11400000, guid: 3d5ff48962583944097e76e4d2cc95c1, type: 2}
-  - dialogueName: 7
+  - dialogueName: 14
     dialogue: {fileID: 11400000, guid: 3dfa6d1bdba30c448a83d8c504cd7bce, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: ecb01d26e846bed4fb766a097efc6ae5, type: 2}
@@ -4724,15 +4724,19 @@ MonoBehaviour:
   waveNumber: 0
   waves:
   - {fileID: 11400000, guid: 32b067604eebac348b4ade36073d9d94, type: 2}
-  - {fileID: 11400000, guid: 8175dec9ee3daf04895edbfa0e6d61a5, type: 2}
-  - {fileID: 11400000, guid: b9e67c51db16de74cbcd3050b8f07d45, type: 2}
-  - {fileID: 11400000, guid: f5273328e3c7a0f4f9c278994b753e78, type: 2}
-  - {fileID: 11400000, guid: 86c1ef2cd6362b147b9c62639c02cffd, type: 2}
-  - {fileID: 11400000, guid: 26dd525e6c5272d459c60d3df5f36514, type: 2}
-  - {fileID: 11400000, guid: a3bb9ec6e61ce0146956bf0608a4bf95, type: 2}
-  - {fileID: 11400000, guid: 5442b41e7cc8e50478e18a7f92c86ce8, type: 2}
-  - {fileID: 11400000, guid: f9afee1b597f64b468f664b2cef5d45e, type: 2}
-  - {fileID: 11400000, guid: 87c1e1ba0e020c74ebb0ce00863112d6, type: 2}
+  - {fileID: 11400000, guid: 212d740f6f2d8b14c9e7c1057a84aded, type: 2}
+  - {fileID: 11400000, guid: 08e1edb459c6db243b902ebcad7a8af5, type: 2}
+  - {fileID: 11400000, guid: 7e72841bd6c7cf54195e999c0ab0b549, type: 2}
+  - {fileID: 11400000, guid: c60a6741d62a2f041bd2f2e03201ef15, type: 2}
+  - {fileID: 11400000, guid: 72e5d2c948d0ca4468ce7ed0fe6d3c52, type: 2}
+  - {fileID: 11400000, guid: efc37a4fb9e823b4588585b0ebe5b876, type: 2}
+  - {fileID: 11400000, guid: bc46181f2cd65d74583042ec5ebad5f2, type: 2}
+  - {fileID: 11400000, guid: 9fa66e8f26e445c44bc90cb545a138a8, type: 2}
+  - {fileID: 11400000, guid: 87787dbb1131c1f41b9e9085e0f17cca, type: 2}
+  - {fileID: 11400000, guid: ca227df8105fbfc4ebefd027cda51f7a, type: 2}
+  - {fileID: 11400000, guid: 596bd63d0af2c114d9e97318e2687d75, type: 2}
+  - {fileID: 11400000, guid: 2e7fb22e923212341875b67891e9cf8d, type: 2}
+  - {fileID: 11400000, guid: 31b056545ca436c4389a3ec396b1915c, type: 2}
 --- !u!114 &440852850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4751,8 +4755,10 @@ MonoBehaviour:
     type: 3}
   crystalTowerPrefab1: {fileID: 8122017662506228672, guid: 1e477ae22c83e7c46adb884342b214e4,
     type: 3}
-  teslaTowerPrefab1: {fileID: 0}
-  spinnerTowerPrefab1: {fileID: 0}
+  teslaTowerPrefab1: {fileID: 2806958102817746218, guid: 0e4a57c84d9452448a1e51f28df79086,
+    type: 3}
+  spinnerTowerPrefab1: {fileID: 596414794137842254, guid: 20867e2bbf1758f428df73e70395e9fc,
+    type: 3}
   enemySlimeRedPrefab: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
     type: 3}
   enemySlimeGreenPrefab: {fileID: 2282488233902236740, guid: 51032b7999d044a409e984e7f0e34ddf,

@@ -51,3 +51,9 @@ MonoBehaviour:
       for the dark gate, to the frontiers of the underworld.
   - entity: 1
     text: Follow them, my brave soldiers...
+  - entity: 0
+    text: Engineer requests audience to the king.
+  - entity: 4
+    text: 'Sir we have researched new weapon type: Spinner tower'
+  - entity: 0
+    text: 'Now you can build new tower type: Tesla Spinner tower'

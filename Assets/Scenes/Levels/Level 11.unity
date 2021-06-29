@@ -6288,15 +6288,15 @@ MonoBehaviour:
   waveNumber: 0
   waves:
   - {fileID: 11400000, guid: 0f5bf8883d690ba4a9da952cbca00daf, type: 2}
-  - {fileID: 11400000, guid: 56f89aab7c980bc438251e756f95f65e, type: 2}
-  - {fileID: 11400000, guid: 8f526939c6ac70e48927a7c90b9ffab1, type: 2}
-  - {fileID: 11400000, guid: 09a21159b0ed5d642891917434af0948, type: 2}
-  - {fileID: 11400000, guid: bab4326692ef6bc4b8902f09d64b8b12, type: 2}
-  - {fileID: 11400000, guid: 881355da19ab4114c8ac1e6be338df6b, type: 2}
-  - {fileID: 11400000, guid: 54095e5fb548af544bd08382bef632a9, type: 2}
-  - {fileID: 11400000, guid: d0905f274b467364aab4dd42d73907bc, type: 2}
-  - {fileID: 11400000, guid: 6ddd2c69e043f6942b1ccaeb6feb7d0c, type: 2}
-  - {fileID: 11400000, guid: 25ee957e6fda921478de7981d2103af9, type: 2}
+  - {fileID: 11400000, guid: 550d58a9f33346d43ae6876546c13cbe, type: 2}
+  - {fileID: 11400000, guid: adbab8bcddd29e84f83296385c3fa901, type: 2}
+  - {fileID: 11400000, guid: eca792c24383a014e86048d15a641358, type: 2}
+  - {fileID: 11400000, guid: f861086345102a346b3b9fe82fdb215a, type: 2}
+  - {fileID: 11400000, guid: 2b9e5866f04b7dd49ab6e7ee04ced4be, type: 2}
+  - {fileID: 11400000, guid: 2ceab4f49df4db54a90595897bdd9857, type: 2}
+  - {fileID: 11400000, guid: ebad627c072b6314ebc0c812734ceccc, type: 2}
+  - {fileID: 11400000, guid: 64dfe49e60b6d6c40b6ac00454f75d00, type: 2}
+  - {fileID: 11400000, guid: d5f0bb5c54ee66645859ed822c1500e0, type: 2}
 --- !u!114 &555929732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6315,7 +6315,8 @@ MonoBehaviour:
     type: 3}
   crystalTowerPrefab1: {fileID: 8122017662506228672, guid: 1e477ae22c83e7c46adb884342b214e4,
     type: 3}
-  teslaTowerPrefab1: {fileID: 0}
+  teslaTowerPrefab1: {fileID: 2806958102817746218, guid: 0e4a57c84d9452448a1e51f28df79086,
+    type: 3}
   spinnerTowerPrefab1: {fileID: 0}
   enemySlimeRedPrefab: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
     type: 3}
