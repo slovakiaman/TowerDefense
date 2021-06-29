@@ -36,3 +36,9 @@ MonoBehaviour:
   - entity: 1
     text: Order the soldiers to prepare the towers. I have a feeling they're still
       here ....
+  - entity: 0
+    text: Engineer requests audience to the king.
+  - entity: 4
+    text: 'Sir we have researched new weapon type: Cannon'
+  - entity: 0
+    text: 'Now you can build new tower type: Cannon'

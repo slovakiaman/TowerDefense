@@ -26,3 +26,9 @@ MonoBehaviour:
     text: Yes sir?
   - entity: 1
     text: Forward!
+  - entity: 0
+    text: Engineer requests audience to the king.
+  - entity: 4
+    text: 'Sir we have researched new weapon type: Cannon'
+  - entity: 0
+    text: 'Now you can build new tower type: Crystal tower'

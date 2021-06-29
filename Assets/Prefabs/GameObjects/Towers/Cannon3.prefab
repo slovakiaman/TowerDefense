@@ -369,7 +369,8 @@ MonoBehaviour:
   towerName: Cannon lvl1
   radiusCircle: {fileID: 8626237114477374880}
   price: 1000
-  range: 9
+  scorePrice: 0
+  range: 11
   fireRate: 1.2
   damage: 40
   weakAgainst: 0200000003000000

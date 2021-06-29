@@ -30457,7 +30457,7 @@ MonoBehaviour:
   editorDialogues:
   - dialogueName: start
     dialogue: {fileID: 11400000, guid: ba85f1da2aeaf524898cac6d6ef4f1f5, type: 2}
-  - dialogueName: 7
+  - dialogueName: 10
     dialogue: {fileID: 11400000, guid: 7e8b61b3ab1e9d647b23d77d324ec2b7, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: cb89a1858c0576b459ac18f746c2b08a, type: 2}
@@ -30519,15 +30519,15 @@ MonoBehaviour:
   waveNumber: 0
   waves:
   - {fileID: 11400000, guid: ee3bf9d8a812b544f8e6d875ffb1bc1a, type: 2}
-  - {fileID: 11400000, guid: b41de44b3d1d26d4a9a9756e40dd5027, type: 2}
-  - {fileID: 11400000, guid: 5b50da2b4b38d3240a2988570efc4f0d, type: 2}
-  - {fileID: 11400000, guid: d54e07e7bd6fd5d49a67d075efc2e703, type: 2}
-  - {fileID: 11400000, guid: 8fd4ec98e4d99a04ca64384bfdede059, type: 2}
-  - {fileID: 11400000, guid: ae36d6a5a0d149443afe2c0b078d0dd9, type: 2}
-  - {fileID: 11400000, guid: 4ec2701cde3d8ef4e813f609fcfd3d13, type: 2}
-  - {fileID: 11400000, guid: 15dd77c3a7907dc4bb1a5418cce3836b, type: 2}
-  - {fileID: 11400000, guid: b1228fe451077f048ad267b12e884202, type: 2}
-  - {fileID: 11400000, guid: a15d669d64070064ca48d0b10c427a4d, type: 2}
+  - {fileID: 11400000, guid: c1f021ddb53988242bcde4ce753d98fc, type: 2}
+  - {fileID: 11400000, guid: 98e1d3527ca820f4da40e6155780da8a, type: 2}
+  - {fileID: 11400000, guid: 46d0bf28d553b524ea8862c4484a7669, type: 2}
+  - {fileID: 11400000, guid: 88d84b9996fbda54982b248e7cec0828, type: 2}
+  - {fileID: 11400000, guid: 228da8579f4d9e041a25915d47e7d9f5, type: 2}
+  - {fileID: 11400000, guid: 3e863f1c674c4e34f839d64e8d62f435, type: 2}
+  - {fileID: 11400000, guid: 97712db6be405b14aaff6eb851da6013, type: 2}
+  - {fileID: 11400000, guid: 74c10aa99798e354a8b8cde522a47ec0, type: 2}
+  - {fileID: 11400000, guid: 51c14b8cc7082024286e270e4c9a1f78, type: 2}
 --- !u!114 &2063577172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30544,7 +30544,8 @@ MonoBehaviour:
     type: 3}
   cannonTowerPrefab1: {fileID: 4149252355760522626, guid: 715e1a34f609e864284a0d4bf5029d70,
     type: 3}
-  crystalTowerPrefab1: {fileID: 0}
+  crystalTowerPrefab1: {fileID: 8122017662506228672, guid: 1e477ae22c83e7c46adb884342b214e4,
+    type: 3}
   teslaTowerPrefab1: {fileID: 0}
   spinnerTowerPrefab1: {fileID: 0}
   enemySlimeRedPrefab: {fileID: 2282488233902236740, guid: aa2e2012ac4cdcf4aa0fbd044bd6eaf6,
