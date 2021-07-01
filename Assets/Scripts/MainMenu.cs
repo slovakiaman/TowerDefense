@@ -34,6 +34,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Scenes/EndlessLevelsMap", LoadSceneMode.Single);
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Scenes/Credits", LoadSceneMode.Single);
+    }
+
     public void Quit()
     {
         Application.Quit();
