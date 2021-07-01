@@ -45096,11 +45096,14 @@ MonoBehaviour:
   countdown: 0
   waveNumber: 0
   waves:
-  - {fileID: 11400000, guid: 43c4b5103014a584296ba7445f5ffa8b, type: 2}
-  - {fileID: 11400000, guid: a7f3a985f7cec2447a53e0ff331a2462, type: 2}
-  - {fileID: 11400000, guid: b2777e4b3e49aec4ca689669a3b5fdbc, type: 2}
-  - {fileID: 11400000, guid: 6aa114bac2664c24f9105d879d14787c, type: 2}
-  - {fileID: 11400000, guid: fe197972ad0b77a449bacb0a89ccd9f0, type: 2}
+  - {fileID: 11400000, guid: c70a052bbc68e3942bbdb4c7995a7fad, type: 2}
+  - {fileID: 11400000, guid: f9c6807cba86dbb4aacb3dc17c8818f5, type: 2}
+  - {fileID: 11400000, guid: b59e8633df2ad8741acc178be73e5d57, type: 2}
+  - {fileID: 11400000, guid: 08d8500544d445d4baf5239bd7d64fbc, type: 2}
+  - {fileID: 11400000, guid: 837ef488d7f75f74388e4015211eb255, type: 2}
+  - {fileID: 11400000, guid: 5faa0a6b6b536b14c9d08b2990fb727a, type: 2}
+  - {fileID: 11400000, guid: 97fbeb43a33e27846b7735320ea90a6c, type: 2}
+  - {fileID: 11400000, guid: b57631775c91e494ab282e25ebb71231, type: 2}
 --- !u!4 &1669861728
 Transform:
   m_ObjectHideFlags: 0

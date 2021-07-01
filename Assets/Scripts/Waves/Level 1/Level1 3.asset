@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: 0
   pathNumber: 2
-  enemyCount: 25
-  speed: 5
+  enemyCount: 2
+  speed: 2
   hp: 150
   scale: 1
-  countdown: 2
+  countdown: 0
   moneyReward: 50

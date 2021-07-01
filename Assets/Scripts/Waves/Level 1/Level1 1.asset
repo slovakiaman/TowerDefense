@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: 0
   pathNumber: 0
-  enemyCount: 5
+  enemyCount: 2
   speed: 2
   hp: 150
   scale: 1
