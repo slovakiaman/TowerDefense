@@ -1351,7 +1351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ing. Peter S\xEDkora, PhD."
+  m_Text: "Ing. Peter S\xFDkora, PhD."
 --- !u!222 &51551668
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4957,7 +4957,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Luk\xE1\u0161 Kraj\u010D\xED"
+  m_Text: "Luk\xE1\u0161 Kraj\u010Di"
 --- !u!222 &158828284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19931,7 +19931,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Luk\xE1\u0161 Kraj\u010D\xED"
+  m_Text: "Luk\xE1\u0161 Kraj\u010Di"
 --- !u!222 &729412041
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24216,7 +24216,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.12148, y: -610.4}
-  m_SizeDelta: {x: 317.76077, y: 40}
+  m_SizeDelta: {x: 317.76077, y: 60.456}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &922740780
 MonoBehaviour:
@@ -24266,7 +24266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u017Dilinsak\xE1 univerzita v \u017Diline \xA9 2021"
+  m_Text: "\u017Dilinsk\xE1 univerzita v \u017Diline \xA9 2021\nFakulta FEIT"
 --- !u!222 &922740782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28985,7 +28985,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Luk\xE1\u0161 Kraj\u010D\xED"
+  m_Text: "Luk\xE1\u0161 Kraj\u010Di"
 --- !u!222 &1083622672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46247,7 +46247,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Luk\xE1\u0161 Kraj\u010D\xED"
+  m_Text: "Luk\xE1\u0161 Kraj\u010Di"
 --- !u!222 &1684176252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51234,8 +51234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -103.979996}
-  m_SizeDelta: {x: 145.85962, y: 41.948914}
+  m_AnchoredPosition: {x: -0.00022316, y: -113.32}
+  m_SizeDelta: {x: 209.02744, y: 60.115845}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860643327
 MonoBehaviour:
