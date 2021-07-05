@@ -60,6 +60,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] protected GameObject nextWaveBeholderPurple;
     [SerializeField] protected GameObject nextWaveBeholderCyan;
     [SerializeField] protected GameObject nextWaveBeholderGreen;
+    [SerializeField] protected GameObject nextWaveBoss1SoulEater;
+    [SerializeField] protected GameObject nextWaveBoss2Nightmare;
+    [SerializeField] protected GameObject nextWaveBoss3Usurper;
+    [SerializeField] protected GameObject nextWaveBoss4TerrorBringer;
 
     private void Start()
     {
@@ -374,6 +378,18 @@ public class UIManager : MonoBehaviour
                 break;
             case EnemyVariant.BEHOLDER_GREEN:
                 nextWaveBeholderGreen.SetActive(show);
+                break;
+            case EnemyVariant.BOSS1:
+                nextWaveBoss1SoulEater.SetActive(show);
+                break;
+            case EnemyVariant.BOSS2:
+                nextWaveBoss2Nightmare.SetActive(show);
+                break;
+            case EnemyVariant.BOSS3:
+                nextWaveBoss3Usurper.SetActive(show);
+                break;
+            case EnemyVariant.BOSS4:
+                nextWaveBoss4TerrorBringer.SetActive(show);
                 break;
         }
     }

@@ -46,6 +46,14 @@ public class ConstantsManager: MonoBehaviour
             Debug.LogError("No beholder enemy found");
         if (enemyBeholderGreenPrefab == null)
             Debug.LogError("No beholder enemy found");
+        if (enemyBoss1Prefab == null)
+            Debug.LogError("No boss1 enemy found");
+        if (enemyBoss2Prefab == null)
+            Debug.LogError("No boss2 enemy found");
+        if (enemyBoss3Prefab == null)
+            Debug.LogError("No boss3 enemy found");
+        if (enemyBoss4Prefab == null)
+            Debug.LogError("No boss enemy found");
     }
 
     [Header("Tower prefabs")]
@@ -75,7 +83,7 @@ public class ConstantsManager: MonoBehaviour
     public GameObject enemyBeholderCyanPrefab;
     public GameObject enemyBeholderGreenPrefab;
 
-    [Header("Enemy prefabs")]
+    [Header("Enemy BOSS prefabs")]
     public GameObject enemyBoss1Prefab;
     public GameObject enemyBoss2Prefab;
     public GameObject enemyBoss3Prefab;
