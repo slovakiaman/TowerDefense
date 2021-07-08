@@ -124,11 +124,7 @@ public abstract class GameManager : MonoBehaviour
 
     public abstract void ResetGame();
 
-    public void ChangeLevel()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Scenes/LevelsMap", LoadSceneMode.Single);
-    }
+    public abstract void ChangeLevel();
 
     public void Menu()
     {

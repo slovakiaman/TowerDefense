@@ -55,7 +55,7 @@ public class EndlessWaveManager : WaveManager
         }
         spawning = true;
 
-        Debug.Log("Spawning wave " + (waveNumber + 1) + "!");
+        Debug.Log("Spawning wave " + (wavesCompleted + 1) + "!");
         
         UIManager.instance.ShowSpawnWaveButton(false);
 

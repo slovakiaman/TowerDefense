@@ -35,4 +35,10 @@ public class EndlessGameManager : GameManager
         BuildManager.instance.ResetBuilder();
         PlayerManager.instance.ResetPlayer();
     }
+
+    public override void ChangeLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Scenes/EndlessLevelsMap", LoadSceneMode.Single);
+    }
 }

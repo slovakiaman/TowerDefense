@@ -41,4 +41,10 @@ public class NormalGameManager : GameManager
         DialogueManager.instance.Reset();
     }
 
+    public override void ChangeLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Scenes/LevelsMap", LoadSceneMode.Single);
+    }
+
 }
