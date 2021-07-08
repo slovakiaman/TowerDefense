@@ -65,52 +65,52 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level 16.unity
     guid: b052d7f5490bbee498b11274297d2a8f
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 1.unity
-    guid: e0beebc06a6c9364f8580996a485425a
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 2.unity
-    guid: 508d37d6f4c1214459839ab2547ce828
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 3.unity
-    guid: 9674cd5523ee08a4a8ddd6c453eb5877
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 4.unity
-    guid: 656f24e6a19586747ae6594efa6ebccc
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 5.unity
-    guid: 7df7f743de47cf544987f64de7d0dfa4
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 6.unity
-    guid: 9cc09391e4a356641930fbfda585c526
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 7.unity
-    guid: b2f630998a4fff049b0e478bdabb5a44
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 8.unity
-    guid: 9e3e86c728969f94683d6f77c971c099
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 9.unity
-    guid: 6d76e5716fc92ab4bad67bc3d2b96cd7
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 10.unity
-    guid: 597a3cacd86f51744b36a5e6bfc75bbc
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 11.unity
-    guid: bbc95f719f4c9f44a91fc5480d233b1d
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 12.unity
-    guid: 20836068cd3a7264cb27317bcd9f5b93
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 13.unity
-    guid: bc1e21d3b6c9502469d4b042fce26ac0
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 14.unity
-    guid: d89dc7a012ec5394e9687bb24e9366fb
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 15.unity
-    guid: 9e60a9ca1e172fe45b87966b75671dba
-  - enabled: 0
-    path: Assets/Scenes/EndlessLevels/Level 16.unity
-    guid: b8110d10b089cf9478619e7144602fe5
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 1.unity
+    guid: 7bd77000cacd74d42b5ce65fc0ecdc95
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 2.unity
+    guid: 91e79f2bcd51979429598b1c7eee4ed8
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 3.unity
+    guid: ca64424f9b919fc4ea2b7660d706fd11
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 4.unity
+    guid: f6526e554ef54e14b9384f70eb446b4c
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 5.unity
+    guid: 1c912aefc0b5c04429c780816d4f3f79
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 6.unity
+    guid: 7d159eabe144e554ab3c6f8d69421928
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 7.unity
+    guid: cbbf7cabeeb6b5c4796a0bc5d35976a0
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 8.unity
+    guid: 30e48846f35f99e4f8820f7c8f1052ad
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 9.unity
+    guid: 3d3b120a2b8fdb34baf5b0806f636c7a
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 10.unity
+    guid: 354ab46a42a4ba844a648bdb7d4185d5
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 11.unity
+    guid: f109ae43d928d1f4b8b7ecce2cbc9a64
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 12.unity
+    guid: e632b1d8dd7e22a48b2a38e1c139c65a
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 13.unity
+    guid: 09468036b96b8bc448442541b404d9fe
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 14.unity
+    guid: 93febc3732936a1468153838ed2ec375
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 15.unity
+    guid: 5fa055b0f3b114a459c5b4f873b494f0
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 16.unity
+    guid: 5b43d2f85eef4ab4fac8cc67b41473b7
   m_configObjects: {}
