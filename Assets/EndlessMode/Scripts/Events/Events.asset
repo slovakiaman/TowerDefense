@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310a9c65ec6d40489ed91a248cc97a81, type: 3}
+  m_Name: Events
+  m_EditorClassIdentifier: 
+  allEvents:
+  - id: 0
+    positiveEffect: 1
+    name: FED UP
+    description: MONSTERS GAIN 20% MORE MAXIMUM HP
+    startingWave: 0
+    duration: 1
+    conflictingGroup: 1
+  - id: 0
+    positiveEffect: 1
+    name: BANQUET
+    description: MONSTERS GAIN 20% MORE MAXIMUM HP
+    startingWave: 2
+    duration: 3
+    conflictingGroup: 1
+  - id: 6
+    positiveEffect: 0
+    name: STARVING
+    description: MONSTERS LOSE 20% MORE MAXIMUM HP
+    startingWave: 2
+    duration: 1
+    conflictingGroup: 1
+  - id: 6
+    positiveEffect: 0
+    name: WORLD HUNGER
+    description: MONSTERS LOSE 20% MORE MAXIMUM HP
+    startingWave: 2
+    duration: 3
+    conflictingGroup: 1
+  - id: 4
+    positiveEffect: 1
+    name: STONKS
+    description: MONSTERS AWARD 20% MORE MONEY
+    startingWave: 1
+    duration: 1
+    conflictingGroup: 2
+  - id: 4
+    positiveEffect: 1
+    name: STONKS++
+    description: MONSTERS AWARD 20% MORE MONEY
+    startingWave: 2
+    duration: 3
+    conflictingGroup: 2
+  - id: 10
+    positiveEffect: 0
+    name: BEGGARS
+    description: MONSTERS AWARD 20% LESS MONEY
+    startingWave: 1
+    duration: 1
+    conflictingGroup: 2
+  - id: 10
+    positiveEffect: 0
+    name: ECONOMIC CRISIS
+    description: MONSTERS AWARD 20% LESS MONEY
+    startingWave: 0
+    duration: 1
+    conflictingGroup: 2
