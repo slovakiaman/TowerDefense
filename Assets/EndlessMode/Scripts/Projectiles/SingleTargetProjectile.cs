@@ -1,5 +1,6 @@
-﻿namespace NormalMode.Projectiles
+﻿namespace EndlessMode.Projectiles
 {
+ 
     public class SingleTargetProjectile : Projectile
     {
         protected override void InitializeProjectile()
@@ -9,11 +10,11 @@
 
         protected override void HitTarget()
         {
-            showParticleEffects();
+            ShowParticleEffects();
 
             Damage(enemyTarget);
             Destroy(gameObject);
         }
-
-    }
+    
+    }   
 }

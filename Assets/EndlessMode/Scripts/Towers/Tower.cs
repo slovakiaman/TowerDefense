@@ -1,13 +1,14 @@
-﻿using NormalMode.Enemies;
-using NormalMode.Managers;
+﻿using EndlessMode.Enemies;
+using EndlessMode.Managers;
 
-namespace NormalMode.Towers
+namespace EndlessMode.Towers
 {
     using System.Collections.Generic;
     using UnityEngine;
 
     public abstract class Tower : MonoBehaviour
     {
+        public TowerType towerType;
         [SerializeField] private string towerName;
         [SerializeField] private GameObject radiusCircle;
 

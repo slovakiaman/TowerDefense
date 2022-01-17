@@ -1,77 +1,81 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using NormalMode.Dialogues;
 
-public class DialogueManager : MonoBehaviour
+namespace NormalMode.Managers
 {
-    public static DialogueManager instance;
+    using System;
+    using System.Collections.Generic;
+    using UnityEngine;
 
-    [Serializable]
-    public struct EditorDialogue
+    public class DialogueManager : MonoBehaviour
     {
-        public string dialogueName;
-        public Dialogue dialogue;
-    }
-    public EditorDialogue[] editorDialogues;
+        public static DialogueManager instance;
 
-    private Dictionary<string ,Dialogue> dialogues;
-
-    private Queue<Dialogue> dialoguesToShow;
-    private Dialogue dialogueInProgress;
-
-    private void Awake()
-    {
-        instance = this;
-        dialoguesToShow = new Queue<Dialogue>();
-        dialogues = new Dictionary<string, Dialogue>();
-        for (int i = 0; i < editorDialogues.Length; i++)
+        [Serializable]
+        public struct EditorDialogue
         {
-            dialogues.Add(editorDialogues[i].dialogueName, editorDialogues[i].dialogue);
+            public string dialogueName;
+            public Dialogue dialogue;
         }
-    }
+        public EditorDialogue[] editorDialogues;
 
-    public void ShowDialogue(string key)
-    {
-        Dialogue dialogue;
-        if (!dialogues.TryGetValue(key, out dialogue))
-            return;
+        private Dictionary<string ,Dialogue> dialogues;
 
-        dialoguesToShow.Enqueue(dialogue);
-    }
+        private Queue<Dialogue> dialoguesToShow;
+        private Dialogue dialogueInProgress;
 
-    private void Update()
-    {
-        // if the dialogue in progress has ended, get the next one in queue
-        if (dialogueInProgress == null || dialogueInProgress.Update())
+        private void Awake()
         {
-            if (dialoguesToShow.Count > 0)
+            instance = this;
+            dialoguesToShow = new Queue<Dialogue>();
+            dialogues = new Dictionary<string, Dialogue>();
+            for (int i = 0; i < editorDialogues.Length; i++)
             {
-                dialogueInProgress = dialoguesToShow.Dequeue();
-                dialogueInProgress.StartDialogue();
-            } 
-            else
-            {
-                dialogueInProgress = null;
+                dialogues.Add(editorDialogues[i].dialogueName, editorDialogues[i].dialogue);
             }
         }
-    }
 
-    public void Reset()
-    {
-        dialoguesToShow.Clear();
-        dialogueInProgress = null;
-        ((NormalUIManager)UIManager.instance).ShowKingDialoguePanel(false);
-        ((NormalUIManager)UIManager.instance).HideOtherDialoguePanel();
-    }
+        public void ShowDialogue(string key)
+        {
+            Dialogue dialogue;
+            if (!dialogues.TryGetValue(key, out dialogue))
+                return;
 
-    public bool HasDialogueInProgress()
-    {
-        return dialogueInProgress != null;
-    }
+            dialoguesToShow.Enqueue(dialogue);
+        }
 
-    public DialogueEntity GetCurrentActiveEntity()
-    {
-        return dialogueInProgress.GetCurrentDialogueLine().GetDialogueEntity();
-    }
+        private void Update()
+        {
+            // if the dialogue in progress has ended, get the next one in queue
+            if (dialogueInProgress == null || dialogueInProgress.Update())
+            {
+                if (dialoguesToShow.Count > 0)
+                {
+                    dialogueInProgress = dialoguesToShow.Dequeue();
+                    dialogueInProgress.StartDialogue();
+                } 
+                else
+                {
+                    dialogueInProgress = null;
+                }
+            }
+        }
+
+        public void Reset()
+        {
+            dialoguesToShow.Clear();
+            dialogueInProgress = null;
+            UIManager.instance.ShowKingDialoguePanel(false);
+            UIManager.instance.HideOtherDialoguePanel();
+        }
+
+        public bool HasDialogueInProgress()
+        {
+            return dialogueInProgress != null;
+        }
+
+        public DialogueEntity GetCurrentActiveEntity()
+        {
+            return dialogueInProgress.GetCurrentDialogueLine().GetDialogueEntity();
+        }
+    }   
 }

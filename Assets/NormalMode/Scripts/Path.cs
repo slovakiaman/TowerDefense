@@ -1,10 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
-
-[Serializable]
-public class Path
+﻿namespace NormalMode.Waves
 {
-    public List<Transform> waypoints;
+    using UnityEngine;
+    using System.Collections.Generic;
+    using System;
+
+    [Serializable]
+    public class Path
+    {
+        public List<Transform> waypoints;
+    }
 }
+

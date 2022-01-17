@@ -1,8 +1,8 @@
-﻿using NormalMode.Towers;
+﻿using EndlessMode.Towers;
 
-namespace NormalMode.Shop
+namespace EndlessMode.Shop
 {
-    using NormalMode.Managers;
+    using EndlessMode.Managers;
     using UnityEngine;
 
     public class Shop : MonoBehaviour
@@ -137,6 +137,5 @@ namespace NormalMode.Shop
             this.selectedTower = null;
             this.shopState = MenuState.NOTHING_SELECTED;
         }
-
-    }
+    }   
 }

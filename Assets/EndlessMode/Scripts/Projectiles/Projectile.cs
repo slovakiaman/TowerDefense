@@ -1,10 +1,8 @@
-﻿using NormalMode.Enemies;
-
-namespace NormalMode.Projectiles
+﻿using EndlessMode.Enemies;
+namespace EndlessMode.Projectiles
 {
     using System.Collections.Generic;
     using UnityEngine;
-
     public abstract class Projectile : MonoBehaviour
     {
         [Header("Projectile stats")]
@@ -64,7 +62,7 @@ namespace NormalMode.Projectiles
                 e.TakeDamage(damage);
         }
 
-        protected void showParticleEffects()
+        protected void ShowParticleEffects()
         {
             if (particleEffect != null)
             {
@@ -79,7 +77,8 @@ namespace NormalMode.Projectiles
         {
             return !weakAgainst.Contains(enemy.weakAgainstType);
         }
-
     }
-   
 }
+
+
+

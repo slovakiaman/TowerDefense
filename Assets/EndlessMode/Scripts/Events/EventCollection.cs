@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-
-[CreateAssetMenu(menuName = "Endless Mode Events/Event")]
-public class EventCollection : ScriptableObject
+﻿namespace EndlessMode.Events
 {
-    [SerializeField]
-    public List<EndlessLevelEvent> allEvents;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    [CreateAssetMenu(menuName = "Endless Mode Events/Event")]
+    public class EventCollection : ScriptableObject
+    {
+        [SerializeField]
+        public List<Event> allEvents;
+    }   
 }

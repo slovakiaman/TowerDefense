@@ -1,13 +1,12 @@
-﻿namespace NormalMode.Waves
+﻿namespace EndlessMode.Waves
 {
-    using NormalMode.Managers;
+    using EndlessMode.Managers;
     using UnityEngine;
-    
-    [CreateAssetMenu(menuName = "Waves/Wave")]
+    [CreateAssetMenu(menuName = "Waves/EndlessWave")]
     public class Wave : ScriptableObject
     {
         [SerializeField] private EnemyVariant enemy;
-        public int pathNumber;
+        public Difficulty waveDifficulty;
         public int enemyCount;
 
         public float speed;
@@ -16,6 +15,7 @@
         public float countdown;
         public int moneyReward;
         private GameObject enemyPrefab = null;
+        private int assignedPathIndex;
 
         public GameObject GetEnemyPrefab()
         {
@@ -95,7 +95,17 @@
                     break;
             }
         }
+
+        public int GetAssignedPathIndex()
+        {
+            
+            return this.assignedPathIndex;
+        }
+
+        public void SetAssignedPathIndex(int index)
+        {
+            this.assignedPathIndex = index;
+        }
     }
-
-
 }
+

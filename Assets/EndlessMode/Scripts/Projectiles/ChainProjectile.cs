@@ -1,8 +1,9 @@
-﻿namespace NormalMode.Projectiles
+﻿using EndlessMode.Enemies;
+namespace EndlessMode.Projectiles
 {
+    
     using DigitalRuby.LightningBolt;
     using System.Collections.Generic;
-    using NormalMode.Enemies;
     using UnityEngine;
 
     public class ChainProjectile : Projectile
@@ -13,7 +14,7 @@
 
         protected override void HitTarget()
         {
-            showParticleEffects();
+            ShowParticleEffects();
             List<Transform> enemiesFound = new List<Transform>();
             FindEnemies(numberOfChains, enemyTarget, new HashSet<Transform>(), enemiesFound);
             ChainEnemies(enemiesFound);

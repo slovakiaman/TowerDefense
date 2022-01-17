@@ -1,4 +1,4 @@
-﻿namespace NormalMode.Managers
+﻿namespace EndlessMode.Managers
 {
     using System.Collections.Generic;
     using System.IO;
@@ -43,30 +43,8 @@
             string data = JsonUtility.ToJson(_scores);
             System.IO.File.WriteAllText(Application.persistentDataPath + "/Score.json", data);
         }
-
-        public void SaveEndlessIntoJson(string levelName)
-        {
-            Score score = null;
-            if (_endlessScores.GetLevelByName(levelName, out score))
-            {
-                if (score.levelScore > _score)
-                {
-                    return;
-                }
-                else
-                {
-                    score.levelScore = _score;
-                }
-            }
-            else
-            {
-                _endlessScores.scores.Add(new Score(levelName, _score));
-            }
-
-            _score = 0;
-            string data = JsonUtility.ToJson(_endlessScores);
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/EndlessScore.json", data);
-        }
+        
+        
         public void LoadFromJson()
         {
             try
@@ -84,8 +62,6 @@
             {
                 Debug.Log(error.Message);
             }
-            
-
             
         }
 

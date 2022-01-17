@@ -1,11 +1,11 @@
-﻿using NormalMode.Building;
-using NormalMode.Towers;
+﻿using EndlessMode.Towers;
+using EndlessMode.Building;
 
-namespace NormalMode.Managers
+namespace EndlessMode.Managers
 {
+    using EndlessMode.Shop;
     using UnityEngine;
-    using NormalMode.Shop;
-    
+
     public class BuildManager : MonoBehaviour
     {
         public static BuildManager instance;
@@ -98,5 +98,5 @@ namespace NormalMode.Managers
             }
             shop.Reset();
         }
-    }
+    }   
 }

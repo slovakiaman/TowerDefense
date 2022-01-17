@@ -1,9 +1,9 @@
-﻿using NormalMode.Towers;
+﻿using EndlessMode.Managers;
+using EndlessMode.Towers;
+using UnityEngine;
 
-namespace NormalMode.Managers
+namespace EndlessMode.Managers
 {
-    using UnityEngine;
-    
     public class PlayerManager : MonoBehaviour
     {
         public static PlayerManager instance;
@@ -75,6 +75,6 @@ namespace NormalMode.Managers
             return this.victory;
         }
     
+    
     }
 }
-

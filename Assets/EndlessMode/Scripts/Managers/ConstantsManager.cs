@@ -1,4 +1,4 @@
-﻿namespace NormalMode.Managers
+﻿namespace EndlessMode.Managers
 {
     using UnityEngine;
     public class ConstantsManager: MonoBehaviour

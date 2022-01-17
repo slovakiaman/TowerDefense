@@ -1,13 +1,13 @@
-﻿using NormalMode.Enemies;
+﻿using EndlessMode.Enemies;
+using EndlessMode.Managers;
 
-namespace NormalMode.Towers
+namespace EndlessMode.Towers
 {
     using UnityEngine;
 
     public class AOEAttackTower : Tower
     {
         private Transform lastNearbyEnemy;
-        [SerializeField]
         protected override void InitializeTower()
         {
             if (damage == 0)
@@ -26,14 +26,18 @@ namespace NormalMode.Towers
         {
             if (lastNearbyEnemy == null)
                 return;
+
+            if (!ValueCalculator.instance.IsTowerEnabled(this))
+                return;
+            
             SetShootingAnimationState(true);
             if (reloadTimer <= 0)
             {
-                reloadTimer = 1 / fireRate;
+                reloadTimer = 1 / ValueCalculator.instance.CalculateTowerSPEED(this);
                 Collider[] colliders = Physics.OverlapSphere(transform.position, range);
                 foreach (Collider collider in colliders)
                 {
-                    if (collider.tag == "Enemy")
+                    if (collider.CompareTag("Enemy"))
                     {
                         if (CanAttack(collider.GetComponent<Enemy>()))
                             Damage(collider.transform);
@@ -49,7 +53,6 @@ namespace NormalMode.Towers
             if (lastNearbyEnemy == null)
             {
                 reloadTimer = reloadTimer < inactiveTreshold ? inactiveTreshold : reloadTimer;
-                return;
             }
         }
 
@@ -66,7 +69,7 @@ namespace NormalMode.Towers
             Collider[] colliders = Physics.OverlapSphere(transform.position, range);
             foreach (Collider collider in colliders)
             {
-                if (collider.tag == "Enemy")
+                if (collider.CompareTag("Enemy"))
                 {
                     lastNearbyEnemy = collider.transform;
                     return;
@@ -78,7 +81,10 @@ namespace NormalMode.Towers
         {
             Enemy e = enemy.GetComponent<Enemy>();
             if (e != null)
-                e.TakeDamage(damage);
+            {
+                int calculatedDamage = ValueCalculator.instance.CalculateTowerDMG(this);
+                e.TakeDamage(calculatedDamage);
+            }
         }
 
         private void SetShootingAnimationState(bool shoot)
@@ -91,5 +97,5 @@ namespace NormalMode.Towers
         {
             shootSound.Play();
         }
-    }
+}
 }

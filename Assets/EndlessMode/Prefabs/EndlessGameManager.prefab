@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5702794881533007621}
-  - component: {fileID: 5702794881533007623}
+  - component: {fileID: 375161174176610597}
   - component: {fileID: 5702794881533007616}
   - component: {fileID: 5702794881533007620}
   - component: {fileID: 3321968532007195087}
   - component: {fileID: 5702794881533007674}
+  - component: {fileID: 3127209957947470096}
   - component: {fileID: 5702794881533007619}
   - component: {fileID: 2704350142759734822}
-  - component: {fileID: 5702794881533007629}
   - component: {fileID: 5702794881533007617}
   - component: {fileID: 5702794881533007618}
   m_Layer: 0
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5702794881533007623
+--- !u!114 &375161174176610597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5702794881533007675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b35b23115815545be900b7aabfb4fa, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd95fa019f64d7689b8612e03259d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   balistaTowerPrefab1: {fileID: 6932228161388596386, guid: d542b7e2367d63f46a74f22abc6a32a4,
@@ -88,9 +88,9 @@ MonoBehaviour:
     type: 3}
   enemyGolemGreenPrefab: {fileID: 5212024513729630868, guid: a709caf9ace1e224ebfb501db058700b,
     type: 3}
-  enemyGolemRedPrefab: {fileID: 5212024513729630868, guid: 1a8d90ac65e6aea418fe63d349a738f8,
+  enemyGolemRedPrefab: {fileID: 5212024513729630868, guid: cd09d7ab05d6df049ac64dada542b15a,
     type: 3}
-  enemyGolemRed2Prefab: {fileID: 5212024513729630868, guid: cd09d7ab05d6df049ac64dada542b15a,
+  enemyGolemRed2Prefab: {fileID: 5212024513729630868, guid: 1a8d90ac65e6aea418fe63d349a738f8,
     type: 3}
   enemyBeholderPurplePrefab: {fileID: 2703858864881451887, guid: 82f77b6c9eb174343b49842038a1f2e0,
     type: 3}
@@ -117,12 +117,14 @@ MonoBehaviour:
   countdown: 1
   waveNumber: 0
   waves:
-  - {fileID: 11400000, guid: 7d8476f2406f40c4594ed225e17873b8, type: 2}
-  - {fileID: 11400000, guid: 9c7bcb2b3855fb34cb280b3fb0e60206, type: 2}
-  - {fileID: 11400000, guid: f4640c4e57d990548916d46bf7576ba0, type: 2}
+  - {fileID: 11400000, guid: 1fd58c62f13964347827c4a032461a90, type: 2}
+  - {fileID: 11400000, guid: cc42ab4dcf21bb347b80776b8aa45259, type: 2}
+  - {fileID: 11400000, guid: bc08d7714c9b63441afe004132a4bebe, type: 2}
+  - {fileID: 11400000, guid: dbf872fcf07963f45b4ae20ab93458c3, type: 2}
   nextWaveNumber: 0
   wavesCompleted: 0
-  endlessCoeficient: 1.3
+  Coeficient: 1.3
+  currentWaveEventGenerated: 0
 --- !u!114 &5702794881533007620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +165,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 5702794881533007617}
   defeatSound: {fileID: 5702794881533007618}
+--- !u!114 &3127209957947470096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5702794881533007675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3493bfcf106a407b885f2b1ea7df8699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5702794881533007619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,18 +200,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c59e319dda24606a00d429768f4729f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5702794881533007629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5702794881533007675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8084d7c1f967ab6429cab96c4051f980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &5702794881533007617

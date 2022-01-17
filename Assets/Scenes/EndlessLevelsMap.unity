@@ -22862,7 +22862,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 467031291}
         m_TargetAssemblyTypeName: EndlessLevelsMap, Assembly-CSharp
-        m_MethodName: loadMenu
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

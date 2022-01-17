@@ -1,6 +1,6 @@
-﻿using NormalMode.Enemies;
+﻿using EndlessMode.Enemies;
 
-namespace NormalMode.Projectiles
+namespace EndlessMode.Projectiles
 {
     using UnityEngine;
 
@@ -21,11 +21,11 @@ namespace NormalMode.Projectiles
 
         void Explode()
         {
-            showParticleEffects();
+            ShowParticleEffects();
             Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
             foreach (Collider collider in colliders)
             {
-                if (collider.tag == "Enemy")
+                if (collider.CompareTag("Enemy"))
                 {
                     if (CanAttack(collider.GetComponent<Enemy>()))
                         Damage(collider.transform);
@@ -39,4 +39,3 @@ namespace NormalMode.Projectiles
         }
     }
 }
-

@@ -1,7 +1,8 @@
-﻿using NormalMode.Enemies;
-using NormalMode.Projectiles;
+﻿using EndlessMode.Enemies;
+using EndlessMode.Managers;
+using EndlessMode.Projectiles;
 
-namespace NormalMode.Towers
+namespace EndlessMode.Towers
 {
     using UnityEngine;
 
@@ -30,11 +31,14 @@ namespace NormalMode.Towers
         {
             SetShootingAnimationState(false);
 
-            if (enemyTarget != null && (Vector3.Distance(enemyTarget.position, transform.position) > range || enemyTarget.tag == "Dead"))
+            if (enemyTarget != null && (Vector3.Distance(enemyTarget.position, transform.position) > range || enemyTarget.CompareTag("Dead")))
                 enemyTarget = null;
 
             if (enemyTarget != null)
                 return;
+
+            if (!ValueCalculator.instance.IsTowerEnabled(this))
+                return;            
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
             float minDistance = Mathf.Infinity;
@@ -70,9 +74,9 @@ namespace NormalMode.Towers
             {
                 if (reloadTimer <= 0)
                 {
-                    reloadTimer = 1 / fireRate;
+                    reloadTimer = 1 / ValueCalculator.instance.CalculateTowerSPEED(this);
                     GameObject projectileObject = (GameObject)Instantiate(bulletPrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
-                    projectileObject.GetComponent<Projectile>().damage = damage;
+                    projectileObject.GetComponent<Projectile>().damage = ValueCalculator.instance.CalculateTowerDMG(this);
                     Projectile projectile = projectileObject.GetComponent<Projectile>();
                     projectile.SetWeakAgainst(this.weakAgainst);
                     if (projectile != null)
@@ -109,4 +113,5 @@ namespace NormalMode.Towers
         }
 
     }
+   
 }
