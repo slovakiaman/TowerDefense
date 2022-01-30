@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level017-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: The soldiers called for the glory of their rescuers, "hooray."
+  - entity: 0
+    text: The king summoned a great council, it was necessary to find out how to
+      get from another dimension back into the living world.
+  - entity: 0
+    text: 'The soldiers who were the longest in the dimension had the most information,
+      they managed to examine a large part of the dimension. '
+  - entity: 0
+    text: One day in the living world equals 1000 days in another dimension.
+  - entity: 0
+    text: The soldiers found a way out of the dimension, but it was well guarded
+      by the enemy.
+  - entity: 0
+    text: The army marched towards the portal.

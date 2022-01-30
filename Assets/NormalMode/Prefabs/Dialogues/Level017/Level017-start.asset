@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level017-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: After a difficult battle, the surviving soldiers treated their wounded
+      and buried the dead.
+  - entity: 0
+    text: 'The army had a gloomy atmosphere. They were so close to a complete victory
+      and the dark wizard eventually escaped them. '
+  - entity: 0
+    text: General Ragnar approached the king.
+  - entity: 6
+    text: 'Sir, we should get out of here as soon as possible, we are in a vulnerable
+      position. '
+  - entity: 6
+    text: If the remnants of the wizarding army unite in a counterattack, they will
+      completely destroy us.
+  - entity: 1
+    text: You are right. Time to get out of this hole.
+  - entity: 0
+    text: The army set out on a journey from the underworld.
+  - entity: 0
+    text: Reconnaissance units paved the way, followed by the remains of the royal
+      army.
+  - entity: 0
+    text: "\u2026"
+  - entity: 0
+    text: 'After a march that lasted several days, the army found itself in front
+      of a gate that led from the underworld. '
+  - entity: 0
+    text: However, a portal hung in front of the gate in the air, blocking the passage
+      through it.
+  - entity: 1
+    text: What kind of magic is this?
+  - entity: 4
+    text: This is the portal, my lord, we cannot pass through the gate.
+  - entity: 1
+    text: After all, you are an engineer, you come up with something.
+  - entity: 4
+    text: There is no wizard among us. But according to the law of conservation of
+      magic, each portal has its own output.
+  - entity: 1
+    text: Hmm, we don't seem to have a choice unless we want to starve to death.
+  - entity: 0
+    text: The army reluctantly entered the portal.
+  - entity: 0
+    text: ...
+  - entity: 0
+    text: The army found itself in a different dimension.
+  - entity: 0
+    text: The king did not know this, but whoever dies in the underworld will teleport
+      to another dimension.
+  - entity: 0
+    text: In the meantime, fighting was taking place between the royal soldiers and
+      the monsters that had died in the underworld.
+  - entity: 1
+    text: These are our comrades-in-arms, we must help them, to attack.
