@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffac0dd59d7a3d54981d16904d1434a7, type: 3}
-  m_Name: Level17 1
+  m_Name: Level18 20
   m_EditorClassIdentifier: 
   enemy: 2
-  pathNumber: 1
-  enemyCount: 5
+  pathNumber: 0
+  enemyCount: 15
   speed: 3
   hp: 175
   scale: 1
