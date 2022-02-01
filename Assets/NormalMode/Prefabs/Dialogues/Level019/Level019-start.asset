@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level019-start
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: ' The royal army continued the march as they approached the portal, so
+      it seemed to get bigger and bigger.'
+  - entity: 0
+    text: When they were relatively close to him, the king sent reconnaissance units
+      to check the situation.
+  - entity: 6
+    text: My king, the scouts report strong enemy resistance, they tried to take
+      the portal by attack, but the monsters pushed them back.
+  - entity: 1
+    text: Never mind, a frontal attack by our infantry will solve the problem, forward!
+  - entity: 0
+    text: The whole army moved forward with a battle cry.

@@ -31326,24 +31326,21 @@ MonoBehaviour:
   countdown: 0
   waveNumber: 0
   waves:
-  - {fileID: 11400000, guid: eafeb3dfb722f8f41824045ed847c012, type: 2}
-  - {fileID: 11400000, guid: 09d7ba984062e8e428bed7c3697e68e8, type: 2}
-  - {fileID: 11400000, guid: 6570137e4defd7242909bf020a4c8383, type: 2}
-  - {fileID: 11400000, guid: c77bba93d10464a458ff12e1ac506f26, type: 2}
-  - {fileID: 11400000, guid: 7673451a329edb74e9dba1416558b5a0, type: 2}
-  - {fileID: 11400000, guid: 15dc9452a15b60347aab9b5f501a6cde, type: 2}
-  - {fileID: 11400000, guid: 04fd0d343c789e94e9d24f0c448caea0, type: 2}
-  - {fileID: 11400000, guid: 5b24c0db0eadd3b469d872bbe7e1792f, type: 2}
-  - {fileID: 11400000, guid: 8d3a1a2e13e4205439a5bc3a5e083012, type: 2}
-  - {fileID: 11400000, guid: 55a4826e13b1b7c439780145488afdd4, type: 2}
-  - {fileID: 11400000, guid: d71c2d8bc7055c1458c20475478dcf56, type: 2}
-  - {fileID: 11400000, guid: f502a167416d7754eaba6754a72c7fd1, type: 2}
-  - {fileID: 11400000, guid: e1bc6d98ace061d46b5dfd40f75bbe7e, type: 2}
-  - {fileID: 11400000, guid: 65f41d7a61df2504a94cf073fd866b4b, type: 2}
-  - {fileID: 11400000, guid: 99b73198a1c1d16439278f38387ec2d7, type: 2}
-  - {fileID: 11400000, guid: 7b3c0580db5229843ab4b60a3edb11af, type: 2}
-  - {fileID: 11400000, guid: 09fafe8067265ed43adab6cd4619d261, type: 2}
-  - {fileID: 11400000, guid: db87e598715135e42a94b5b158f9781e, type: 2}
+  - {fileID: 11400000, guid: 4db4e4697b3b85d4589619ac0ee72907, type: 2}
+  - {fileID: 11400000, guid: 1dbf701a51052a847b95ac8615239323, type: 2}
+  - {fileID: 11400000, guid: 5556d8d3c16fcea4f875f5c460a10715, type: 2}
+  - {fileID: 11400000, guid: 62e81ee5e2dd0f54cb54ad0911161db5, type: 2}
+  - {fileID: 11400000, guid: f634484b86513b24bb68c2e807edabb3, type: 2}
+  - {fileID: 11400000, guid: d453cd28bb9c8244b89deaa021c0f0d8, type: 2}
+  - {fileID: 11400000, guid: db81f18847c1b4b47b8ec471f7382661, type: 2}
+  - {fileID: 11400000, guid: e667cd2665b79ea419d580af01215f76, type: 2}
+  - {fileID: 11400000, guid: e3a78ef4a6c132f47bc878e6ca6ca3ca, type: 2}
+  - {fileID: 11400000, guid: 25cfd354248b57040952afc4d5e63b8c, type: 2}
+  - {fileID: 11400000, guid: a29cc7b440ece344491f7c0c8063b42c, type: 2}
+  - {fileID: 11400000, guid: 1f05f01081620e943a0e9f3d01a2d7cd, type: 2}
+  - {fileID: 11400000, guid: ddf962c0c3b5961449981713971a0fc6, type: 2}
+  - {fileID: 11400000, guid: d55aa2f54c6c86f46aeda0f2b44d56e1, type: 2}
+  - {fileID: 11400000, guid: 628e1351d22fe2c4a88f83b1a11085a1, type: 2}
 --- !u!114 &1565029991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31402,6 +31399,14 @@ MonoBehaviour:
     type: 3}
   enemyBeholderGreenPrefab: {fileID: 2703858864881451887, guid: b8efcf3126860f7449d921914eee1fa3,
     type: 3}
+  enemyBatPurplePrefab: {fileID: 0}
+  enemySmallDragonRedPrefab: {fileID: 0}
+  enemyMonsterPlantGreenPrefab: {fileID: 0}
+  enemyOrcGreenPrefab: {fileID: 0}
+  enemySkeletonPurplePrefab: {fileID: 0}
+  enemySpiderGreenPrefab: {fileID: 0}
+  enemyEvilMagePurplePrefab: {fileID: 0}
+  enemyRoboGolemGrayPrefab: {fileID: 0}
   enemyBoss1Prefab: {fileID: 170346, guid: da6d6a06655063040aeb66d615ac7600, type: 3}
   enemyBoss2Prefab: {fileID: 100720, guid: 718245bcad6022948a1547e6551fc1c8, type: 3}
   enemyBoss3Prefab: {fileID: 194904, guid: 39f6545d821d68244a0bc391b186a47e, type: 3}
