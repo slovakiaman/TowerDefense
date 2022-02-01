@@ -11,7 +11,7 @@
         private Scores _endlessScores;
         private ulong _score;
 
-        private void Start()
+        private void Awake()
         {
             instance = this;
             instance._scores = new Scores();
