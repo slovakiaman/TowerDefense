@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level20-end
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: In a desperate counterattack, the dark wizard broke through the lines of
+      the royal army, panic broke out among the soldiers.
+  - entity: 0
+    text: 'The king, aware of the gravity of the situation, prompted his horse. '
+  - entity: 1
+    text: Erwind, you're not leaving me now.
+  - entity: 0
+    text: The king rushes at full speed at the unsuspecting wizard.
+  - entity: 0
+    text: At the last moment, however, the wizard notices him and sends a deadly
+      spell directly at him.
+  - entity: 0
+    text: The king dodges the spell and strikes the wizard's head.
+  - entity: 0
+    text: ' Green smoke billows from the wizard''s body instead of blood and all
+      the monsters dissolve.'
+  - entity: 0
+    text: The kingdom was saved, but at what cost? Hundreds of soldiers lost their
+      lives in the last battle and thousands during the entire campaign.
+  - entity: 0
+    text: Over the following years, the king and his subjects restored the kingdom
+      and lived in peace for generations to come.

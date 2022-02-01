@@ -75,6 +75,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level 19.unity
     guid: f47e66fb8725fc34eb59f53a866b0c6f
   - enabled: 1
+    path: Assets/Scenes/Levels/Level 20.unity
+    guid: 2eec74b6cab2f69498022381126f0089
+  - enabled: 1
     path: Assets/Scenes/EndlessLevels/Endless Level 1.unity
     guid: 7bd77000cacd74d42b5ce65fc0ecdc95
   - enabled: 1

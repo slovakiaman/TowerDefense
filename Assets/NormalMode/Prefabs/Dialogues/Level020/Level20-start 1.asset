@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc221e2ecfc494f8fb20979b09dafe, type: 3}
+  m_Name: Level20-start 1
+  m_EditorClassIdentifier: 
+  lines:
+  - entity: 0
+    text: After crossing the portal, the king remained surprised. The exit portal
+      led in front of the capital of his kingdom.
+  - entity: 1
+    text: Something is wrong.
+  - entity: 0
+    text: There was a black tow of smoke above the city.
+  - entity: 6
+    text: Our city is on fire, the wizard has teleported and taken advantage of our
+      absence.
+  - entity: 1
+    text: That's true, but we have a large advantage and a moment of surprise, Erwind
+      certainly isn't waiting for us here.
+  - entity: 1
+    text: He thinks we're still in the underworld.
+  - entity: 4
+    text: The scouts managed to surprise the enemy and occupied the gate.
+  - entity: 1
+    text: Great, we can't wait a minute, attack!
+  - entity: 0
+    text: The army fought directly into the city. Before long, the enemy recovered
+      and began to lead an organized resistance.
+  - entity: 0
+    text: A hard fight awaits our heroes.
