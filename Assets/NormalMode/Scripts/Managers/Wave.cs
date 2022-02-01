@@ -81,6 +81,30 @@
                 case EnemyVariant.BEHOLDER_GREEN:
                     enemyPrefab = ConstantsManager.instance.enemyBeholderGreenPrefab;
                     break;
+                case EnemyVariant.BAT_PURPLE:
+                    enemyPrefab = ConstantsManager.instance.enemyBatPurplePrefab;
+                    break;
+                case EnemyVariant.SMALLDRAGON_RED:
+                    enemyPrefab = ConstantsManager.instance.enemySmallDragonRedPrefab;
+                    break;
+                case EnemyVariant.MONSTERPLANT_GREEN:
+                    enemyPrefab = ConstantsManager.instance.enemyMonsterPlantGreenPrefab;
+                    break;
+                case EnemyVariant.ORC_GREEN:
+                    enemyPrefab = ConstantsManager.instance.enemyOrcGreenPrefab;
+                    break;
+                case EnemyVariant.SKELETON_PURPLE:
+                    enemyPrefab = ConstantsManager.instance.enemySkeletonPurplePrefab;
+                    break;
+                case EnemyVariant.SPIDER_GREEN:
+                    enemyPrefab = ConstantsManager.instance.enemySpiderGreenPrefab;
+                    break;
+                case EnemyVariant.EVILMAGE_PURPLE:
+                    enemyPrefab = ConstantsManager.instance.enemyEvilMagePurplePrefab;
+                    break;
+                case EnemyVariant.ROBOGOLEM_GRAY:
+                    enemyPrefab = ConstantsManager.instance.enemyRoboGolemGrayPrefab;
+                    break;
                 case EnemyVariant.BOSS1:
                     enemyPrefab = ConstantsManager.instance.enemyBoss1Prefab;
                     break;

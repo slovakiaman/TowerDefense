@@ -41106,6 +41106,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8969268209720696240, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8969268209785820762, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -48624,6 +48629,22 @@ MonoBehaviour:
   enemyBeholderCyanPrefab: {fileID: 2703858864881451887, guid: b402bd065feb95d48933cbed4d72a325,
     type: 3}
   enemyBeholderGreenPrefab: {fileID: 2703858864881451887, guid: b8efcf3126860f7449d921914eee1fa3,
+    type: 3}
+  enemyBatPurplePrefab: {fileID: 1522199433267968, guid: 2dfaeecbd10fab84490f29a2421b30e2,
+    type: 3}
+  enemySmallDragonRedPrefab: {fileID: 1269815030824246, guid: 49c44325d882f184299bbe5a97db452b,
+    type: 3}
+  enemyMonsterPlantGreenPrefab: {fileID: 1618574005888820, guid: 7c134fac7a0193f4b8becd3ebfe76474,
+    type: 3}
+  enemyOrcGreenPrefab: {fileID: 1091293637548798, guid: eb503cf547a62df4e87733745bfc3e84,
+    type: 3}
+  enemySkeletonPurplePrefab: {fileID: 1112885853905290, guid: 707667b9764e76a4b841b6684137070e,
+    type: 3}
+  enemySpiderGreenPrefab: {fileID: 1711228206799690, guid: 7e2e5c332910d2c4db2338fc45817a36,
+    type: 3}
+  enemyEvilMagePurplePrefab: {fileID: 1580023137681114, guid: 8ab2ad4a218cb3a479b9b37fe2079706,
+    type: 3}
+  enemyRoboGolemGrayPrefab: {fileID: 1606282618913942, guid: 87dc8275232e48444a76b520935aafd9,
     type: 3}
   enemyBoss1Prefab: {fileID: 170346, guid: da6d6a06655063040aeb66d615ac7600, type: 3}
   enemyBoss2Prefab: {fileID: 100720, guid: 718245bcad6022948a1547e6551fc1c8, type: 3}

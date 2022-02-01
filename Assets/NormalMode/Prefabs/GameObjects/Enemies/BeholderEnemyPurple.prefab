@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 2703858864881451890}
   - component: {fileID: 8083116581204730215}
   m_Layer: 0
-  m_Name: BeholderEnemy
+  m_Name: BeholderEnemyPurple
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

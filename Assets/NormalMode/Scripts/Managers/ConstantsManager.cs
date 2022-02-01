@@ -53,6 +53,22 @@
                 Debug.LogError("No boss3 enemy found");
             if (enemyBoss4Prefab == null)
                 Debug.LogError("No boss enemy found");
+            if (enemyBatPurplePrefab == null)
+                Debug.LogError("No bat enemy found");
+            if (enemySmallDragonRedPrefab == null)
+                Debug.LogError("No small dragon enemy found");
+            if (enemyMonsterPlantGreenPrefab == null)
+                Debug.LogError("No monster plant green enemy found");
+            if (enemyOrcGreenPrefab == null)
+                Debug.LogError("No orc green enemy found");
+            if (enemySkeletonPurplePrefab == null)
+                Debug.LogError("No skeleton purple enemy found");
+            if (enemySpiderGreenPrefab == null)
+                Debug.LogError("No spider green enemy found");
+            if (enemyEvilMagePurplePrefab == null)
+                Debug.LogError("No evilmage purple enemy found");
+            if (enemyRoboGolemGrayPrefab == null)
+                Debug.LogError("No robogolem gray enemy found");
         }
 
         [Header("Tower prefabs")]
@@ -81,6 +97,14 @@
         public GameObject enemyBeholderPurplePrefab;
         public GameObject enemyBeholderCyanPrefab;
         public GameObject enemyBeholderGreenPrefab;
+        public GameObject enemyBatPurplePrefab;
+        public GameObject enemySmallDragonRedPrefab;
+        public GameObject enemyMonsterPlantGreenPrefab;
+        public GameObject enemyOrcGreenPrefab;
+        public GameObject enemySkeletonPurplePrefab;
+        public GameObject enemySpiderGreenPrefab;
+        public GameObject enemyEvilMagePurplePrefab;
+        public GameObject enemyRoboGolemGrayPrefab;
 
         [Header("Enemy BOSS prefabs")]
         public GameObject enemyBoss1Prefab;
