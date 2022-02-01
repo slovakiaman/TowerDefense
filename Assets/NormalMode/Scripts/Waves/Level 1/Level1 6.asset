@@ -18,5 +18,5 @@ MonoBehaviour:
   speed: 2
   hp: 150
   scale: 1
-  countdown: 0
+  countdown: 3
   moneyReward: 50

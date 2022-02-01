@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 9036703426023895091}
   - component: {fileID: 7106941144521325382}
   m_Layer: 0
-  m_Name: OrcEnemyGreen
+  m_Name: OrcEnemyDesert
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 22
+  variant: 26
   weakAgainstType: 2
   pathNumber: 0
   controller: {fileID: 2616443683847314221}
@@ -2159,7 +2159,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d06ef433d7c35546890f0502b45353b, type: 2}
+  - {fileID: 2100000, guid: 7f336122ad7984948853076941abf85e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

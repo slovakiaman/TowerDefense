@@ -55,20 +55,53 @@
                 Debug.LogError("No boss enemy found");
             if (enemyBatPurplePrefab == null)
                 Debug.LogError("No bat enemy found");
+            if (enemyBatDesertPrefab == null)
+                Debug.LogError("No bat desert enemy found");
+            if (enemyBatWinterPrefab == null)
+                Debug.LogError("No bat winter enemy found");
             if (enemySmallDragonRedPrefab == null)
+                Debug.LogError("No small dragon enemy found");
+            if (enemySmallDragonDesertPrefab == null)
+                Debug.LogError("No small dragon enemy found");
+            if (enemySmallDragonWinterPrefab == null)
                 Debug.LogError("No small dragon enemy found");
             if (enemyMonsterPlantGreenPrefab == null)
                 Debug.LogError("No monster plant green enemy found");
+            if (enemyMonsterPlantDesertPrefab == null)
+                Debug.LogError("No monster plant desert enemy found");
+            if (enemyMonsterPlantWinterPrefab == null)
+                Debug.LogError("No monster plant winter enemy found");
             if (enemyOrcGreenPrefab == null)
                 Debug.LogError("No orc green enemy found");
+            if (enemyOrcDesertPrefab == null)
+                Debug.LogError("No orc desert enemy found");
+            if (enemyOrcWinterPrefab == null)
+                Debug.LogError("No orc winter enemy found");
             if (enemySkeletonPurplePrefab == null)
                 Debug.LogError("No skeleton purple enemy found");
+            if (enemySkeletonDesertPrefab == null)
+                Debug.LogError("No skeleton desert enemy found");
+            if (enemySkeletonWinterPrefab == null)
+                Debug.LogError("No skeleton winter enemy found");
             if (enemySpiderGreenPrefab == null)
                 Debug.LogError("No spider green enemy found");
+            if (enemySpiderDesertPrefab == null)
+                Debug.LogError("No spider desert enemy found");
+            if (enemySpiderWinterPrefab == null)
+                Debug.LogError("No spider winter enemy found");
             if (enemyEvilMagePurplePrefab == null)
                 Debug.LogError("No evilmage purple enemy found");
+            if (enemyEvilMageWinterPrefab == null)
+                Debug.LogError("No evilmage winter enemy found");
+            if (enemyEvilMageDesertPrefab == null)
+                Debug.LogError("No evilmage desert enemy found");
             if (enemyRoboGolemGrayPrefab == null)
                 Debug.LogError("No robogolem gray enemy found");
+            if (enemyRoboGolemDesertPrefab == null)
+                Debug.LogError("No robogolem desert enemy found");
+            if (enemyRoboGolemWinterPrefab == null)
+                Debug.LogError("No robogolem winter enemy found");
+
         }
 
         [Header("Tower prefabs")]
@@ -98,13 +131,29 @@
         public GameObject enemyBeholderCyanPrefab;
         public GameObject enemyBeholderGreenPrefab;
         public GameObject enemyBatPurplePrefab;
+        public GameObject enemyBatDesertPrefab;
+        public GameObject enemyBatWinterPrefab;
         public GameObject enemySmallDragonRedPrefab;
+        public GameObject enemySmallDragonDesertPrefab;
+        public GameObject enemySmallDragonWinterPrefab;
         public GameObject enemyMonsterPlantGreenPrefab;
+        public GameObject enemyMonsterPlantDesertPrefab;
+        public GameObject enemyMonsterPlantWinterPrefab;
         public GameObject enemyOrcGreenPrefab;
+        public GameObject enemyOrcDesertPrefab;
+        public GameObject enemyOrcWinterPrefab;
         public GameObject enemySkeletonPurplePrefab;
+        public GameObject enemySkeletonDesertPrefab;
+        public GameObject enemySkeletonWinterPrefab;
         public GameObject enemySpiderGreenPrefab;
+        public GameObject enemySpiderDesertPrefab;
+        public GameObject enemySpiderWinterPrefab;
         public GameObject enemyEvilMagePurplePrefab;
+        public GameObject enemyEvilMageDesertPrefab;
+        public GameObject enemyEvilMageWinterPrefab;
         public GameObject enemyRoboGolemGrayPrefab;
+        public GameObject enemyRoboGolemDesertPrefab;
+        public GameObject enemyRoboGolemWinterPrefab;
 
         [Header("Enemy BOSS prefabs")]
         public GameObject enemyBoss1Prefab;

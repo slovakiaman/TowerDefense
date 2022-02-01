@@ -50,7 +50,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d06ef433d7c35546890f0502b45353b, type: 2}
+  - {fileID: 2100000, guid: 7f336122ad7984948853076941abf85e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 5295203027500272121}
   - component: {fileID: 7774019678288101718}
   m_Layer: 0
-  m_Name: SkeletonEnemyPurple
+  m_Name: SkeletonEnemyDesert
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 28
+  variant: 29
   weakAgainstType: 1
   pathNumber: 0
   controller: {fileID: 8392825285525672207}
@@ -475,7 +475,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d06ef433d7c35546890f0502b45353b, type: 2}
+  - {fileID: 2100000, guid: 7f336122ad7984948853076941abf85e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1636,7 +1636,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d06ef433d7c35546890f0502b45353b, type: 2}
+  - {fileID: 2100000, guid: 7f336122ad7984948853076941abf85e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

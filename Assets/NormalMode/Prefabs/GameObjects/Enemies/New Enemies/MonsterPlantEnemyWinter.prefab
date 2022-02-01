@@ -740,7 +740,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d06ef433d7c35546890f0502b45353b, type: 2}
+  - {fileID: 2100000, guid: 98a94172eea4b8c4dbb1114bafe7814a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1265,7 +1265,7 @@ GameObject:
   - component: {fileID: 131909188879786600}
   - component: {fileID: 670107834731865830}
   m_Layer: 0
-  m_Name: MonsterPlantEnemyGreen
+  m_Name: MonsterPlantEnemyWinter
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 22
+  variant: 24
   weakAgainstType: 2
   pathNumber: 0
   controller: {fileID: 4578419632196897580}

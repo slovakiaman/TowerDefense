@@ -84,26 +84,74 @@
                 case EnemyVariant.BAT_PURPLE:
                     enemyPrefab = ConstantsManager.instance.enemyBatPurplePrefab;
                     break;
+                case EnemyVariant.BAT_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemyBatDesertPrefab;
+                    break;
+                case EnemyVariant.BAT_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemyBatWinterPrefab;
+                    break;
                 case EnemyVariant.SMALLDRAGON_RED:
                     enemyPrefab = ConstantsManager.instance.enemySmallDragonRedPrefab;
+                    break;
+                case EnemyVariant.SMALLDRAGON_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemySmallDragonDesertPrefab;
+                    break;
+                case EnemyVariant.SMALLDRAGON_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemySmallDragonWinterPrefab;
                     break;
                 case EnemyVariant.MONSTERPLANT_GREEN:
                     enemyPrefab = ConstantsManager.instance.enemyMonsterPlantGreenPrefab;
                     break;
+                case EnemyVariant.MONSTERPLANT_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemyMonsterPlantDesertPrefab;
+                    break;
+                case EnemyVariant.MONSTERPLANT_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemyMonsterPlantWinterPrefab;
+                    break;
                 case EnemyVariant.ORC_GREEN:
                     enemyPrefab = ConstantsManager.instance.enemyOrcGreenPrefab;
+                    break;
+                case EnemyVariant.ORC_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemyOrcDesertPrefab;
+                    break;
+                case EnemyVariant.ORC_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemyOrcWinterPrefab;
                     break;
                 case EnemyVariant.SKELETON_PURPLE:
                     enemyPrefab = ConstantsManager.instance.enemySkeletonPurplePrefab;
                     break;
+                case EnemyVariant.SKELETON_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemySkeletonDesertPrefab;
+                    break;
+                case EnemyVariant.SKELETON_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemySkeletonWinterPrefab;
+                    break;
                 case EnemyVariant.SPIDER_GREEN:
                     enemyPrefab = ConstantsManager.instance.enemySpiderGreenPrefab;
+                    break;
+                case EnemyVariant.SPIDER_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemySpiderDesertPrefab;
+                    break;
+                case EnemyVariant.SPIDER_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemySpiderWinterPrefab;
                     break;
                 case EnemyVariant.EVILMAGE_PURPLE:
                     enemyPrefab = ConstantsManager.instance.enemyEvilMagePurplePrefab;
                     break;
+                case EnemyVariant.EVILMAGE_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemyEvilMageDesertPrefab;
+                    break;
+                case EnemyVariant.EVILMAGE_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemyEvilMageWinterPrefab;
+                    break;
                 case EnemyVariant.ROBOGOLEM_GRAY:
                     enemyPrefab = ConstantsManager.instance.enemyRoboGolemGrayPrefab;
+                    break;
+                case EnemyVariant.ROBOGOLEM_DESERT:
+                    enemyPrefab = ConstantsManager.instance.enemyRoboGolemDesertPrefab;
+                    break;
+                case EnemyVariant.ROBOGOLEM_WINTER:
+                    enemyPrefab = ConstantsManager.instance.enemyRoboGolemWinterPrefab;
                     break;
                 case EnemyVariant.BOSS1:
                     enemyPrefab = ConstantsManager.instance.enemyBoss1Prefab;

@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 6547780604377245103}
   - component: {fileID: 7531611830611823607}
   m_Layer: 0
-  m_Name: SpiderEnemyGreen
+  m_Name: SpiderEnemyWinter
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 33
+  variant: 35
   weakAgainstType: 2
   pathNumber: 0
   controller: {fileID: 3776506133142648703}
@@ -1113,7 +1113,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d06ef433d7c35546890f0502b45353b, type: 2}
+  - {fileID: 2100000, guid: 98a94172eea4b8c4dbb1114bafe7814a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
