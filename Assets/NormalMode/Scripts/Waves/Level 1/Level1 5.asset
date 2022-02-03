@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1 5
   m_EditorClassIdentifier: 
   enemy: 0
-  pathNumber: 4
+  pathNumber: 1
   enemyCount: 5
   speed: 2
   hp: 150

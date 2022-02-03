@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffac0dd59d7a3d54981d16904d1434a7, type: 3}
-  m_Name: Level1 3
+  m_Name: Level6 11
   m_EditorClassIdentifier: 
-  enemy: 0
-  pathNumber: 2
-  enemyCount: 10
-  speed: 2
-  hp: 150
+  enemy: 31
+  pathNumber: 0
+  enemyCount: 20
+  speed: 8
+  hp: 80
   scale: 1
-  countdown: 3
+  countdown: 2
   moneyReward: 50

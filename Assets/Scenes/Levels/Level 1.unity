@@ -50634,14 +50634,12 @@ MonoBehaviour:
   countdown: 0
   waveNumber: 0
   waves:
-  - {fileID: 11400000, guid: c70a052bbc68e3942bbdb4c7995a7fad, type: 2}
-  - {fileID: 11400000, guid: f9c6807cba86dbb4aacb3dc17c8818f5, type: 2}
-  - {fileID: 11400000, guid: b59e8633df2ad8741acc178be73e5d57, type: 2}
-  - {fileID: 11400000, guid: 08d8500544d445d4baf5239bd7d64fbc, type: 2}
-  - {fileID: 11400000, guid: 837ef488d7f75f74388e4015211eb255, type: 2}
-  - {fileID: 11400000, guid: 5faa0a6b6b536b14c9d08b2990fb727a, type: 2}
   - {fileID: 11400000, guid: 97fbeb43a33e27846b7735320ea90a6c, type: 2}
+  - {fileID: 11400000, guid: 5faa0a6b6b536b14c9d08b2990fb727a, type: 2}
   - {fileID: 11400000, guid: b57631775c91e494ab282e25ebb71231, type: 2}
+  - {fileID: 11400000, guid: 837ef488d7f75f74388e4015211eb255, type: 2}
+  - {fileID: 11400000, guid: 9ea7a18cff5c41945ba3aff9345e43eb, type: 2}
+  - {fileID: 11400000, guid: d6f706238b2278048a248bc84ac0642a, type: 2}
 --- !u!4 &1669861728
 Transform:
   m_ObjectHideFlags: 0
