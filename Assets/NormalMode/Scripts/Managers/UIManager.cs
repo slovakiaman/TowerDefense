@@ -67,6 +67,9 @@ namespace NormalMode.Managers
         [SerializeField] protected GameObject nextWaveBoss2Nightmare;
         [SerializeField] protected GameObject nextWaveBoss3Usurper;
         [SerializeField] protected GameObject nextWaveBoss4TerrorBringer;
+        [SerializeField] protected GameObject nextWaveBatPurple;
+        [SerializeField] protected GameObject nextWaveBatWinter;
+        [SerializeField] protected GameObject nextWaveBatDesert;
 
         [Header("DialoguePanels")]
         [SerializeField] private GameObject infoDialoguePanel;
@@ -398,6 +401,15 @@ namespace NormalMode.Managers
                     break;
                 case EnemyVariant.BOSS4:
                     nextWaveBoss4TerrorBringer.SetActive(show);
+                    break;
+                case EnemyVariant.BAT_PURPLE:
+                    nextWaveBatPurple.SetActive(show);
+                    break;
+                case EnemyVariant.BAT_WINTER:
+                    nextWaveBatWinter.SetActive(show);
+                    break;
+                case EnemyVariant.BAT_DESERT:
+                    nextWaveBatDesert.SetActive(show);
                     break;
             }
         }
