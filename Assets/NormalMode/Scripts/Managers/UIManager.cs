@@ -85,6 +85,13 @@ namespace NormalMode.Managers
         [SerializeField] protected GameObject nextWaveSpiderGreen;
         [SerializeField] protected GameObject nextWaveSpiderWinter;
         [SerializeField] protected GameObject nextWaveSpiderDesert;
+        [SerializeField] protected GameObject nextWaveEvilMagePurple;
+        [SerializeField] protected GameObject nextWaveEvilMageWinter;
+        [SerializeField] protected GameObject nextWaveEvilMageDesert;
+        [SerializeField] protected GameObject nextWaveRobogolemGray;
+        [SerializeField] protected GameObject nextWaveRobogolemWinter;
+        [SerializeField] protected GameObject nextWaveRobogolemDesert;
+
 
 
         [Header("DialoguePanels")]
@@ -471,6 +478,24 @@ namespace NormalMode.Managers
                     break;
                 case EnemyVariant.SPIDER_DESERT:
                     nextWaveSpiderDesert.SetActive(show);
+                    break;
+                case EnemyVariant.EVILMAGE_PURPLE:
+                    nextWaveEvilMagePurple.SetActive(show);
+                    break;
+                case EnemyVariant.EVILMAGE_WINTER:
+                    nextWaveEvilMageWinter.SetActive(show);
+                    break;
+                case EnemyVariant.EVILMAGE_DESERT:
+                    nextWaveEvilMageDesert.SetActive(show);
+                    break;
+                case EnemyVariant.ROBOGOLEM_GRAY:
+                    nextWaveRobogolemGray.SetActive(show);
+                    break;
+                case EnemyVariant.ROBOGOLEM_WINTER:
+                    nextWaveRobogolemWinter.SetActive(show);
+                    break;
+                case EnemyVariant.ROBOGOLEM_DESERT:
+                    nextWaveRobogolemDesert.SetActive(show);
                     break;
 
 
