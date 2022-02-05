@@ -73,6 +73,10 @@ namespace NormalMode.Managers
         [SerializeField] protected GameObject nextWaveSmallDragonRed;
         [SerializeField] protected GameObject nextWaveSmallDragonWinter;
         [SerializeField] protected GameObject nextWaveSmallDragonDesert;
+        [SerializeField] protected GameObject nextWavePlantGreen;
+        [SerializeField] protected GameObject nextWavePlantWinter;
+        [SerializeField] protected GameObject nextWavePlantDesert;
+
 
 
         [Header("DialoguePanels")]
@@ -424,6 +428,16 @@ namespace NormalMode.Managers
                 case EnemyVariant.SMALLDRAGON_DESERT:
                     nextWaveSmallDragonDesert.SetActive(show);
                     break;
+                case EnemyVariant.MONSTERPLANT_GREEN:
+                    nextWavePlantGreen.SetActive(show);
+                    break;
+                case EnemyVariant.MONSTERPLANT_WINTER:
+                    nextWavePlantWinter.SetActive(show);
+                    break;
+                case EnemyVariant.MONSTERPLANT_DESERT:
+                    nextWavePlantDesert.SetActive(show);
+                    break;
+
             }
         }
         

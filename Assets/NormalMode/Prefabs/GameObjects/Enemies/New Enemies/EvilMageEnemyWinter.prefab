@@ -1214,7 +1214,7 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 34
+  variant: 38
   weakAgainstType: 1
   pathNumber: 0
   controller: {fileID: 1350769499014702048}
