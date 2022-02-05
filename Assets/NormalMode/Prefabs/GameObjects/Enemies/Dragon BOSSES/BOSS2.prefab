@@ -65,12 +65,11 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 19
+  variant: 43
   weakAgainstType: 3
   pathNumber: 2
   controller: {fileID: 4474298557992932987}
-  deathSound: {fileID: 8083116581204730215, guid: b402bd065feb95d48933cbed4d72a325,
-    type: 3}
+  deathSound: {fileID: -2175007232260333512}
   playWithDelay: 0
 --- !u!82 &-2175007232260333512
 AudioSource:
@@ -82,7 +81,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4d1d59afda311884a851408ce9dac6a5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 16533f0489ddf2a4ab61ccf0b9af1227, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1

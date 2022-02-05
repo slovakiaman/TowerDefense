@@ -376,12 +376,11 @@ MonoBehaviour:
   maxHealth: 100
   moneyReward: 50
   scoreReward: 10
-  variant: 21
+  variant: 45
   weakAgainstType: 3
   pathNumber: 2
   controller: {fileID: 3682599615194039703}
-  deathSound: {fileID: 8083116581204730215, guid: b402bd065feb95d48933cbed4d72a325,
-    type: 3}
+  deathSound: {fileID: 3054490903883573857}
   playWithDelay: 0
 --- !u!82 &3054490903883573857
 AudioSource:
