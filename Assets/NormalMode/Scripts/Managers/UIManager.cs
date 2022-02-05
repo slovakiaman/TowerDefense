@@ -79,7 +79,12 @@ namespace NormalMode.Managers
         [SerializeField] protected GameObject nextWaveOrcGreen;
         [SerializeField] protected GameObject nextWaveOrcWinter;
         [SerializeField] protected GameObject nextWaveOrcDesert;
-
+        [SerializeField] protected GameObject nextWaveSkeletonPurple;
+        [SerializeField] protected GameObject nextWaveSkeletonWinter;
+        [SerializeField] protected GameObject nextWaveSkeletonDesert;
+        [SerializeField] protected GameObject nextWaveSpiderGreen;
+        [SerializeField] protected GameObject nextWaveSpiderWinter;
+        [SerializeField] protected GameObject nextWaveSpiderDesert;
 
 
         [Header("DialoguePanels")]
@@ -449,6 +454,25 @@ namespace NormalMode.Managers
                 case EnemyVariant.ORC_DESERT:
                     nextWaveOrcDesert.SetActive(show);
                     break;
+                case EnemyVariant.SKELETON_PURPLE:
+                    nextWaveSkeletonPurple.SetActive(show);
+                    break;
+                case EnemyVariant.SKELETON_WINTER:
+                    nextWaveSkeletonWinter.SetActive(show);
+                    break;
+                case EnemyVariant.SKELETON_DESERT:
+                    nextWaveSkeletonDesert.SetActive(show);
+                    break;
+                case EnemyVariant.SPIDER_GREEN:
+                    nextWaveSpiderGreen.SetActive(show);
+                    break;
+                case EnemyVariant.SPIDER_WINTER:
+                    nextWaveSpiderWinter.SetActive(show);
+                    break;
+                case EnemyVariant.SPIDER_DESERT:
+                    nextWaveSpiderDesert.SetActive(show);
+                    break;
+
 
             }
         }
