@@ -70,6 +70,10 @@ namespace NormalMode.Managers
         [SerializeField] protected GameObject nextWaveBatPurple;
         [SerializeField] protected GameObject nextWaveBatWinter;
         [SerializeField] protected GameObject nextWaveBatDesert;
+        [SerializeField] protected GameObject nextWaveSmallDragonRed;
+        [SerializeField] protected GameObject nextWaveSmallDragonWinter;
+        [SerializeField] protected GameObject nextWaveSmallDragonDesert;
+
 
         [Header("DialoguePanels")]
         [SerializeField] private GameObject infoDialoguePanel;
@@ -410,6 +414,15 @@ namespace NormalMode.Managers
                     break;
                 case EnemyVariant.BAT_DESERT:
                     nextWaveBatDesert.SetActive(show);
+                    break;
+                case EnemyVariant.SMALLDRAGON_RED:
+                    nextWaveSmallDragonRed.SetActive(show);
+                    break;
+                case EnemyVariant.SMALLDRAGON_WINTER:
+                    nextWaveSmallDragonWinter.SetActive(show);
+                    break;
+                case EnemyVariant.SMALLDRAGON_DESERT:
+                    nextWaveSmallDragonDesert.SetActive(show);
                     break;
             }
         }
