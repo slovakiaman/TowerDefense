@@ -76,6 +76,9 @@ namespace NormalMode.Managers
         [SerializeField] protected GameObject nextWavePlantGreen;
         [SerializeField] protected GameObject nextWavePlantWinter;
         [SerializeField] protected GameObject nextWavePlantDesert;
+        [SerializeField] protected GameObject nextWaveOrcGreen;
+        [SerializeField] protected GameObject nextWaveOrcWinter;
+        [SerializeField] protected GameObject nextWaveOrcDesert;
 
 
 
@@ -436,6 +439,15 @@ namespace NormalMode.Managers
                     break;
                 case EnemyVariant.MONSTERPLANT_DESERT:
                     nextWavePlantDesert.SetActive(show);
+                    break;
+                case EnemyVariant.ORC_GREEN:
+                    nextWaveOrcGreen.SetActive(show);
+                    break;
+                case EnemyVariant.ORC_WINTER:
+                    nextWaveOrcWinter.SetActive(show);
+                    break;
+                case EnemyVariant.ORC_DESERT:
+                    nextWaveOrcDesert.SetActive(show);
                     break;
 
             }
