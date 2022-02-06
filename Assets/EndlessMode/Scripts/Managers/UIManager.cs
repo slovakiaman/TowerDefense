@@ -518,8 +518,7 @@ namespace EndlessMode.Managers
 
         public void ShowEventPanel(EndlessMode.Events.Event eventToShow)
         {
-            Transform icons = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(0);
-            Text name = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<Text>();
+            Transform icons = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(1);
             Text description = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(2).GetComponent<Text>();
             Text duration = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(3).GetComponent<Text>();
 
@@ -536,7 +535,6 @@ namespace EndlessMode.Managers
                 icons.GetChild(1).gameObject.SetActive(true);
             }
 
-            name.text = eventToShow.name;
             description.text = eventToShow.description;
             duration.text = "Duration: " + eventToShow.duration + " waves";
             this.eventPanel.SetActive(true);
