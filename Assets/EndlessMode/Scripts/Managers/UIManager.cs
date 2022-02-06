@@ -1,4 +1,5 @@
-﻿using EndlessMode.Towers;
+﻿using EndlessMode.Events;
+using EndlessMode.Towers;
 
 namespace EndlessMode.Managers
 {
@@ -516,33 +517,85 @@ namespace EndlessMode.Managers
             }
         }
 
-        public void ShowEventPanel(EndlessMode.Events.Event eventToShow)
+        public void ShowActiveEvents(List<EndlessMode.Events.Event> activeEvents)
         {
-            Transform icons = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(1);
-            Text description = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(2).GetComponent<Text>();
-            Text duration = this.eventPanel.transform.GetChild(0).GetChild(0).GetChild(3).GetComponent<Text>();
-
-            if (eventToShow.positiveEffect)
+            EndlessMode.Events.Event eEvent = null;
+            Transform icons = null;
+            Text description = null;
+            Text duration = null;
+            
+            this.eventPanel.transform.GetChild(0).gameObject.SetActive(false);
+            this.eventPanel.transform.GetChild(1).gameObject.SetActive(false);
+            this.eventPanel.transform.GetChild(2).gameObject.SetActive(false);
+            
+            if (activeEvents.Count > 0)
             {
-                //show positive effect icon
-                icons.GetChild(0).gameObject.SetActive(true);
-                icons.GetChild(1).gameObject.SetActive(false);
+                eEvent = activeEvents[0];
+                icons = this.eventPanel.transform.GetChild(0).GetChild(0);
+                description = this.eventPanel.transform.GetChild(0).GetChild(1).GetComponent<Text>();
+                duration = this.eventPanel.transform.GetChild(0).GetChild(2).GetComponent<Text>();
+
+                if (eEvent.positiveEffect)
+                {
+                    icons.GetChild(0).gameObject.SetActive(true);
+                    icons.GetChild(1).gameObject.SetActive(false);
+                }
+                else
+                {
+                    icons.GetChild(0).gameObject.SetActive(false);
+                    icons.GetChild(1).gameObject.SetActive(true);
+                }
+                
+                description.text = eEvent.description;
+                duration.text = eEvent.duration.ToString();
+                this.eventPanel.transform.GetChild(0).gameObject.SetActive(true);
             }
-            else
+            
+            if (activeEvents.Count > 1)
             {
-                //show negative effect icon
-                icons.GetChild(0).gameObject.SetActive(false);
-                icons.GetChild(1).gameObject.SetActive(true);
+                eEvent = activeEvents[1];
+                icons = this.eventPanel.transform.GetChild(1).GetChild(0);
+                description = this.eventPanel.transform.GetChild(1).GetChild(1).GetComponent<Text>();
+                duration = this.eventPanel.transform.GetChild(1).GetChild(2).GetComponent<Text>();
+
+                if (eEvent.positiveEffect)
+                {
+                    icons.GetChild(0).gameObject.SetActive(true);
+                    icons.GetChild(1).gameObject.SetActive(false);
+                }
+                else
+                {
+                    icons.GetChild(0).gameObject.SetActive(false);
+                    icons.GetChild(1).gameObject.SetActive(true);
+                }
+                
+                description.text = eEvent.description;
+                duration.text = eEvent.duration.ToString();
+                this.eventPanel.transform.GetChild(1).gameObject.SetActive(true);
             }
 
-            description.text = eventToShow.description;
-            duration.text = "Duration: " + eventToShow.duration + " waves";
-            this.eventPanel.SetActive(true);
-        }
+            if (activeEvents.Count == 3)
+            {
+                eEvent = activeEvents[2];
+                icons = this.eventPanel.transform.GetChild(2).GetChild(0);
+                description = this.eventPanel.transform.GetChild(2).GetChild(1).GetComponent<Text>();
+                duration = this.eventPanel.transform.GetChild(2).GetChild(2).GetComponent<Text>();
 
-        public void HideEventPanel()
-        {
-            this.eventPanel.SetActive(false);
+                if (eEvent.positiveEffect)
+                {
+                    icons.GetChild(0).gameObject.SetActive(true);
+                    icons.GetChild(1).gameObject.SetActive(false);
+                }
+                else
+                {
+                    icons.GetChild(0).gameObject.SetActive(false);
+                    icons.GetChild(1).gameObject.SetActive(true);
+                }
+                
+                description.text = eEvent.description;
+                duration.text = eEvent.duration.ToString();
+                this.eventPanel.transform.GetChild(2).gameObject.SetActive(true);
+            }
         }
 
     }

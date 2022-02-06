@@ -45,12 +45,13 @@
                 eventIndex = Random.Range(0, allEvents.allEvents.Count);
                 newEvent = allEvents.allEvents[eventIndex];
                 noAttempts--;
-            } while (!conflictingGroupsActive[newEvent.conflictingGroup] && activeEvents.ContainsKey(newEvent.id));
+            } while (conflictingGroupsActive[newEvent.conflictingGroup] || activeEvents.ContainsKey(newEvent.id));
 
             newEvent.startingWave = waveNumber;
             activeEvents.Add(newEvent.id, newEvent);
-            
-            UIManager.instance.ShowEventPanel(newEvent);
+
+            List<Events.Event> events = activeEvents.Values.ToList();
+            UIManager.instance.ShowActiveEvents(events);
         }
 
         private void UpdateActiveEvents(int waveNumber)
@@ -58,8 +59,7 @@
             List<Events.Event> active = this.activeEvents.Values.ToList();
             foreach (Events.Event actualEvent in active)
             {
-                int remainingDuration = waveNumber - (actualEvent.startingWave + actualEvent.duration);
-                //update UI?
+                int remainingDuration = (actualEvent.startingWave + actualEvent.duration) - waveNumber;
                 if (remainingDuration <= 0)
                 {
                     activeEvents.Remove(actualEvent.id);

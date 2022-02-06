@@ -17,55 +17,55 @@ MonoBehaviour:
     positiveEffect: 1
     name: FED UP
     description: MONSTERS GAIN 20% MORE MAXIMUM HP
-    startingWave: 0
+    startingWave: 11
     duration: 1
     conflictingGroup: 1
   - id: 0
     positiveEffect: 1
     name: BANQUET
     description: MONSTERS GAIN 20% MORE MAXIMUM HP
-    startingWave: 2
+    startingWave: 14
     duration: 3
     conflictingGroup: 1
   - id: 6
     positiveEffect: 0
     name: STARVING
     description: MONSTERS LOSE 20% MORE MAXIMUM HP
-    startingWave: 2
-    duration: 1
+    startingWave: 13
+    duration: 3
     conflictingGroup: 1
   - id: 6
     positiveEffect: 0
     name: WORLD HUNGER
     description: MONSTERS LOSE 20% MORE MAXIMUM HP
-    startingWave: 2
+    startingWave: 8
     duration: 3
     conflictingGroup: 1
   - id: 4
     positiveEffect: 1
     name: STONKS
     description: MONSTERS AWARD 20% MORE MONEY
-    startingWave: 1
-    duration: 1
+    startingWave: 7
+    duration: 3
     conflictingGroup: 2
   - id: 4
     positiveEffect: 1
     name: STONKS++
     description: MONSTERS AWARD 20% MORE MONEY
-    startingWave: 2
+    startingWave: 10
     duration: 3
     conflictingGroup: 2
   - id: 10
     positiveEffect: 0
     name: BEGGARS
     description: MONSTERS AWARD 20% LESS MONEY
-    startingWave: 1
-    duration: 1
+    startingWave: 12
+    duration: 3
     conflictingGroup: 2
   - id: 10
     positiveEffect: 0
     name: ECONOMIC CRISIS
     description: MONSTERS AWARD 20% LESS MONEY
-    startingWave: 0
-    duration: 1
+    startingWave: 15
+    duration: 3
     conflictingGroup: 2

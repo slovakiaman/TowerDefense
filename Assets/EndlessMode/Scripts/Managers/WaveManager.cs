@@ -20,8 +20,6 @@ namespace EndlessMode.Managers
         public int wavesCompleted;
         public float Coeficient = 1.3f;
 
-        public bool currentWaveEventGenerated = false;
-
         void Start()
         {
             countdown = this.waves[waveNumber].countdown;
@@ -38,18 +36,11 @@ namespace EndlessMode.Managers
                     UIManager.instance.ShowNextWaveCountdown(Math.Round(countdown));
                     if (countdown <= 0f)
                     {
-                        if (!currentWaveEventGenerated && nextWaveNumber > 0)
+                        if (nextWaveNumber > 0)
                         {
                             EventManager.instance.GenerateWaveEvent(waveNumber);
-                            currentWaveEventGenerated = true;
-                            countdown = 4f;
                         }
-                        else
-                        {
-                            UIManager.instance.HideEventPanel();
-                            StartCoroutine(SpawnWave());
-                            currentWaveEventGenerated = false;
-                        }
+                        StartCoroutine(SpawnWave());
                     }
                     countdown -= ValueCalculator.instance.CalculateTimerDeltaTime(Time.deltaTime);
                 }
