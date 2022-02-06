@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d37fe99df1ad248bf5b019b5740f9d, type: 3}
   m_Name: Wave19
   m_EditorClassIdentifier: 
-  enemy: 14
+  enemy: 18
   waveDifficulty: 0
-  enemyCount: 2
-  speed: 1
-  hp: 800
-  scale: 1
-  countdown: 0
-  moneyReward: 200
+  enemyCount: 9
+  speed: 6
+  hp: 150
+  scale: 0.6
+  countdown: 3
+  moneyReward: 130

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: 0
   waveDifficulty: 0
-  enemyCount: 2
+  enemyCount: 5
   speed: 2
   hp: 150
-  scale: 1
-  countdown: 0
+  scale: 0.7
+  countdown: 3
   moneyReward: 50

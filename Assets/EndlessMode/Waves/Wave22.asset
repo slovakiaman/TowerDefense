@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Wave22
   m_EditorClassIdentifier: 
   enemy: 21
-  waveDifficulty: 2
+  waveDifficulty: 0
   enemyCount: 1
-  speed: 3
-  hp: 20000
-  scale: 1
-  countdown: 0
-  moneyReward: 500
+  speed: 4
+  hp: 900
+  scale: 0.9
+  countdown: 3
+  moneyReward: 300
