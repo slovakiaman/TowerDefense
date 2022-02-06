@@ -46,9 +46,8 @@ namespace EndlessMode.Managers
         [SerializeField] protected GameObject teslaItem;
         [SerializeField] protected GameObject spinnerItem;
 
-        [Header("NextWaveEnemy")] [SerializeField]
-        protected GameObject nextWaveSlimeRed;
-
+        [Header("NextWaveEnemy")] 
+        [SerializeField] protected GameObject nextWaveSlimeRed;
         [SerializeField] protected GameObject nextWaveSlimeGreen;
         [SerializeField] protected GameObject nextWaveSlimeYellow;
         [SerializeField] protected GameObject nextWaveTurtleBlue;
@@ -70,6 +69,30 @@ namespace EndlessMode.Managers
         [SerializeField] protected GameObject nextWaveBoss2Nightmare;
         [SerializeField] protected GameObject nextWaveBoss3Usurper;
         [SerializeField] protected GameObject nextWaveBoss4TerrorBringer;
+        [SerializeField] protected GameObject nextWaveBatPurple;
+        [SerializeField] protected GameObject nextWaveBatWinter;
+        [SerializeField] protected GameObject nextWaveBatDesert;
+        [SerializeField] protected GameObject nextWaveSmallDragonRed;
+        [SerializeField] protected GameObject nextWaveSmallDragonWinter;
+        [SerializeField] protected GameObject nextWaveSmallDragonDesert;
+        [SerializeField] protected GameObject nextWavePlantGreen;
+        [SerializeField] protected GameObject nextWavePlantWinter;
+        [SerializeField] protected GameObject nextWavePlantDesert;
+        [SerializeField] protected GameObject nextWaveOrcGreen;
+        [SerializeField] protected GameObject nextWaveOrcWinter;
+        [SerializeField] protected GameObject nextWaveOrcDesert;
+        [SerializeField] protected GameObject nextWaveSkeletonPurple;
+        [SerializeField] protected GameObject nextWaveSkeletonWinter;
+        [SerializeField] protected GameObject nextWaveSkeletonDesert;
+        [SerializeField] protected GameObject nextWaveSpiderGreen;
+        [SerializeField] protected GameObject nextWaveSpiderWinter;
+        [SerializeField] protected GameObject nextWaveSpiderDesert;
+        [SerializeField] protected GameObject nextWaveEvilMagePurple;
+        [SerializeField] protected GameObject nextWaveEvilMageWinter;
+        [SerializeField] protected GameObject nextWaveEvilMageDesert;
+        [SerializeField] protected GameObject nextWaveRobogolemGray;
+        [SerializeField] protected GameObject nextWaveRobogolemWinter;
+        [SerializeField] protected GameObject nextWaveRobogolemDesert;
 
         protected void Awake()
         {
@@ -417,6 +440,78 @@ namespace EndlessMode.Managers
                     break;
                 case EnemyVariant.BOSS4:
                     nextWaveBoss4TerrorBringer.SetActive(show);
+                    break;
+                case EnemyVariant.BAT_PURPLE:
+                    nextWaveBatPurple.SetActive(show);
+                    break;
+                case EnemyVariant.BAT_WINTER:
+                    nextWaveBatWinter.SetActive(show);
+                    break;
+                case EnemyVariant.BAT_DESERT:
+                    nextWaveBatDesert.SetActive(show);
+                    break;
+                case EnemyVariant.SMALLDRAGON_RED:
+                    nextWaveSmallDragonRed.SetActive(show);
+                    break;
+                case EnemyVariant.SMALLDRAGON_WINTER:
+                    nextWaveSmallDragonWinter.SetActive(show);
+                    break;
+                case EnemyVariant.SMALLDRAGON_DESERT:
+                    nextWaveSmallDragonDesert.SetActive(show);
+                    break;
+                case EnemyVariant.MONSTERPLANT_GREEN:
+                    nextWavePlantGreen.SetActive(show);
+                    break;
+                case EnemyVariant.MONSTERPLANT_WINTER:
+                    nextWavePlantWinter.SetActive(show);
+                    break;
+                case EnemyVariant.MONSTERPLANT_DESERT:
+                    nextWavePlantDesert.SetActive(show);
+                    break;
+                case EnemyVariant.ORC_GREEN:
+                    nextWaveOrcGreen.SetActive(show);
+                    break;
+                case EnemyVariant.ORC_WINTER:
+                    nextWaveOrcWinter.SetActive(show);
+                    break;
+                case EnemyVariant.ORC_DESERT:
+                    nextWaveOrcDesert.SetActive(show);
+                    break;
+                case EnemyVariant.SKELETON_PURPLE:
+                    nextWaveSkeletonPurple.SetActive(show);
+                    break;
+                case EnemyVariant.SKELETON_WINTER:
+                    nextWaveSkeletonWinter.SetActive(show);
+                    break;
+                case EnemyVariant.SKELETON_DESERT:
+                    nextWaveSkeletonDesert.SetActive(show);
+                    break;
+                case EnemyVariant.SPIDER_GREEN:
+                    nextWaveSpiderGreen.SetActive(show);
+                    break;
+                case EnemyVariant.SPIDER_WINTER:
+                    nextWaveSpiderWinter.SetActive(show);
+                    break;
+                case EnemyVariant.SPIDER_DESERT:
+                    nextWaveSpiderDesert.SetActive(show);
+                    break;
+                case EnemyVariant.EVILMAGE_PURPLE:
+                    nextWaveEvilMagePurple.SetActive(show);
+                    break;
+                case EnemyVariant.EVILMAGE_WINTER:
+                    nextWaveEvilMageWinter.SetActive(show);
+                    break;
+                case EnemyVariant.EVILMAGE_DESERT:
+                    nextWaveEvilMageDesert.SetActive(show);
+                    break;
+                case EnemyVariant.ROBOGOLEM_GRAY:
+                    nextWaveRobogolemGray.SetActive(show);
+                    break;
+                case EnemyVariant.ROBOGOLEM_WINTER:
+                    nextWaveRobogolemWinter.SetActive(show);
+                    break;
+                case EnemyVariant.ROBOGOLEM_DESERT:
+                    nextWaveRobogolemDesert.SetActive(show);
                     break;
             }
         }

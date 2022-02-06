@@ -497,8 +497,6 @@ namespace NormalMode.Managers
                 case EnemyVariant.ROBOGOLEM_DESERT:
                     nextWaveRobogolemDesert.SetActive(show);
                     break;
-
-
             }
         }
         

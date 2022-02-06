@@ -1,5 +1,4 @@
 ﻿using EndlessMode.Waves;
-using NormalMode.Managers;
 using EndlessMode.Events;
 
 namespace EndlessMode.Enemies
