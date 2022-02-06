@@ -51,7 +51,7 @@
             activeEvents.Add(newEvent.id, newEvent);
 
             List<Events.Event> events = activeEvents.Values.ToList();
-            UIManager.instance.ShowActiveEvents(events);
+            UIManager.instance.ShowActiveEvents(events, waveNumber);
         }
 
         private void UpdateActiveEvents(int waveNumber)

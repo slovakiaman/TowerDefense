@@ -517,7 +517,7 @@ namespace EndlessMode.Managers
             }
         }
 
-        public void ShowActiveEvents(List<EndlessMode.Events.Event> activeEvents)
+        public void ShowActiveEvents(List<EndlessMode.Events.Event> activeEvents, int waveNumber)
         {
             EndlessMode.Events.Event eEvent = null;
             Transform icons = null;
@@ -547,7 +547,9 @@ namespace EndlessMode.Managers
                 }
                 
                 description.text = eEvent.description;
-                duration.text = eEvent.duration.ToString();
+                
+                int remainingDuration = (eEvent.startingWave + eEvent.duration) - waveNumber;
+                duration.text = remainingDuration.ToString();
                 this.eventPanel.transform.GetChild(0).gameObject.SetActive(true);
             }
             
@@ -570,7 +572,8 @@ namespace EndlessMode.Managers
                 }
                 
                 description.text = eEvent.description;
-                duration.text = eEvent.duration.ToString();
+                int remainingDuration = (eEvent.startingWave + eEvent.duration) - waveNumber;
+                duration.text = remainingDuration.ToString();
                 this.eventPanel.transform.GetChild(1).gameObject.SetActive(true);
             }
 
@@ -593,7 +596,8 @@ namespace EndlessMode.Managers
                 }
                 
                 description.text = eEvent.description;
-                duration.text = eEvent.duration.ToString();
+                int remainingDuration = (eEvent.startingWave + eEvent.duration) - waveNumber;
+                duration.text = remainingDuration.ToString();
                 this.eventPanel.transform.GetChild(2).gameObject.SetActive(true);
             }
         }
