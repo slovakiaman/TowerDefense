@@ -17,6 +17,6 @@ MonoBehaviour:
   enemyCount: 15
   speed: 6
   hp: 160
-  scale: 1
+  scale: 0.8
   countdown: 2
   moneyReward: 120
