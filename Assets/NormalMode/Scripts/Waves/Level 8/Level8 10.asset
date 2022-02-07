@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Level8 10
   m_EditorClassIdentifier: 
   enemy: 43
-  pathNumber: 1
+  pathNumber: 0
   enemyCount: 1
-  speed: 5
-  hp: 3000
+  speed: 4
+  hp: 5000
   scale: 1
-  countdown: 5
+  countdown: 2
   moneyReward: 500
