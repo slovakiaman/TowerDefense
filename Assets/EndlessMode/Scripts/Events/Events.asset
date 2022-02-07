@@ -197,11 +197,11 @@ MonoBehaviour:
     conflictingGroup: 2
   - id: 21
     positiveEffect: 0
-    name: BYE BYE
-    description: RANDOM TOWER IS DELETED
+    name: BEYOND PLUS ULTRA
+    description: TOWERS CAN KILL IN 1 SHOT
     startingWave: 21
-    duration: 3
-    conflictingGroup: 2
+    duration: 1
+    conflictingGroup: 16
   - id: 16
     positiveEffect: 1
     name: NO SPEED LIMIT!!!
@@ -369,4 +369,39 @@ MonoBehaviour:
     description: TIMER DECREACES BY 50%
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 29
+  - id: 5
+    positiveEffect: 0
+    name: ENRAGE
+    description: MONSTERS FASTER WHEN HIT
+    startingWave: 21
+    duration: 2
+    conflictingGroup: 30
+  - id: 11
+    positiveEffect: 1
+    name: IN THE KNEE
+    description: MONSTERS SLOWER WHEN HIT
+    startingWave: 21
+    duration: 2
+    conflictingGroup: 30
+  - id: 12
+    positiveEffect: 0
+    name: HALELUJAH
+    description: MONSTERS ARE SOMETIMES INVINCIBLE
+    startingWave: 21
+    duration: 1
+    conflictingGroup: 16
+  - id: 3
+    positiveEffect: 0
+    name: NATURAL SPRINTERS
+    description: MONSTERS ARE SOMETIMES FASTER
+    startingWave: 21
+    duration: 1
+    conflictingGroup: 31
+  - id: 9
+    positiveEffect: 1
+    name: SLOW DOWN FFS
+    description: MONSTERS ARE SOMETIMES SLOWER
+    startingWave: 21
+    duration: 1
+    conflictingGroup: 31
