@@ -1,4 +1,4 @@
-﻿using EndlessMode.Events;
+﻿using System;
 using EndlessMode.Towers;
 
 namespace EndlessMode.Managers
@@ -131,6 +131,15 @@ namespace EndlessMode.Managers
                 spinnerItem.SetActive(false);
         }
 
+        public void UpdateTowerCosts()
+        {
+            this.balistaItem.transform.GetChild(1).GetComponent<Text>().text = "$" + ValueCalculator.instance.CalculateTowerCOST(ConstantsManager.instance.balistaTowerPrefab1.GetComponent<Tower>());
+            this.cannonItem.transform.GetChild(1).GetComponent<Text>().text = "$" +ValueCalculator.instance.CalculateTowerCOST(ConstantsManager.instance.cannonTowerPrefab1.GetComponent<Tower>());
+            this.crystalItem.transform.GetChild(1).GetComponent<Text>().text = "$" + ValueCalculator.instance.CalculateTowerCOST(ConstantsManager.instance.crystalTowerPrefab1.GetComponent<Tower>());
+            this.teslaItem.transform.GetChild(1).GetComponent<Text>().text = "$" + ValueCalculator.instance.CalculateTowerCOST(ConstantsManager.instance.teslaTowerPrefab1.GetComponent<Tower>());
+            this.spinnerItem.transform.GetChild(1).GetComponent<Text>().text = "$" + ValueCalculator.instance.CalculateTowerCOST(ConstantsManager.instance.spinnerTowerPrefab1.GetComponent<Tower>());
+        }
+
         public Shop GetShop()
         {
             return shopLeftPanel.GetComponentInParent<Shop>();
@@ -224,7 +233,7 @@ namespace EndlessMode.Managers
             {
                 ShowBuyButton(true);
                 this.shopBuyButton.transform.Find("Text").GetComponent<Text>().text =
-                    "BUY" + " " + "($" + tower.GetTowerPrice() + ")";
+                    "BUY" + " " + "($" + ValueCalculator.instance.CalculateTowerCOST(tower) + ")";
             }
             else
             {
@@ -365,6 +374,7 @@ namespace EndlessMode.Managers
             pausePanel.SetActive(false);
             victoryPanel.SetActive(false);
             defeatPanel.SetActive(false);
+            this.HideActiveEvents();
         }
 
         public void Menu()
@@ -600,6 +610,13 @@ namespace EndlessMode.Managers
                 duration.text = remainingDuration.ToString();
                 this.eventPanel.transform.GetChild(2).gameObject.SetActive(true);
             }
+        }
+
+        private void HideActiveEvents()
+        {
+            this.eventPanel.transform.GetChild(0).gameObject.SetActive(false);
+            this.eventPanel.transform.GetChild(1).gameObject.SetActive(false);
+            this.eventPanel.transform.GetChild(2).gameObject.SetActive(false);
         }
 
     }

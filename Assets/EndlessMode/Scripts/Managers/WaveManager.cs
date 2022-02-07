@@ -23,8 +23,10 @@ namespace EndlessMode.Managers
         void Start()
         {
             countdown = this.waves[waveNumber].countdown;
-            nextWaveNumber = 0;
-            UIManager.instance.ShowNextWaveEnemy(waves[0].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
+            waveNumber = 0;
+            nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
+            wavesCompleted = 0;
+            UIManager.instance.ShowNextWaveEnemy(waves[nextWaveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
         }
 
         void Update()
@@ -38,7 +40,7 @@ namespace EndlessMode.Managers
                     {
                         if (nextWaveNumber > 0)
                         {
-                            EventManager.instance.GenerateWaveEvent(waveNumber);
+                            EventManager.instance.GenerateWaveEvent(wavesCompleted);
                         }
                         StartCoroutine(SpawnWave());
                     }
@@ -46,7 +48,7 @@ namespace EndlessMode.Managers
                 }
                 else
                 {
-                    UIManager.instance.ShowWaveSpawning(waveNumber + 1);
+                    UIManager.instance.ShowWaveSpawning(wavesCompleted + 1);
                 }
             }
             else
@@ -65,14 +67,7 @@ namespace EndlessMode.Managers
         public IEnumerator SpawnWave()
         {
             waveNumber = nextWaveNumber;
-            if (wavesCompleted >= waves.Count - 1)
-            {
-                nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
-            } else
-            {
-                nextWaveNumber = waveNumber + 1;
-            }
-            
+            nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
             spawning = true;
 
             Debug.Log("Spawning wave " + (wavesCompleted + 1) + "!");
@@ -87,7 +82,7 @@ namespace EndlessMode.Managers
             //wave calculated values
             int noEnemies = ValueCalculator.instance.CalculateEnemyCount(wave);
             float enemyHp = ValueCalculator.instance.CalculateEnemyHP(wave);
-            float enemySpeed = ValueCalculator.instance.CalculateEnemySpeed(wave);
+            float enemySpeed = wave.speed;
             int enemyMoneyReward = ValueCalculator.instance.CalculateEnemyMoneyReward(wave);
             int enemyScoreReward = wave.moneyReward;
             for (int i = 0; i < noEnemies; i++)
@@ -103,10 +98,13 @@ namespace EndlessMode.Managers
                 enemyObject.GetComponent<Enemy>().SetupValues(wave.GetAssignedPathIndex(), enemySpeed, enemyHp, enemyMoneyReward, enemyScoreReward, wave.scale);
                 yield return new WaitForSeconds(1.7f - (enemySpeed * 0.15f));
             }
+            
             if (waveNumber < waves.Count)
                 countdown = this.waves[waveNumber].countdown;
+            
             spawning = false;
             wavesCompleted++;
+            
             UIManager.instance.ShowNextWaveEnemy(waves[waveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, false);
             UIManager.instance.ShowNextWaveEnemy(waves[nextWaveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
             UIManager.instance.ShowSpawnWaveButton(true);
@@ -135,10 +133,10 @@ namespace EndlessMode.Managers
             spawning = false;
             start = false;
             waveNumber = 0;
-            nextWaveNumber = 0;
+            nextWaveNumber = UnityEngine.Random.Range(0, this.waves.Count);
             wavesCompleted = 0;
-            countdown = this.waves[waveNumber].countdown;
-            UIManager.instance.ShowNextWaveEnemy(waves[0].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
+            countdown = this.waves[nextWaveNumber].countdown;
+            UIManager.instance.ShowNextWaveEnemy(waves[nextWaveNumber].GetEnemyPrefab().GetComponent<Enemy>().variant, true);
             UIManager.instance.ShowGameNotStartedText();
         }
     }

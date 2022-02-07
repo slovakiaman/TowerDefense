@@ -41,6 +41,15 @@ namespace EndlessMode.Managers
             return wave.speed;
         }
 
+        public float CalculateEnemySpeed(float speed)
+        {
+            if (IsEventActive(EventID.MONSTER_BUFF_SPEED))
+                return speed * 1.5f;
+            if (IsEventActive(EventID.MONSTER_DEBUFF_SPEED))
+                return speed * 0.5f;
+            return speed;
+        }
+        
         public int CalculateEnemyCount(Wave wave)
         {
             if (IsEventActive(EventID.MONSTER_BUFF_COUNT))
@@ -71,6 +80,20 @@ namespace EndlessMode.Managers
                 return (int)(wave.moneyReward * .8f);
             }
             return wave.moneyReward;
+        }
+        
+        public int CalculateEnemyMoneyReward(int moneyReward)
+        {
+            if (IsEventActive(EventID.MONSTER_BUFF_MONEY))
+            {
+                return (int)(moneyReward * 1.2f);
+            }
+
+            if (IsEventActive(EventID.MONSTER_DEBUFF_MONEY))
+            {
+                return (int)(moneyReward * .8f);
+            }
+            return moneyReward;
         }
 
         public bool IsTowerEnabled(Tower tower)

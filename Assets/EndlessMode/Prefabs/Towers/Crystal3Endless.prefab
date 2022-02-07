@@ -8214,7 +8214,7 @@ MonoBehaviour:
   range: 16
   fireRate: 0.4
   damage: 200
-  weakAgainst: 
+  weakAgainst: 00000000
   upgradeTower: {fileID: 0}
   shootSound: {fileID: 5317470769804349015}
   controller: {fileID: 3691290437144436214}

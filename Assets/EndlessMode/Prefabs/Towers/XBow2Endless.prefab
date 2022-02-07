@@ -2023,7 +2023,7 @@ MonoBehaviour:
   range: 14
   fireRate: 1.5
   damage: 30
-  weakAgainst: 
+  weakAgainst: 00000000
   upgradeTower: {fileID: 7949479164689940615, guid: 1867fd0fc6a92eb458cde4d7d0e18056,
     type: 3}
   shootSound: {fileID: 2318633742585713838}

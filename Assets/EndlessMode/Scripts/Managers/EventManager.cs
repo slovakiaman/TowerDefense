@@ -52,6 +52,7 @@
 
             List<Events.Event> events = activeEvents.Values.ToList();
             UIManager.instance.ShowActiveEvents(events, waveNumber);
+            UIManager.instance.UpdateTowerCosts();
         }
 
         private void UpdateActiveEvents(int waveNumber)
@@ -67,6 +68,18 @@
                 }
             }
         }
-        
+
+        public void ResetEventManager()
+        {
+            activeEvents = new Dictionary<EventID, Events.Event>();
+            conflictingGroupsActive = new Dictionary<int, bool>();
+            foreach (Events.Event actualEvent in allEvents.allEvents)
+            {
+                if (!conflictingGroupsActive.ContainsKey(actualEvent.conflictingGroup))
+                {
+                    conflictingGroupsActive.Add(actualEvent.conflictingGroup, false);
+                }
+            }
+        }
     }   
 }

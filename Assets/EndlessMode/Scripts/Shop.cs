@@ -82,7 +82,8 @@ namespace EndlessMode.Shop
         {
             shopState = MenuState.TOWER_UPGRADEABLE;
             buildManager.BuildTower(selectedTower);
-            PlayerManager.instance.AddMoney(-1 * selectedTower.GetComponent<Tower>().GetTowerPrice());
+            int towerCost = ValueCalculator.instance.CalculateTowerCOST(selectedTower.GetComponent<Tower>());
+            PlayerManager.instance.AddMoney(-1 * towerCost);
             moneySound.Play();
         }
 

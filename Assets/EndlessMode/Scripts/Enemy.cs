@@ -54,6 +54,9 @@ namespace EndlessMode.Enemies
                 Debug.LogError("No animation controller");
             if (deathSound == null)
                 Debug.LogError("No death sound attached");
+            this.randomSpeedCooldown = 3;
+            this.randomSpeedTimeRemaining = -1;
+            this.randomInvincibilityTimeRemaining = -1;
         }
 
         void Update()
@@ -61,7 +64,7 @@ namespace EndlessMode.Enemies
             if (!dead)
             {
                 Vector3 direction = nextWaypoint.position - transform.position;
-                transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
+                transform.Translate(direction.normalized * ValueCalculator.instance.CalculateEnemySpeed(this.actualSpeed) * Time.deltaTime, Space.World);
 
                 if (Vector3.Distance(transform.position, nextWaypoint.position) <= 0.2f)
                 {
@@ -92,10 +95,31 @@ namespace EndlessMode.Enemies
 
         public void TakeDamage(int damage)
         {
-            if (ValueCalculator.instance.IsEventActive(Events.EventID.MONSTER_RANDOM_INVINCIBILITY) && this.randomInvincibilityCooldown <= 0f)
+            if (ValueCalculator.instance.IsEventActive(EventID.MONSTER_ONHIT_SPEED))
             {
-                this.randomInvincibilityCooldown = Random.Range(5, 11);
-                this.randomInvincibilityTimeRemaining = 3f;
+                this.onHitSpeedTimeRemaining = 3f;
+                this.actualSpeed = this.speed * 1.4f;
+            } 
+            else if (ValueCalculator.instance.IsEventActive(EventID.MONSTER_ONHIT_SLOW))
+            {
+                this.onHitSpeedTimeRemaining = 3f;
+                this.actualSpeed = this.speed * 0.6f;
+            }
+
+            if (ValueCalculator.instance.IsEventActive(Events.EventID.MONSTER_RANDOM_INVINCIBILITY))
+            {
+                if (this.randomInvincibilityCooldown <= 0f)
+                {
+                    this.randomInvincibilityCooldown = Random.Range(5, 11);
+                    this.randomInvincibilityTimeRemaining = 3f;
+                }
+                else if (this.randomInvincibilityTimeRemaining <= 0) {
+                    health -= damage;
+                    float hpPercent = ((float)health) / ((float)maxHealth);
+                    HPComponent.fillAmount = hpPercent;
+                    if (health <= 0)
+                        Die();
+                }
             }
             else
             {
@@ -105,16 +129,7 @@ namespace EndlessMode.Enemies
                 if (health <= 0)
                     Die();
             }
-            if (ValueCalculator.instance.IsEventActive(EventID.MONSTER_ONHIT_SPEED))
-            {
-                this.onHitSpeedTimeRemaining = 3f;
-                this.actualSpeed = this.speed * 1.2f;
-            } 
-            else if (ValueCalculator.instance.IsEventActive(EventID.MONSTER_ONHIT_SLOW))
-            {
-                this.onHitSpeedTimeRemaining = 3f;
-                this.actualSpeed = this.speed * 0.8f;
-            }
+            
         }
 
         private void Die()
@@ -123,7 +138,7 @@ namespace EndlessMode.Enemies
             controller.SetBool("dead", true);
             gameObject.tag = "Dead";
             transform.Find("Canvas").gameObject.SetActive(false);
-            PlayerManager.instance.AddMoney(moneyReward);
+            PlayerManager.instance.AddMoney(ValueCalculator.instance.CalculateEnemyMoneyReward(moneyReward));
             ScoreManager.instance.AddScore(scoreReward);
             if (playWithDelay > 0)
             {
@@ -145,28 +160,41 @@ namespace EndlessMode.Enemies
                 
             if (this.randomSpeedTimeRemaining <= 0 && this.onHitSpeedTimeRemaining <= 0)
                 this.actualSpeed = this.speed;
-                
-            if (this.randomSpeedTimeRemaining <= 0)
-                this.randomSpeedCooldown -= Time.deltaTime;
-            if (this.randomInvincibilityTimeRemaining <= 0)
-                this.randomInvincibilityCooldown -= Time.deltaTime;
+
+            if (ValueCalculator.instance.IsEventActive(Events.EventID.MONSTER_RANDOM_INVINCIBILITY))
+            {
+                if (this.randomInvincibilityTimeRemaining <= 0)
+                    this.randomInvincibilityCooldown -= Time.deltaTime;
+            }
+            else
+            {
+                this.randomInvincibilityTimeRemaining = 0;
+            }
             
             if (ValueCalculator.instance.IsEventActive(EventID.MONSTER_BUFF_SPEED_RANDOM))
             {
+                if (this.randomSpeedTimeRemaining <= 0)
+                    this.randomSpeedCooldown -= Time.deltaTime;
+                
                 if (this.randomSpeedCooldown <= 0f)
                 {
+                    Debug.Log("Random SPEED");
                     this.randomSpeedTimeRemaining = 3f;
                     this.randomSpeedCooldown = Random.Range(3, 11);
-                    this.actualSpeed = this.speed * 1.5f;
+                    this.actualSpeed = this.speed * 3f;
                 }
             } 
             else if (ValueCalculator.instance.IsEventActive(EventID.MONSTER_DEBUFF_SPEED_RANDOM))
             {
+                if (this.randomSpeedTimeRemaining <= 0)
+                    this.randomSpeedCooldown -= Time.deltaTime;
+                
                 if (this.randomSpeedCooldown <= 0f)
                 {
+                    Debug.Log("Random SLOW");
                     this.randomSpeedTimeRemaining = 3f;
                     this.randomSpeedCooldown = Random.Range(3, 11);
-                    this.actualSpeed = this.speed * 0.5f;
+                    this.actualSpeed = this.speed * 0.25f;
                 }
             }
         }

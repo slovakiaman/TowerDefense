@@ -613,7 +613,7 @@ MonoBehaviour:
   radiusCircle: {fileID: 6158458648083361473}
   price: 200
   scorePrice: 200
-  range: 9
+  range: 7
   fireRate: 0.4
   damage: 40
   weakAgainst: 0200000003000000

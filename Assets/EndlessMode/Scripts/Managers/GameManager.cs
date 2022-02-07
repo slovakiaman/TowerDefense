@@ -156,6 +156,8 @@
             GetComponent<WaveManager>().ResetSpawner();
             BuildManager.instance.ResetBuilder();
             PlayerManager.instance.ResetPlayer();
+            EventManager.instance.ResetEventManager();
+            gameOver = false;
         }
 
         public void ChangeLevel()
