@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffac0dd59d7a3d54981d16904d1434a7, type: 3}
   m_Name: Level5 6
   m_EditorClassIdentifier: 
-  enemy: 1
-  pathNumber: 2
+  enemy: 40
+  pathNumber: 0
   enemyCount: 8
-  speed: 3
-  hp: 150
+  speed: 5
+  hp: 220
   scale: 1
-  countdown: 5
-  moneyReward: 75
+  countdown: 2
+  moneyReward: 130
