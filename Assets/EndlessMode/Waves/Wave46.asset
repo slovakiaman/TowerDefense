@@ -16,7 +16,7 @@ MonoBehaviour:
   waveDifficulty: 2
   enemyCount: 1
   speed: 4
-  hp: 2800
+  hp: 5000
   scale: 1
   countdown: 5
   moneyReward: 500

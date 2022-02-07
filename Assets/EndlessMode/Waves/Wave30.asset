@@ -19,4 +19,4 @@ MonoBehaviour:
   hp: 520
   scale: 1.1
   countdown: 3
-  moneyReward: 230
+  moneyReward: 170
