@@ -125,4 +125,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndlessLevels/Endless Level 16.unity
     guid: 5b43d2f85eef4ab4fac8cc67b41473b7
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 17.unity
+    guid: d0975f95314dadd43b0708e2497ad877
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 18.unity
+    guid: f318f15a6d722d54f91f2a3c41632190
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 19.unity
+    guid: 36284b5d99dfd944282e2100e572a8ab
+  - enabled: 1
+    path: Assets/Scenes/EndlessLevels/Endless Level 20.unity
+    guid: ab2794be8138c9947993a82bc0179d10
   m_configObjects: {}
