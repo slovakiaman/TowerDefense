@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Level6 5
   m_EditorClassIdentifier: 
   enemy: 4
-  pathNumber: 1
-  enemyCount: 10
-  speed: 4
+  pathNumber: 0
+  enemyCount: 4
+  speed: 3
   hp: 200
-  scale: 1
+  scale: 0.8
   countdown: 2
-  moneyReward: 75
+  moneyReward: 100

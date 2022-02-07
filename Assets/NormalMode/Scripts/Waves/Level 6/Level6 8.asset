@@ -15,8 +15,8 @@ MonoBehaviour:
   enemy: 9
   pathNumber: 0
   enemyCount: 5
-  speed: 5
-  hp: 100
+  speed: 3
+  hp: 350
   scale: 1
   countdown: 2
-  moneyReward: 75
+  moneyReward: 100
