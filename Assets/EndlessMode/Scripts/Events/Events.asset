@@ -14,359 +14,387 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allEvents:
   - id: 0
-    positiveEffect: 1
+    positiveEffect: 0
     name: FED UP
-    description: MONSTERS GAIN 20% MORE MAXIMUM HP
+    description: MONSTERS HAVE 20% MORE HP
     startingWave: 11
     duration: 1
     conflictingGroup: 1
   - id: 6
-    positiveEffect: 0
+    positiveEffect: 1
     name: STARVING
-    description: MONSTERS LOSE 20% MORE MAXIMUM HP
+    description: MONSTERS HAVE 20% LESS HP
     startingWave: 15
     duration: 3
     conflictingGroup: 1
   - id: 4
     positiveEffect: 1
     name: STONKS
-    description: MONSTERS AWARD 20% MORE MONEY
+    description: 20% MORE MONEY FOR KILLS
     startingWave: 13
     duration: 3
     conflictingGroup: 2
   - id: 10
     positiveEffect: 0
     name: BEGGARS
-    description: MONSTERS AWARD 20% LESS MONEY
+    description: 20% LESS MONEY FOR KILLS
     startingWave: 18
     duration: 3
     conflictingGroup: 2
   - id: 1
-    positiveEffect: 1
+    positiveEffect: 0
     name: FASTER FASTER FASTER
-    description: MONSTERS SPEED  INCREACES BY 50%
+    description: MONSTERS ARE 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 3
   - id: 8
-    positiveEffect: 0
-    name: SPEED LIMIT
-    description: MONSTERS SPEED  DECREASES BY 50%
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
-  - id: 2
     positiveEffect: 1
+    name: SPEED LIMIT
+    description: MONSTERS ARE 50% SLOWER
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 3
+  - id: 2
+    positiveEffect: 0
     name: WE GOT NUMBERS
-    description: NEXT WAVE HAS MORE ENEMIES BY 1
+    description: NEXT WAVE HAS 1 MORE ENEMY
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 4
   - id: 7
-    positiveEffect: 0
+    positiveEffect: 1
     name: MANPOWER SHORTAGE
-    description: NEXT WAVE HAS LESS ENEMIES BY 1
+    description: NEXT WAVE HAS 1 LESS ENEMY
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
-  - id: 10
-    positiveEffect: 0
-    name: ECONOMIC CRISIS
-    description: MONSTERS AWARD 20% LESS MONEY
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 4
   - id: 22
     positiveEffect: 0
     name: NO MORE ARROWS
     description: BALISTA TOWER  IS DISABLED
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 5
   - id: 29
     positiveEffect: 0
     name: NO CANNON BALLS LEFT
     description: CANNON TOWER  IS DISABLED
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 6
   - id: 36
     positiveEffect: 0
     name: CRYSTAL CLEAR
     description: CRYSTAL TOWER  IS DISABLED
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 7
   - id: 43
     positiveEffect: 0
     name: TESLA IS ON HOLIDAY
     description: TESLA TOWER  IS DISABLED
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 8
   - id: 50
     positiveEffect: 0
     name: IT DOESNT SPIN
     description: SPINNER TOWER  IS DISABLED
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 9
   - id: 15
     positiveEffect: 1
     name: FIRE ARROWS
-    description: TOWERS DOES 20% MORE DAMAGE
+    description: TOWERS DO 20% MORE DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 10
   - id: 18
     positiveEffect: 0
     name: USERD ARROWS
-    description: TOWERS DOES 20% LESS  DAMAGE
+    description: TOWERS DO 20% LESS  DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 10
   - id: 23
     positiveEffect: 1
     name: BALISTA FIRE ARROWS
-    description: BALISTA TOWER DOES 50% MORE DAMAGE
+    description: BALISTA DOES 50% MORE DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 11
   - id: 30
     positiveEffect: 1
     name: LEAD CANNON BALLS
-    description: CANNON TOWER DOES 50% MORE DAMAGE
+    description: CANNON DOES 50% MORE DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 12
   - id: 37
     positiveEffect: 1
     name: FINE CRYSTAL
-    description: CRYSTAL TOWER DOES 50% MORE DAMAGE
+    description: CRYSTAL DOES 50% MORE DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 13
   - id: 44
     positiveEffect: 1
     name: TESLAS CONCENTRATION
-    description: TESLA TOWER DOES 50% MORE DAMAGE
+    description: TESLA DOES 50% MORE DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 14
   - id: 51
     positiveEffect: 1
     name: IMPROVED BEARINGS
-    description: SPINNER TOWER DOES 50% MORE DAMAGE
+    description: SPINNER DOES 50% MORE DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 15
   - id: 26
     positiveEffect: 0
     name: MEAGRE ARROWS
-    description: BALISTA TOWER DOES 50% LESS DAMAGE
+    description: BALISTA DOES 50% LESS DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 11
   - id: 33
     positiveEffect: 0
     name: CHEAP CANNON BALLS
-    description: CANNON TOWER DOES 50% LESS DAMAGE
+    description: CANNON DOES 50% LESS DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 12
   - id: 40
     positiveEffect: 0
     name: LOW QUALITY CRYSTAL
-    description: CRYSTAL TOWER DOES 50% LESS DAMAGE
+    description: CRYSTAL DOES 50% LESS DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 13
   - id: 47
     positiveEffect: 0
     name: USED COIL
-    description: TESLA TOWER DOES 20% LESS DAMAGE
+    description: TESLA DOES 20% LESS DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 14
   - id: 54
     positiveEffect: 0
     name: USED BEARINGS
-    description: SPINNER TOWER DOES 50% LESS DAMAGE
+    description: SPINNER DOES 50% LESS DAMAGE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 15
   - id: 21
     positiveEffect: 0
     name: BYE BYE
     description: RANDOM TOWER IS DELETED
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 16
   - id: 16
     positiveEffect: 1
     name: NO SPEED LIMIT!!!
-    description: TOWERS RATE OF FIRE INCREACES BY 20%
+    description: TOWERS FIRE 20% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 17
   - id: 19
     positiveEffect: 0
     name: SLOW DOWN NOW!!!
-    description: TOWERS RATE OF FIRE DECREACES BY 20%
+    description: TOWERS FIRE 20% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 17
   - id: 24
     positiveEffect: 1
     name: ULTRA BALISTA
-    description: BALISTA TOWER RATE OF FIRE INCREACES BY 50%
+    description: BALISTA FIRES 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 18
   - id: 31
     positiveEffect: 1
     name: ULTRA CANNON
-    description: CANNON TOWER RATE OF FIRE INCREACES BY 50%
+    description: CANNON FIRES 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 19
   - id: 38
     positiveEffect: 1
     name: ULTRA CRYSTAL
-    description: CRYSTAL TOWER RATE OF FIRE INCREACES BY 50%
+    description: CRYSTAL FIRES 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 20
   - id: 45
     positiveEffect: 1
     name: ULTRA TESLA
-    description: TESLA TOWER RATE OF FIRE INCREACES BY 50%
+    description: TESLA FIRES 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 21
   - id: 52
     positiveEffect: 1
     name: ULTRA SPINNER
-    description: SPINNER TOWER RATE OF FIRE INCREACES BY 50%
+    description: SPINNER FIRES 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 22
   - id: 27
     positiveEffect: 0
     name: USED BALISTA TOWER
-    description: SPINNER TOWER RATE OF FIRE DECREACES BY 50%
+    description: BALISTA FIRES 50% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 18
   - id: 34
     positiveEffect: 0
     name: USED CANNON TOWER
-    description: CANNON TOWER RATE OF FIRE DECREACES BY 50%
+    description: CANNON FIRES 50% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 19
   - id: 41
     positiveEffect: 0
     name: USED CRYSTAL TOWER
-    description: CRYSTAL TOWER RATE OF FIRE DECREACES BY 50%
+    description: CRYSTAL FIRES 50% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 20
   - id: 48
     positiveEffect: 0
     name: USED TESLA TOWER
-    description: TESLA TOWER RATE OF FIRE DECREACES BY 50%
+    description: TESLA FIRES 50% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 21
   - id: 55
     positiveEffect: 0
     name: USED SPINNER TOWER
-    description: SPINNER TOWER RATE OF FIRE DECREACES BY 50%
+    description: SPINNER FIRES 50% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 22
   - id: 25
-    positiveEffect: 1
-    name: BALISTA DISCOUNT
-    description: BALISTA TOWER PRICE REDUCTION BY 30%
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
-  - id: 32
-    positiveEffect: 1
-    name: CANNON DISCOUNT
-    description: CANNON TOWER PRICE REDUCTION BY 30%
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
-  - id: 39
-    positiveEffect: 1
-    name: CRYSTAL DISCOUNT
-    description: CRYSTAL TOWER PRICE REDUCTION BY 30%
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
-  - id: 46
-    positiveEffect: 1
-    name: TESLA DISCOUNT
-    description: TESLA TOWER PRICE REDUCTION BY 30%
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
-  - id: 53
-    positiveEffect: 1
-    name: SPINNER DISCOUNT
-    description: SPINNER TOWER PRICE REDUCTION BY 30%
-    startingWave: 21
-    duration: 3
-    conflictingGroup: 2
-  - id: 28
     positiveEffect: 0
     name: BALISTA PRICE INFLATION
-    description: BALISTA TOWER PRICE INCREACES BY 30%
+    description: BALISTA IS 30% MORE EXPENSIVE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
-  - id: 35
+    conflictingGroup: 23
+  - id: 32
     positiveEffect: 0
     name: CANNON PRICE INFLATION
-    description: CANNON TOWER PRICE INCREACES BY 30%
+    description: CANNON IS 30% MORE EXPENSIVE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
-  - id: 42
+    conflictingGroup: 24
+  - id: 39
     positiveEffect: 0
     name: CRYSTAL PRICE INFLATION
-    description: CRYSTAL TOWER PRICE INCREACES BY 30%
+    description: CRYSTAL IS 30% MORE EXPENSIVE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
-  - id: 49
+    conflictingGroup: 25
+  - id: 46
     positiveEffect: 0
     name: TESLA PRICE INFLATION
-    description: TESLA TOWER PRICE INCREACES BY 30%
+    description: TESLA IS 30% MORE EXPENSIVE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
-  - id: 56
-    positiveEffect: 0
+    conflictingGroup: 26
+  - id: 53
+    positiveEffect: 1
     name: SPINNER PRICE INFLATION
-    description: SPINNER TOWER PRICE INCREACES BY 30%
+    description: SPINNER IS 30% MORE EXPENSIVE
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 27
+  - id: 28
+    positiveEffect: 1
+    name: BALISTA DISCOUNT
+    description: BALISTA IS 30% LESS EXPENSIVE
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 23
+  - id: 35
+    positiveEffect: 1
+    name: CANNON DISCOUNT
+    description: CANNON IS 30% LESS EXPENSIVE
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 24
+  - id: 42
+    positiveEffect: 1
+    name: CRYSTAL DISCOUNT
+    description: CRYSTAL IS 30% LESS EXPENSIVE
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 25
+  - id: 49
+    positiveEffect: 1
+    name: TESLA DISCOUNT
+    description: TESLA IS 30% LESS EXPENSIVE
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 26
+  - id: 56
+    positiveEffect: 1
+    name: SPINNER DISCOUNT
+    description: SPINNER IS 30% LESS EXPENSIVE
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 27
   - id: 13
     positiveEffect: 0
     name: RUSH
-    description: TIMER INCREACES BY 50%
+    description: TIMER TICKS 50% FASTER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 28
   - id: 14
     positiveEffect: 1
     name: LAZY DAYS
-    description: TIMER DECREACES BY 50%
+    description: TIMER TICKS 50% SLOWER
     startingWave: 21
     duration: 3
-    conflictingGroup: 2
+    conflictingGroup: 29
+  - id: 5
+    positiveEffect: 0
+    name: ENRAGE
+    description: MONSTERS FASTER WHEN HIT
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 30
+  - id: 11
+    positiveEffect: 1
+    name: IN THE KNEE
+    description: MONSTERS SLOWER WHEN HIT
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 30
+  - id: 12
+    positiveEffect: 0
+    name: HALELUJAH
+    description: MONSTERS ARE SOMETIMES INVINCIBLE
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 16
+  - id: 3
+    positiveEffect: 0
+    name: NATURAL SPRINTERS
+    description: MONSTERS ARE SOMETIMES FASTER
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 31
+  - id: 9
+    positiveEffect: 1
+    name: SLOW DOWN FFS
+    description: MONSTERS ARE SOMETIMES SLOWER
+    startingWave: 21
+    duration: 3
+    conflictingGroup: 31
