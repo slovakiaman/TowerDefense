@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Level18 9
   m_EditorClassIdentifier: 
   enemy: 17
-  pathNumber: 2
-  enemyCount: 15
-  speed: 4
-  hp: 175
+  pathNumber: 0
+  enemyCount: 7
+  speed: 5
+  hp: 220
   scale: 1
-  countdown: 1
-  moneyReward: 75
+  countdown: 2
+  moneyReward: 100
