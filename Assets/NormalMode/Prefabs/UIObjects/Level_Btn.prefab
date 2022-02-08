@@ -1892,6 +1892,7 @@ GameObject:
   - component: {fileID: 5445432082076847102}
   - component: {fileID: 5445432082076847096}
   - component: {fileID: 5445432082076847103}
+  - component: {fileID: 5449969504497498443}
   m_Layer: 5
   m_Name: Level_name
   m_TagString: Untagged
@@ -1957,6 +1958,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5449969504497498443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445432082076847101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5445432082890182898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +1986,7 @@ GameObject:
   - component: {fileID: 5445432082890182909}
   - component: {fileID: 5445432082890182908}
   - component: {fileID: 6068361019785147869}
+  - component: {fileID: 1338567272216857476}
   m_Layer: 5
   m_Name: Level_Btn
   m_TagString: Untagged
@@ -2106,6 +2123,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelIndex: 0
+--- !u!114 &1338567272216857476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445432082890182898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 6, y: -6.42}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5445432083039730422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2149,7 @@ GameObject:
   - component: {fileID: 5445432083039730423}
   - component: {fileID: 5445432083039730417}
   - component: {fileID: 5445432083039730416}
+  - component: {fileID: 3619466791730088840}
   m_Layer: 5
   m_Name: Level_image
   m_TagString: Untagged
@@ -2222,6 +2255,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3619466791730088840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445432083039730422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5445432083109314100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +2356,7 @@ GameObject:
   - component: {fileID: 5445432083366327300}
   - component: {fileID: 5445432083366327302}
   - component: {fileID: 5445432083366327301}
+  - component: {fileID: 8270342226902033883}
   m_Layer: 5
   m_Name: Level_score
   m_TagString: Untagged
@@ -2373,6 +2422,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8270342226902033883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445432083366327803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5445432083381853993
 GameObject:
   m_ObjectHideFlags: 0
