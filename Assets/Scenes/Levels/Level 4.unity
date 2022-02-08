@@ -25992,11 +25992,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2697094515777587109, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -13.809998
-      objectReference: {fileID: 0}
     - target: {fileID: 3074555464313794109, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -26016,11 +26011,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5389712763617842904, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 9.599976
       objectReference: {fileID: 0}
     - target: {fileID: 6998048078809404068, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
@@ -26226,11 +26216,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969268208819543472, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8969268208819543476, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}

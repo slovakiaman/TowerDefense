@@ -11264,6 +11264,7 @@ Transform:
   - {fileID: 1306720169}
   - {fileID: 212439523}
   - {fileID: 760470265}
+  - {fileID: 2125907475}
   - {fileID: 86583131}
   - {fileID: 423024799}
   - {fileID: 1021685849}
@@ -11320,7 +11321,6 @@ Transform:
   - {fileID: 1588598932}
   - {fileID: 941504449}
   - {fileID: 1306660430}
-  - {fileID: 2125907475}
   - {fileID: 651815338}
   - {fileID: 715032161}
   - {fileID: 197943270}
@@ -11460,16 +11460,16 @@ Transform:
   - {fileID: 645903704}
   - {fileID: 51053400}
   - {fileID: 1305698676}
+  - {fileID: 1521209289}
   - {fileID: 1785603799}
   - {fileID: 176728901}
+  - {fileID: 204071956}
   - {fileID: 825121154}
   - {fileID: 1953704172}
   - {fileID: 1222256824}
-  - {fileID: 204071956}
+  - {fileID: 1098353473}
   - {fileID: 1381908043}
   - {fileID: 1382617686}
-  - {fileID: 1098353473}
-  - {fileID: 1521209289}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27800,11 +27800,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2697094515777587109, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -13.809998
-      objectReference: {fileID: 0}
     - target: {fileID: 3074555464313794109, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -27824,11 +27819,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5389712763617842904, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -14.599976
       objectReference: {fileID: 0}
     - target: {fileID: 6998048078809404068, guid: c36de0b2a7a2b3b4d9bdda5a6e977730,
         type: 3}
@@ -42686,7 +42676,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 40}
   m_Children: []
   m_Father: {fileID: 662594047}
-  m_RootOrder: 388
+  m_RootOrder: 332
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2128915396
 PrefabInstance:
