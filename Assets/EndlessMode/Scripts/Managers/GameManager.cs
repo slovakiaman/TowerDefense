@@ -118,12 +118,17 @@
         public void Menu()
         {
             ScoreManager.instance.setScore(0);
-            Time.timeScale = 1;
+            PauseSounds(false);
+            MuteSounds(false);
+            StopTime(false);
             SceneManager.LoadScene("Scenes/MainMenuScene", LoadSceneMode.Single);
         }
 
         public void NextLevel()
         {
+            PauseSounds(false);
+            MuteSounds(false);
+            StopTime(false);
             int buildIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(++buildIndex);
         }
@@ -162,7 +167,9 @@
 
         public void ChangeLevel()
         {
-            Time.timeScale = 1;
+            PauseSounds(false);
+            MuteSounds(false);
+            StopTime(false);
             SceneManager.LoadScene("Scenes/LevelsMap", LoadSceneMode.Single);
         }
     }
