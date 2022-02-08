@@ -28,6 +28,8 @@ namespace EndlessMode.Managers
         {
             money = startMoney;
             lives = startLives;
+            UIManager.instance.ShowMoney(money);
+            UIManager.instance.ShowLives(lives);
         }
     
         public void AddMoney(int ammount)
