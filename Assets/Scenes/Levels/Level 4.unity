@@ -12975,6 +12975,7 @@ Transform:
   - {fileID: 1094496011}
   - {fileID: 30010073}
   - {fileID: 1285439428}
+  - {fileID: 2125907475}
   - {fileID: 1386180470}
   - {fileID: 169172225}
   - {fileID: 468955656}
@@ -12990,7 +12991,6 @@ Transform:
   - {fileID: 1859018785}
   - {fileID: 63195925}
   - {fileID: 1090627362}
-  - {fileID: 2125907475}
   - {fileID: 292329178}
   - {fileID: 584253741}
   - {fileID: 933052875}
@@ -37047,7 +37047,7 @@ MonoBehaviour:
   editorDialogues:
   - dialogueName: start
     dialogue: {fileID: 11400000, guid: ba85f1da2aeaf524898cac6d6ef4f1f5, type: 2}
-  - dialogueName: 10
+  - dialogueName: 9
     dialogue: {fileID: 11400000, guid: 7e8b61b3ab1e9d647b23d77d324ec2b7, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: cb89a1858c0576b459ac18f746c2b08a, type: 2}
@@ -38272,7 +38272,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 40}
   m_Children: []
   m_Father: {fileID: 770338751}
-  m_RootOrder: 177
+  m_RootOrder: 162
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2129663896
 PrefabInstance:

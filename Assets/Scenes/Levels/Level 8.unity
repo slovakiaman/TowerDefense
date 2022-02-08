@@ -6717,7 +6717,7 @@ MonoBehaviour:
   editorDialogues:
   - dialogueName: start
     dialogue: {fileID: 11400000, guid: 485692b8b62894c46b1f3f9cd0db842c, type: 2}
-  - dialogueName: 10
+  - dialogueName: 9
     dialogue: {fileID: 11400000, guid: 1dc217ba6e9b4124a9a13ed8faf8b66e, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: 937cea0d4d82fcc42b2b589dc80fc527, type: 2}

@@ -50146,7 +50146,7 @@ MonoBehaviour:
   editorDialogues:
   - dialogueName: start
     dialogue: {fileID: 11400000, guid: aed4792693566834691433713185fc6a, type: 2}
-  - dialogueName: 20
+  - dialogueName: 19
     dialogue: {fileID: 11400000, guid: 13a4346a80a3f414491e875fa403bea0, type: 2}
   - dialogueName: end
     dialogue: {fileID: 11400000, guid: 04937ef96ff734b4b9ca97537a294009, type: 2}
