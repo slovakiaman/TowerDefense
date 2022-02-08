@@ -24266,7 +24266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u017Dilinsk\xE1 univerzita v \u017Diline \xA9 2021\nFakulta FEIT"
+  m_Text: "\u017Dilinsk\xE1 univerzita v \u017Diline \xA9 2022\nFakulta FEIT"
 --- !u!222 &922740782
 CanvasRenderer:
   m_ObjectHideFlags: 0
